@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="view_form_account_withholding" model="ir.ui.view">
+            <field name="name">view.form.account.withholding</field>
+            <field name="model">account.withholding</field>
+            <field name="arch" type="xml">
+                <form string="Retención de Ganancias">
+                    <header>
+                        <button name="action_declared" class="oe_highlight" string="Declared" type="object" states="done"/>
+                        <field name="state" widget="statusbar" statusbar_visible="done,declared,annulled"/>
+                    </header>
+                    <sheet>
+                        <legend attrs="{'invisible':[('type_aliquot','!=', 'earnings')]}">Withholding of Earnings</legend>
+                        <group name="data">
+                            <group>
+                                <field name="name" readonly="True"/>
+                                <field name="date" readonly="True"/>
+                                <field name="withholding_amount" readonly="True"/>
+                                <field name="withholding_tax_base_real" readonly="True"/>
+                            </group>
+                            <group>
+                                <field name="date" readonly="True"/>
+                                <field name="partner_id" readonly="True"/>
+                                <field name="cuit" readonly="True" />
+                                <field name="regimen_retencion_id" readonly="True" attrs="{'invisible':[('type_aliquot','!=', 'earnings')]}"/>
+                                <!--<field name="reference" readonly="True"/>-->
+                                <field name="payment_group_id" readonly="True"/>
+                                <field name="type_aliquot" invisible="True"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_account_withholding" model="ir.ui.view">
+            <field name="name">view.tree.account.withholding</field>
+            <field name="model">account.withholding</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" readonly="True"/>
+                    <field name="date" readonly="True"/>
+                    <field name="withholding_amount" readonly="True"/>
+                    <field name="partner_id" readonly="True"/>
+                    <field name="cuit" readonly="True" />
+                    <!--<field name="reference" readonly="True"/>-->
+                    <field name="payment_group_id" readonly="True"/>
+                    <field name="state" readonly="True"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_account_withholding" model="ir.actions.act_window">
+            <field name="name">Withholding of Earnings</field>
+            <field name="res_model">account.withholding</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('type_aliquot','=','earnings')]</field>
+        </record>
+
+        <menuitem id="account_withholding_menu"
+                  name="Withholdings"
+                  parent="account.menu_finance_entries"
+                  sequence="31"/>
+
+        <menuitem id="account_withholding_earnings_menu"
+                  name="Withholdings of Earnings"
+                  parent="account_withholding_menu"
+                  sequence="1"
+                  action="action_account_withholding" />
+
+        <record id="action_declared_withholding" model="ir.actions.server">
+            <field name="name">Declared</field>
+            <field name="condition">True</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_account_withholding"/>
+             <field name="binding_model_id" ref="model_account_withholding"/>
+            <field name="state">code</field>
+            <field name="code">
+records.action_declared()
+            </field>
+        </record>
+    </data>
+</odoo>

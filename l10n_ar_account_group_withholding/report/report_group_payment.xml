@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_account_group_wh_payment" inherit_id="account_payment_group.report_account_group_payment">
+            <xpath expr="//th[@name='moneda_th']" position="before">
+                <t t-if="o.get_withholding_receipt()[0]">
+                    <th>Nro Comprobante Retención</th>
+                </t>
+            </xpath>
+            <xpath expr="//td[@name='moneda_td']" position="before">
+                <t t-if="o.get_withholding_receipt()[0]">
+                    <t t-if="payment.customers_withholding">
+                         <td><span t-field="payment.withholding_receipt"/></td>
+                    </t>
+                    <t t-if="not payment.customers_withholding">
+                        <td><span></span></td>
+                    </t>
+                </t>
+            </xpath>
+            <xpath expr="//tr[@name='total_payment']" position="replace">
+                <tr style="border-top: 1px solid black;" name="total_payment">
+                    <t t-if="not o.get_withholding_receipt()[0]">
+                        <t t-if="pay_show_report_currency == 'multi_currency'">
+                            <td colspan="6" class="text-right"><span>Total pagado:</span></td>
+                        </t>
+                        <t t-if="pay_show_report_currency != 'multi_currency'">
+                            <td colspan="5" class="text-right"><span>Total pagado:</span></td>
+                        </t>
+                    </t>
+                    <t t-if="o.get_withholding_receipt()[0]">
+                        <t t-if="pay_show_report_currency == 'multi_currency'">
+                            <td colspan="7" class="text-right"><span>Total pagado:</span></td>
+                        </t>
+                        <t t-if="pay_show_report_currency != 'multi_currency'">
+                            <td colspan="6" class="text-right"><span>Total pagado:</span></td>
+                        </t>
+                    </t>
+                    <td></td>
+                    <t t-if="pay_show_report_currency == 'other_currency'">
+                        <td class="text-right"><span t-esc="total_currency" t-options='{"widget": "monetary", "display_currency": o.payment_ids[0].currency_id}'/></td>
+                    </t>
+                    <td class="text-right"><span t-esc="total" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
+                </tr>
+            </xpath>
+        </template>
+    </data>
+</odoo>

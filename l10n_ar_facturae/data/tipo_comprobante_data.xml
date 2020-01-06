@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="201" model="tipo.comprobante">
+            <field name="codigo">201</field>
+            <field name="name">FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="desc">A</field>
+            <field name="type">invoice</field>
+            <field name="permitido_venta">True</field>
+        </record>
+        <record id="202" model="tipo.comprobante">
+            <field name="codigo">202</field>
+            <field name="name">NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="desc">A</field>
+            <field name="type">debit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="201"/>
+        </record>
+        <record id="203" model="tipo.comprobante">
+            <field name="codigo">203</field>
+            <field name="name">NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="desc">A</field>
+            <field name="type">credit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="201"/>
+        </record>
+        <record id="206" model="tipo.comprobante">
+            <field name="codigo">206</field>
+            <field name="name">FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="desc">B</field>
+            <field name="type">invoice</field>
+            <field name="permitido_venta">True</field>
+        </record>
+        <record id="207" model="tipo.comprobante">
+            <field name="codigo">207</field>
+            <field name="name">NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="desc">B</field>
+            <field name="type">debit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="206"/>
+        </record>
+        <record id="208" model="tipo.comprobante">
+            <field name="codigo">208</field>
+            <field name="name">NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="desc">B</field>
+            <field name="type">credit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="206"/>
+        </record>
+        <record id="211" model="tipo.comprobante">
+            <field name="codigo">211</field>
+            <field name="name">FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="desc">C</field>
+            <field name="type">invoice</field>
+            <field name="permitido_venta">True</field>
+        </record>
+        <record id="212" model="tipo.comprobante">
+            <field name="codigo">212</field>
+            <field name="name">NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="desc">C</field>
+            <field name="type">debit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="211"/>
+        </record>
+        <record id="213" model="tipo.comprobante">
+            <field name="codigo">213</field>
+            <field name="name">NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="desc">C</field>
+            <field name="type">credit_note</field>
+            <field name="permitido_venta">True</field>
+            <field name="referencia_id" ref="211"/>
+        </record>
+        <record id="account_journal_sale_201A" model="account.journal">
+            <field name="name">Diario Venta FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="type">sale</field>
+            <field name="code">FCEMA</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.201"/>
+        </record>
+        <record id="account_journal_sale_202A" model="account.journal">
+            <field name="name">Diario Venta NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="type">sale</field>
+            <field name="code">NDEMA</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.202"/>
+        </record>
+        <record id="account_journal_sale_203A" model="account.journal">
+            <field name="name">Diario Venta NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) A</field>
+            <field name="type">sale</field>
+            <field name="code">NCEMA</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.203"/>
+        </record>
+        <record id="account_journal_sale_206B" model="account.journal">
+            <field name="name">Diario Venta FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="type">sale</field>
+            <field name="code">FCEMB</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.206"/>
+        </record>
+        <record id="account_journal_sale_207B" model="account.journal">
+            <field name="name">Diario Venta NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="type">sale</field>
+            <field name="code">NDEMB</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.207"/>
+        </record>
+        <record id="account_journal_sale_208B" model="account.journal">
+            <field name="name">Diario Venta NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) B</field>
+            <field name="type">sale</field>
+            <field name="code">NCEMB</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.208"/>
+        </record>
+        <record id="account_journal_sale_211C" model="account.journal">
+            <field name="name">Diario Venta FACTURA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="type">sale</field>
+            <field name="code">FCEMC</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.211"/>
+        </record>
+        <record id="account_journal_sale_212C" model="account.journal">
+            <field name="name">Diario Venta NOTA DE DÉBITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="type">sale</field>
+            <field name="code">NDEMC</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.212"/>
+        </record>
+        <record id="account_journal_sale_213C" model="account.journal">
+            <field name="name">Diario Venta NOTA DE CRÉDITO ELECTRÓNICA MiPyME (FCE) C</field>
+            <field name="type">sale</field>
+            <field name="code">NCEMC</field>
+            <field name="show_on_dashboard">False</field>
+            <field name="comprobante_id" ref="l10n_ar_facturae.213"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_user_res_aliquot_agip,access.purchase.user.res.aliquot.agip,l10n_ar_perception_withholding_agip.model_res_aliquot_agip,purchase.group_purchase_user,1,0,0,0
+access_sale_salesman_all_res_aliquot_agip,access.sale.salesman.all.res.aliquot.agip,l10n_ar_perception_withholding_agip.model_res_aliquot_agip,sales_team.group_sale_salesman_all_leads,1,0,0,0
+access_sale_salesman_all_res_aliquot_agip,access.sale.salesman.all.res.aliquot.agip,l10n_ar_perception_withholding_agip.model_res_aliquot_agip,sales_team.group_sale_salesman,1,0,0,0
+access_account_manager_res_aliquot_agip,access.account.manager.res.aliquot.agip,l10n_ar_perception_withholding_agip.model_res_aliquot_agip,account.group_account_manager,1,1,1,0
+access_erp_manager_res_aliquot_agip,access.erp.manager.res.aliquot.agip,l10n_ar_perception_withholding_agip.model_res_aliquot_agip,base.group_erp_manager,1,1,1,1

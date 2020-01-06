@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_form_afip_session" model="ir.ui.view">
+        <field name="name">view.form.afip.session</field>
+        <field name="model">afip.session</field>
+        <field name="arch" type="xml">
+            <form string="Sesiones AFIP">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="sign"/>
+                            <field name="token"/>
+                            <field name="expirationTime"/>
+                            <field name="xml_tag"/>
+                            <field name="environment"/>
+                            <field name="company_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_afip_session" model="ir.ui.view">
+        <field name="name">view.tree.afip.session</field>
+        <field name="model">afip.session</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sign"/>
+                <field name="token"/>
+                <field name="expirationTime"/>
+                <field name="xml_tag"/>
+                <field name="environment"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_afip_session" model="ir.actions.act_window">
+        <field name="name">Sesiones Afip</field>
+        <field name="res_model">afip.session</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+        </field>
+    </record>
+
+    <menuitem id="afip_session_menu"
+              name="Sesiones AFIP"
+              parent="l10n_ar_base.menu_argentina"
+              sequence="32"
+              action="action_afip_session" />
+</odoo>

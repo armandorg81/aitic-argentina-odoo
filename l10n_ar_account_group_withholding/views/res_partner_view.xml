@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="wh_partner_argentina_form_view">
+            <field name="name">wh.partner.argentina.form.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="l10n_ar_base.partner_argentina_form_view"/>
+            <field name="arch" type="xml">
+                <field name="inscripto" position="replace"/>
+                <notebook position="inside">
+                    <page string="Retención Ganancias" groups="account.group_account_invoice">
+                        <group name="withholding">
+                            <group>
+                                <field name="inscripto" attrs="{'invisible':[('supplier', '!=', True)]}" string="Retención Ganancias"/>
+                                <field name="regimen_retencion_id" attrs="{'invisible':[('inscripto','=',False)], 'required': [('inscripto','=',True)]}"/>
+                            </group>
+                            <group>
+                                <field name="exempt_earning" attrs="{'invisible':[('inscripto','=',False)]}"/>
+                                <field name="date_earnings_from" attrs="{'invisible': ['|',('exempt_earning','=',False),('exempt_earning','=',False)], 'required': [('exempt_earning','=',True)]}"/>
+                                <field name="date_earnings_to" attrs="{'invisible': ['|',('exempt_earning','=',False),('exempt_earning','=',False)], 'required': [('exempt_earning','=',True)]}"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

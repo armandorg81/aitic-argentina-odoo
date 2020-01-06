@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_regimen_retencion" model="ir.ui.view">
+             <field name="name">view.form.regimen.retencion</field>
+             <field name="model">regimen.retencion</field>
+             <field name="arch" type="xml">
+                <form string="Listado de Régimen Retención">
+                  <sheet>
+                    <legend>Régimen Retención</legend>
+                       <group>
+                          <group>
+                             <field name="name" required="True"/>
+                             <field name="concepto" required="True"/>
+                             <field name="desc" required="True"/>
+                             <field name="por_ins" required="True"/>
+                             <field name="segun_escala_ins"/>
+                             <field name="por_no_ins" required="True"/>
+                             <field name="segun_escala_nins"/>
+                             <field name="montos_no_sujeto" required="True"/>
+                          </group>
+                       </group>
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_regimen_retencion" model="ir.ui.view">
+             <field name="name">view.tree.regimen.retencion</field>
+             <field name="model">regimen.retencion</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="name" required="True"/>
+                    <field name="concepto" required="True"/>
+                    <field name="desc" required="True"/>
+                    <field name="por_ins" required="True"/>
+                    <field name="por_no_ins" required="True"/>
+                    <field name="montos_no_sujeto" required="True"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_regimen_retencion" model="ir.actions.act_window">
+            <field name="name">Régimen Retención</field>
+            <field name="res_model">regimen.retencion</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="py_regimen_retencion_menu"
+        name="Régimen Retención"
+        parent="menu_retenciones"
+        sequence="31"
+        action="action_regimen_retencion" />
+
+     </data>
+</odoo>

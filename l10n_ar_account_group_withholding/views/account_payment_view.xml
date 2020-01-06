@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_payment_form_w" model="ir.ui.view">
+            <field name="name">account.payment.form.inherited</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form" />
+            <field name="arch" type="xml">
+                <field name="communication" position="before">
+                    <field name="customers_withholding" attrs="{'invisible': [('partner_type', '!=', 'customer')]}"/>
+                    <field name="withholding_receipt" attrs="{'invisible': ['|', ('partner_type', '!=', 'customer'), ('customers_withholding', '=', False)],
+                                                                'required': [('partner_type', '=', 'customer'), ('customers_withholding', '=', True)]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_account_payment_invoice_withholding_form" model="ir.ui.view">
+            <field name="name">account.payment.invoice.withholding.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_invoice_form" />
+            <field name="arch" type="xml">
+                <field name="check_ids" position="after">
+                    <field name="withholding_receipt" invisible="not context.get('default_partner_type', False)"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

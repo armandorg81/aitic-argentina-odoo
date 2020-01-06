@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data noupdate="1">
+               <record id="account_journal_sale_001A" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS A</field>
+                   <field name="type">sale</field>
+                   <field name="code">FACAV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.001"/>
+               </record>
+               <record id="account_journal_purchase_001A" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">FACAC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.001"/>
+               </record>
+               <record id="account_journal_sale_002A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO A</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDAVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.002"/>
+               </record>
+               <record id="account_journal_purchase_002A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDACO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.002"/>
+               </record>
+               <record id="account_journal_sale_003A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO A</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCAVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.003"/>
+               </record>
+               <record id="account_journal_purchase_003A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCACO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.003"/>
+               </record>
+               <record id="account_journal_sale_004A" model="account.journal">
+                   <field name="name">Diario Venta RECIBOS A</field>
+                   <field name="type">sale</field>
+                   <field name="code">RBAVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.004"/>
+               </record>
+               <record id="account_journal_purchase_004A" model="account.journal">
+                   <field name="name">Diario Compra RECIBOS A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RBACO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.004"/>
+               </record>
+               <record id="account_journal_sale_005A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE VENTA AL CONTADO A</field>
+                   <field name="type">sale</field>
+                   <field name="code">NVAVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.005"/>
+               </record>
+               <record id="account_journal_purchase_005A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE VENTA AL CONTADO A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NVACO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.005"/>
+               </record>
+               <record id="account_journal_sale_006B" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS B</field>
+                   <field name="type">sale</field>
+                   <field name="code">FACBV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.006"/>
+               </record>
+               <record id="account_journal_purchase_006B" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">FACBC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.006"/>
+               </record>
+               <record id="account_journal_sale_007B" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO B</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDBVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.007"/>
+               </record>
+               <record id="account_journal_purchase_007B" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDBCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.007"/>
+               </record>
+               <record id="account_journal_sale_008B" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO B</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCBVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.008"/>
+               </record>
+               <record id="account_journal_purchase_008B" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCBCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.008"/>
+               </record>
+               <record id="account_journal_sale_009B" model="account.journal">
+                   <field name="name">Diario Venta RECIBOS B</field>
+                   <field name="type">sale</field>
+                   <field name="code">RBBV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.009"/>
+               </record>
+               <record id="account_journal_purchase_009B" model="account.journal">
+                   <field name="name">Diario Compra RECIBOS B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RBBC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.009"/>
+               </record>
+               <record id="account_journal_sale_010B" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE VENTA AL CONTADO B</field>
+                   <field name="type">sale</field>
+                   <field name="code">NVBVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.010"/>
+               </record>
+               <record id="account_journal_purchase_010B" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE VENTA AL CONTADO B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NVBCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.010"/>
+               </record>
+               <record id="account_journal_sale_011C" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS C</field>
+                   <field name="type">sale</field>
+                   <field name="code">FACCV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.011"/>
+               </record>
+               <record id="account_journal_purchase_011C" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">FACCC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.011"/>
+               </record>
+               <record id="account_journal_sale_012C" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO C</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDCVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.012"/>
+               </record>
+               <record id="account_journal_purchase_012C" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDCCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.012"/>
+               </record>
+               <record id="account_journal_sale_013C" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO C</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCCVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.013"/>
+               </record>
+               <record id="account_journal_purchase_013C" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCCCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.013"/>
+               </record>
+               <record id="account_journal_sale_014DA" model="account.journal">
+                   <field name="name">Diario Venta DOCUMENTO ADUANERO</field>
+                   <field name="type">sale</field>
+                   <field name="code">ADUVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.014"/>
+               </record>
+               <record id="account_journal_purchase_014DA" model="account.journal">
+                   <field name="name">Diario Compra DOCUMENTO ADUANERO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">ADUACO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.014"/>
+               </record>
+               <record id="account_journal_sale_015C" model="account.journal">
+                   <field name="name">Diario Venta RECIBOS C</field>
+                   <field name="type">sale</field>
+                   <field name="code">RBCVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.015"/>
+               </record>
+               <record id="account_journal_purchase_015C" model="account.journal">
+                   <field name="name">Diario Compra RECIBOS C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RBCCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.015"/>
+               </record>
+               <record id="account_journal_sale_016C" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE VENTA AL CONTADO</field>
+                   <field name="type">sale</field>
+                   <field name="code">NVVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.016"/>
+               </record>
+               <record id="account_journal_purchase_016C" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE VENTA AL CONTADO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NVCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.016"/>
+               </record>
+               <record id="account_journal_sale_019A" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS DE EXPORTACION</field>
+                   <field name="type">sale</field>
+                   <field name="code">EXPVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.019"/>
+               </record>
+               <record id="account_journal_purchase_019A" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS DE EXPORTACION</field>
+                   <field name="type">purchase</field>
+                   <field name="code">EXPCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.019"/>
+               </record>
+               <record id="account_journal_sale_020A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDEXV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.020"/>
+               </record>
+               <record id="account_journal_purchase_020A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDEXC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.020"/>
+               </record>
+               <record id="account_journal_sale_021A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCEXV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.021"/>
+               </record>
+               <record id="account_journal_purchase_021A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCEXC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.021"/>
+               </record>
+               <record id="account_journal_sale_022A" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS - PERMISO EXPORTACION SIMPLIFICADO - DTO. 855/97</field>
+                   <field name="type">sale</field>
+                   <field name="code">PESVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.022"/>
+               </record>
+               <record id="account_journal_purchase_022A" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS - PERMISO EXPORTACION SIMPLIFICADO - DTO. 855/97</field>
+                   <field name="type">purchase</field>
+                   <field name="code">PESCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.022"/>
+               </record>
+               <record id="account_journal_sale_030A" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES DE COMPRA DE BIENES USADOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">CCBVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.030"/>
+               </record>
+               <record id="account_journal_purchase_030A" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES DE COMPRA DE BIENES USADOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">CCBCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.030"/>
+               </record>
+               <record id="account_journal_sale_031A" model="account.journal">
+                   <field name="name">Diario Venta MANDATO - CONSIGNACION</field>
+                   <field name="type">sale</field>
+                   <field name="code">MANVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.031"/>
+               </record>
+               <record id="account_journal_purchase_031A" model="account.journal">
+                   <field name="name">Diario Compra MANDATO - CONSIGNACION</field>
+                   <field name="type">purchase</field>
+                   <field name="code">MANCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.031"/>
+               </record>
+               <record id="account_journal_sale_032A" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES PARA RECICLAR MATERIALES</field>
+                   <field name="type">sale</field>
+                   <field name="code">RECVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.032"/>
+               </record>
+               <record id="account_journal_purchase_032A" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES PARA RECICLAR MATERIALES</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RECCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.032"/>
+               </record>
+               <record id="account_journal_sale_034A" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES A DEL APARTADO A  INCISO F  R G  N  1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">034AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.034"/>
+               </record>
+               <record id="account_journal_purchase_034A" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES A DEL APARTADO A  INCISO F  R G  N  1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">034AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.034"/>
+               </record>
+               <record id="account_journal_sale_035B" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES B DEL ANEXO I, APARTADO A, INC. F), RG N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">035BV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.035"/>
+               </record>
+
+               <record id="account_journal_purchase_035B" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES B DEL ANEXO I, APARTADO A, INC. F), RG N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">035BC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.035"/>
+               </record>
+               <record id="account_journal_sale_036C" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES C DEL Anexo I, Apartado A, INC.F), R.G. N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">036CV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.036"/>
+               </record>
+               <record id="account_journal_purchase_036C" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES C DEL Anexo I, Apartado A, INC.F), R.G. N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">036CC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.036"/>
+               </record>
+               <record id="account_journal_sale_037A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO O DOCUMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">037AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.037"/>
+               </record>
+               <record id="account_journal_purchase_037A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO O DOCUMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">037AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.037"/>
+               </record>
+               <record id="account_journal_sale_038A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO O DOCMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">038AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.038"/>
+               </record>
+               <record id="account_journal_purchase_038A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO O DOCMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">038AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.038"/>
+               </record>
+               <record id="account_journal_sale_039A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES A QUE CUMPLEN CON LA R G  1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">039AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.039"/>
+               </record>
+               <record id="account_journal_purchase_039A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES A QUE CUMPLEN CON LA R G  1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">039AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.039"/>
+               </record>
+               <record id="account_journal_sale_040B" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES B QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">040BV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.040"/>
+               </record>
+               <record id="account_journal_purchase_040B" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES B QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">040BC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.040"/>
+               </record>
+               <record id="account_journal_sale_041C" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES C QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">041CV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.041"/>
+               </record>
+               <record id="account_journal_purchase_041C" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES C QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">041CC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.041"/>
+               </record>
+               <record id="account_journal_sale_050A" model="account.journal">
+                   <field name="name">Diario Venta RECIBO FACTURA A  REGIMEN DE FACTURA DE CREDITO</field>
+                   <field name="type">sale</field>
+                   <field name="code">050AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.050"/>
+               </record>
+               <record id="account_journal_purchase_050A" model="account.journal">
+                   <field name="name">Diario Compra RECIBO FACTURA A  REGIMEN DE FACTURA DE CREDITO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">050AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.050"/>
+               </record>
+               <record id="account_journal_sale_051M" model="account.journal">
+                   <field name="name">Diario Venta FACTURAS M</field>
+                   <field name="type">sale</field>
+                   <field name="code">FACMV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.051"/>
+               </record>
+               <record id="account_journal_purchase_051M" model="account.journal">
+                   <field name="name">Diario Compra FACTURAS M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">FACMC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.051"/>
+               </record>
+               <record id="account_journal_sale_052M" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE DEBITO M</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDMVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.052"/>
+               </record>
+               <record id="account_journal_purchase_052M" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE DEBITO M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDMCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.052"/>
+               </record>
+               <record id="account_journal_sale_053M" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO M</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCMVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.053"/>
+               </record>
+               <record id="account_journal_purchase_053M" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCMCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.053"/>
+               </record>
+               <record id="account_journal_sale_054M" model="account.journal">
+                   <field name="name">Diario Venta RECIBOS M</field>
+                   <field name="type">sale</field>
+                   <field name="code">RBMVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.054"/>
+               </record>
+               <record id="account_journal_purchase_054M" model="account.journal">
+                   <field name="name">Diario Compra RECIBOS M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RBMCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.054"/>
+               </record>
+               <record id="account_journal_sale_055M" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE VENTA AL CONTADO M</field>
+                   <field name="type">sale</field>
+                   <field name="code">NVMVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.055"/>
+               </record>
+               <record id="account_journal_purchase_055M" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE VENTA AL CONTADO M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NVMCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.055"/>
+               </record>
+               <record id="account_journal_sale_056M" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTES M DEL ANEXO I  APARTADO A  INC F   R G  N  1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">056MV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.056"/>
+               </record>
+               <record id="account_journal_purchase_056M" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTES M DEL ANEXO I  APARTADO A  INC F   R G  N  1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">056MC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.056"/>
+               </record>
+               <record id="account_journal_sale_057M" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES M QUE CUMPLAN CON LA R G  N  1415</field>
+                   <field name="type">sale</field>
+                   <field name="code">057MV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.057"/>
+               </record>
+               <record id="account_journal_purchase_057M" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES M QUE CUMPLAN CON LA R G  N  1415</field>
+                   <field name="type">purchase</field>
+                   <field name="code">057MC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.057"/>
+               </record>
+               <record id="account_journal_sale_058M" model="account.journal">
+                   <field name="name">Diario Venta CUENTAS DE VENTA Y LIQUIDO PRODUCTO M</field>
+                   <field name="type">sale</field>
+                   <field name="code">058MV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.058"/>
+               </record>
+               <record id="account_journal_purchase_058M" model="account.journal">
+                   <field name="name">Diario Compra CUENTAS DE VENTA Y LIQUIDO PRODUCTO M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">058MC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.058"/>
+               </record>
+               <record id="account_journal_sale_059M" model="account.journal">
+                   <field name="name">Diario Venta LIQUIDACIONES M</field>
+                   <field name="type">sale</field>
+                   <field name="code">LIQMV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.059"/>
+               </record>
+               <record id="account_journal_purchase_059M" model="account.journal">
+                   <field name="name">Diario Compra LIQUIDACIONES M</field>
+                   <field name="type">purchase</field>
+                   <field name="code">LIQMC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.059"/>
+               </record>
+               <record id="account_journal_sale_060A" model="account.journal">
+                   <field name="name">Diario Venta CUENTAS DE VENTA Y LIQUIDO PRODUCTO A</field>
+                   <field name="type">sale</field>
+                   <field name="code">060AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.060"/>
+               </record>
+               <record id="account_journal_purchase_060A" model="account.journal">
+                   <field name="name">Diario Compra CUENTAS DE VENTA Y LIQUIDO PRODUCTO A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">060AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.060"/>
+               </record>
+               <record id="account_journal_sale_061B" model="account.journal">
+                   <field name="name">Diario Venta CUENTAS DE VENTA Y LIQUIDO PRODUCTO B</field>
+                   <field name="type">sale</field>
+                   <field name="code">061BV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.061"/>
+               </record>
+               <record id="account_journal_purchase_061B" model="account.journal">
+                   <field name="name">Diario Compra CUENTAS DE VENTA Y LIQUIDO PRODUCTO B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">061BC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.061"/>
+               </record>
+               <record id="account_journal_sale_063A" model="account.journal">
+                   <field name="name">Diario Venta LIQUIDACIONES A</field>
+                   <field name="type">sale</field>
+                   <field name="code">LIQAV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.063"/>
+               </record>
+               <record id="account_journal_purchase_063A" model="account.journal">
+                   <field name="name">Diario Compra LIQUIDACIONES A</field>
+                   <field name="type">purchase</field>
+                   <field name="code">LIQAC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.063"/>
+               </record>
+               <record id="account_journal_sale_064B" model="account.journal">
+                   <field name="name">Diario Venta LIQUIDACIONES B</field>
+                   <field name="type">sale</field>
+                   <field name="code">LIQBV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.064"/>
+               </record>
+               <record id="account_journal_purchase_064B" model="account.journal">
+                   <field name="name">Diario Compra LIQUIDACIONES B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">LIQBC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.064"/>
+               </record>
+               <record id="account_journal_sale_065A" model="account.journal">
+                   <field name="name">Diario Venta NOTAS DE CREDITO DE COMPROBANTES CON COD. 34, 39, 58, 59, 60, 63, 96, 97</field>
+                   <field name="type">sale</field>
+                   <field name="code">065AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.065"/>
+               </record>
+               <record id="account_journal_purchase_065A" model="account.journal">
+                   <field name="name">Diario Compra NOTAS DE CREDITO DE COMPROBANTES CON COD. 34, 39, 58, 59, 60, 63, 96, 97</field>
+                   <field name="type">purchase</field>
+                   <field name="code">065AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.065"/>
+               </record>
+               <record id="account_journal_sale_066A" model="account.journal">
+                   <field name="name">Diario Venta DESPACHO DE IMPORTACION</field>
+                   <field name="type">sale</field>
+                   <field name="code">DIMVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.066"/>
+               </record>
+               <record id="account_journal_purchase_066A" model="account.journal">
+                   <field name="name">Diario Compra DESPACHO DE IMPORTACION</field>
+                   <field name="type">purchase</field>
+                   <field name="code">DIMCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.066"/>
+               </record>
+               <record id="account_journal_sale_067A" model="account.journal">
+                   <field name="name">Diario Venta IMPORTACION DE SERVICIOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">IMSVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.067"/>
+               </record>
+               <record id="account_journal_purchase_067A" model="account.journal">
+                   <field name="name">Diario Compra IMPORTACION DE SERVICIOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">IMSCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.067"/>
+               </record>
+               <record id="account_journal_sale_068C" model="account.journal">
+                   <field name="name">Diario Venta LIQUIDACION C</field>
+                   <field name="type">sale</field>
+                   <field name="code">LIQCV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.068"/>
+               </record>
+               <record id="account_journal_purchase_068C" model="account.journal">
+                   <field name="name">Diario Compra LIQUIDACION C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">LIQCC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.068"/>
+               </record>
+               <record id="account_journal_sale_070A" model="account.journal">
+                   <field name="name">Diario Venta RECIBOS FACTURA DE CREDITO</field>
+                   <field name="type">sale</field>
+                   <field name="code">RFCVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.070"/>
+               </record>
+               <record id="account_journal_purchase_070A" model="account.journal">
+                   <field name="name">Diario Compra RECIBOS FACTURA DE CREDITO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">RFCCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.070"/>
+               </record>
+               <record id="account_journal_sale_071A" model="account.journal">
+                   <field name="name">Diario Venta CREDITO FISCAL POR CONTRIBUCIONES PATRONALES</field>
+                   <field name="type">sale</field>
+                   <field name="code">071AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.071"/>
+               </record>
+               <record id="account_journal_purchase_071A" model="account.journal">
+                   <field name="name">Diario Compra CREDITO FISCAL POR CONTRIBUCIONES PATRONALES</field>
+                   <field name="type">purchase</field>
+                   <field name="code">071AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.071"/>
+               </record>
+               <record id="account_journal_sale_073A" model="account.journal">
+                   <field name="name">Diario Venta FORMULARIO 1116 RT</field>
+                   <field name="type">sale</field>
+                   <field name="code">073AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.073"/>
+               </record>
+               <record id="account_journal_purchase_073A" model="account.journal">
+                   <field name="name">Diario Compra FORMULARIO 1116 RT</field>
+                   <field name="type">purchase</field>
+                   <field name="code">073AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.073"/>
+               </record>
+               <record id="account_journal_sale_074A" model="account.journal">
+                   <field name="name">Diario Venta CARTA DE PORTE PARA EL TRANSPORTE AUTOMOTOR PARA GRANOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">074AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.074"/>
+               </record>
+               <record id="account_journal_purchase_074A" model="account.journal">
+                   <field name="name">Diario Compra CARTA DE PORTE PARA EL TRANSPORTE AUTOMOTOR PARA GRANOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">074AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.074"/>
+               </record>
+               <record id="account_journal_sale_075A" model="account.journal">
+                   <field name="name">Diario Venta CARTA DE PORTE PARA EL TRANSPORTE FERROVIARIO PARA GRANOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">075AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.075"/>
+               </record>
+               <record id="account_journal_purchase_075A" model="account.journal">
+                   <field name="name">Diario Compra CARTA DE PORTE PARA EL TRANSPORTE FERROVIARIO PARA GRANOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">075AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.075"/>
+               </record>
+               <record id="account_journal_sale_080A" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTE DIARIO DE CIERRE (ZETA)</field>
+                   <field name="type">sale</field>
+                   <field name="code">080AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.080"/>
+               </record>
+               <record id="account_journal_purchase_080A" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTE DIARIO DE CIERRE (ZETA)</field>
+                   <field name="type">purchase</field>
+                   <field name="code">080AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.080"/>
+               </record>
+               <record id="account_journal_sale_081A" model="account.journal">
+                   <field name="name">Diario Venta TIQUE FACTURA A   CONTROLADORES FISCALES</field>
+                   <field name="type">sale</field>
+                   <field name="code">TIQAV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.081"/>
+               </record>
+               <record id="account_journal_purchase_081A" model="account.journal">
+                   <field name="name">Diario Compra TIQUE FACTURA A   CONTROLADORES FISCALES</field>
+                   <field name="type">purchase</field>
+                   <field name="code">TIQAC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.081"/>
+               </record>
+               <record id="account_journal_sale_082B" model="account.journal">
+                   <field name="name">Diario Venta TIQUE - FACTURA B</field>
+                   <field name="type">sale</field>
+                   <field name="code">TIQBV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.082"/>
+               </record>
+               <record id="account_journal_purchase_082B" model="account.journal">
+                   <field name="name">Diario Compra TIQUE - FACTURA B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">TIQBC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.082"/>
+               </record>
+               <record id="account_journal_sale_083A" model="account.journal">
+                   <field name="name">Diario Venta TIQUE</field>
+                   <field name="type">sale</field>
+                   <field name="code">TIQVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.083"/>
+               </record>
+               <record id="account_journal_purchase_083A" model="account.journal">
+                   <field name="name">Diario Compra TIQUE</field>
+                   <field name="type">purchase</field>
+                   <field name="code">TIQCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.083"/>
+               </record>
+               <record id="account_journal_sale_084A" model="account.journal">
+                   <field name="name">Diario Venta COMPROBANTE   FACTURA DE SERVICIOS PUBLICOS   INTERESES FINANCIEROS</field>
+                   <field name="type">sale</field>
+                   <field name="code">FASVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.084"/>
+               </record>
+               <record id="account_journal_purchase_084A" model="account.journal">
+                   <field name="name">Diario Compra COMPROBANTE   FACTURA DE SERVICIOS PUBLICOS   INTERESES FINANCIEROS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">FASCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.084"/>
+               </record>
+               <record id="account_journal_sale_085A" model="account.journal">
+                   <field name="name">Diario Venta NOTA DE CREDITO   SERVICIOS PUBLICOS   NOTA DE CREDITO CONTROLADORES FISCALES</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCSVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.085"/>
+               </record>
+               <record id="account_journal_purchase_085A" model="account.journal">
+                   <field name="name">Diario Compra NOTA DE CREDITO   SERVICIOS PUBLICOS   NOTA DE CREDITO CONTROLADORES FISCALES</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCSCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.085"/>
+               </record>
+               <record id="account_journal_sale_086A" model="account.journal">
+                   <field name="name">Diario Venta NOTA DE DEBITO   SERVICIOS PUBLICOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">NDSVE</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.086"/>
+               </record>
+               <record id="account_journal_purchase_086A" model="account.journal">
+                   <field name="name">Diario Compra NOTA DE DEBITO   SERVICIOS PUBLICOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NDSCO</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.086"/>
+               </record>
+               <record id="account_journal_sale_087A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES - SERVICIOS DEL EXTERIOR</field>
+                   <field name="type">sale</field>
+                   <field name="code">087AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.087"/>
+               </record>
+               <record id="account_journal_purchase_087A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES - SERVICIOS DEL EXTERIOR</field>
+                   <field name="type">purchase</field>
+                   <field name="code">087AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.087"/>
+               </record>
+               <record id="account_journal_sale_088A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS / REMITO ELECTRONICO </field>
+                   <field name="type">sale</field>
+                   <field name="code">088AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.088"/>
+               </record>
+               <record id="account_journal_purchase_088A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS / REMITO ELECTRONICO </field>
+                   <field name="type">purchase</field>
+                   <field name="code">088AC</field>
+               <field name="show_on_dashboard">False</field>
+               </record>
+               <record id="account_journal_sale_089A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTAS DE DEBITO / RESUMEN DE DATOS</field>
+                   <field name="type">sale</field>
+                   <field name="code">089AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.089"/>
+               </record>
+               <record id="account_journal_purchase_089A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTAS DE DEBITO / RESUMEN DE DATOS</field>
+                   <field name="type">purchase</field>
+                   <field name="code">089AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.089"/>
+               </record>
+               <record id="account_journal_sale_090A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTAS DE CREDITO</field>
+                   <field name="type">sale</field>
+                   <field name="code">090AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.090"/>
+               </record>
+               <record id="account_journal_purchase_090A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTAS DE CREDITO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">090AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.090"/>
+               </record>
+               <record id="account_journal_sale_091A" model="account.journal">
+                   <field name="name">Diario Venta REMITO R</field>
+                   <field name="type">sale</field>
+                   <field name="code">REMRV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.091"/>
+               </record>
+               <record id="account_journal_purchase_091A" model="account.journal">
+                   <field name="name">Diario Compra REMITO R</field>
+                   <field name="type">purchase</field>
+                   <field name="code">REMRC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.091"/>
+               </record>
+               <record id="account_journal_sale_092A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTES CONTABLES QUE INCREMENTAN EL DEBITO FISCAL</field>
+                   <field name="type">sale</field>
+                   <field name="code">092AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.092"/>
+               </record>
+               <record id="account_journal_purchase_092A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTES CONTABLES QUE INCREMENTAN EL DEBITO FISCAL</field>
+                   <field name="type">purchase</field>
+                   <field name="code">092AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.092"/>
+               </record>
+               <record id="account_journal_sale_093A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTES CONTABLES QUE DISMINUYEN EL DEBITO FISCAL</field>
+                   <field name="type">sale</field>
+                   <field name="code">093AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.093"/>
+               </record>
+               <record id="account_journal_purchase_093A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTES CONTABLES QUE DISMINUYEN EL DEBITO FISCAL</field>
+                   <field name="type">purchase</field>
+                   <field name="code">093AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.093"/>
+               </record>
+               <record id="account_journal_sale_094A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTES CONTABLES QUE INCREMENTAN EL CREDITO FISCAL</field>
+                   <field name="type">sale</field>
+                   <field name="code">094AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.094"/>
+               </record>
+               <record id="account_journal_purchase_094A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTES CONTABLES QUE INCREMENTAN EL CREDITO FISCAL</field>
+                   <field name="type">purchase</field>
+                   <field name="code">094AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.094"/>
+               </record>
+               <record id="account_journal_sale_095A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTES CONTABLES QUE DISMINUYEN EL CREDITO FISCAL</field>
+                   <field name="type">sale</field>
+                   <field name="code">095AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.095"/>
+               </record>
+               <record id="account_journal_purchase_095A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTES CONTABLES QUE DISMINUYEN EL CREDITO FISCAL</field>
+                   <field name="type">purchase</field>
+                   <field name="code">095AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.095"/>
+               </record>
+               <record id="account_journal_sale_096A" model="account.journal">
+                   <field name="name">Diario Venta FORMULARIO 1116 B</field>
+                   <field name="type">sale</field>
+                   <field name="code">096AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.096"/>
+               </record>
+               <record id="account_journal_purchase_096A" model="account.journal">
+                   <field name="name">Diario Compra FORMULARIO 1116 B</field>
+                   <field name="type">purchase</field>
+                   <field name="code">096AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.096"/>
+               </record>
+               <record id="account_journal_sale_097C" model="account.journal">
+                   <field name="name">Diario Venta FORMULARIO 1116 C</field>
+                   <field name="type">sale</field>
+                   <field name="code">097CV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.097"/>
+               </record>
+               <record id="account_journal_purchase_097C" model="account.journal">
+                   <field name="name">Diario Compra FORMULARIO 1116 C</field>
+                   <field name="type">purchase</field>
+                   <field name="code">097CC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.097"/>
+               </record>
+               <record id="account_journal_sale_099A" model="account.journal">
+                   <field name="name">Diario Venta OTROS COMP  QUE NO CUMPLEN CON LA R G  3419 Y SUS MODIF</field>
+                   <field name="type">sale</field>
+                   <field name="code">099AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.099"/>
+               </record>
+               <record id="account_journal_purchase_099A" model="account.journal">
+                   <field name="name">Diario Compra OTROS COMP  QUE NO CUMPLEN CON LA R G  3419 Y SUS MODIF</field>
+                   <field name="type">purchase</field>
+                   <field name="code">099AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.099"/>
+               </record>
+               <record id="account_journal_sale_101A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  POSITIVO</field>
+                   <field name="type">sale</field>
+                   <field name="code">101AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.101"/>
+               </record>
+               <record id="account_journal_purchase_101A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  POSITIVO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">101AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.101"/>
+               </record>
+               <record id="account_journal_sale_102A" model="account.journal">
+                   <field name="name">Diario Venta AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  NEGATIVO</field>
+                   <field name="type">sale</field>
+                   <field name="code">102AV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.102"/>
+               </record>
+               <record id="account_journal_purchase_102A" model="account.journal">
+                   <field name="name">Diario Compra AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  NEGATIVO</field>
+                   <field name="type">purchase</field>
+                   <field name="code">102AC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.102"/>
+               </record>
+               <record id="account_journal_sale_103A" model="account.journal">
+                   <field name="name">Diario Venta NOTA DE ASIGNACION</field>
+                   <field name="type">sale</field>
+                   <field name="code">ASIGV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.103"/>
+               </record>
+               <record id="account_journal_purchase_103A" model="account.journal">
+                   <field name="name">Diario Compra NOTA DE ASIGNACION</field>
+                   <field name="type">purchase</field>
+                   <field name="code">ASIGC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.103"/>
+               </record>
+               <record id="account_journal_sale_104A" model="account.journal">
+                   <field name="name">Diario Venta NOTA DE CREDITO DE ASIGNACION</field>
+                   <field name="type">sale</field>
+                   <field name="code">NCASV</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.104"/>
+               </record>
+               <record id="account_journal_purchase_104A" model="account.journal">
+                   <field name="name">Diario Compra NOTA DE CREDITO DE ASIGNACION</field>
+                   <field name="type">purchase</field>
+                   <field name="code">NCASC</field>
+                    <field name="show_on_dashboard">False</field>
+                    <field name="comprobante_id" ref="l10n_ar_base.104"/>
+               </record>
+        </data>
+    </odoo>

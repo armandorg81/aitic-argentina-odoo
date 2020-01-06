@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="view_afip_gain_withholding_tree" model="ir.ui.view">
+            <field name="name">afip.gain.withholding.tree</field>
+            <field name="model">afip.gain.withholding</field>
+            <field name="arch" type="xml">
+                <tree string="Escala de Retenciones" editable="top">
+                    <field name="amount_from"/>
+                    <field name="amount_to"/>
+                    <field name="amount"/>
+                    <field name="rate"/>
+                    <field name="excess_amount"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="view_afip_gain_withholding_action">
+            <field name="name">Escala de Retenciones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">afip.gain.withholding</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem name="Escala de Retenciones" action="view_afip_gain_withholding_action"
+                  id="menu_action_afip_gain_withholding" parent="menu_retenciones"
+                    sequence="31"/>
+
+    </data>
+</odoo>

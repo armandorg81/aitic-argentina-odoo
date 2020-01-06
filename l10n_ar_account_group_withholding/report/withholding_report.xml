@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="withholding_format" model="report.paperformat">
+            <field name="name">Withholding Paperformat</field>
+            <field name="default" eval="False"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">45</field>
+            <field name="margin_bottom">45</field>
+            <field name="margin_left">10</field>
+            <field name="margin_right">10</field>
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report 
+            id="report_withholding_report"
+            string="Retencion"
+            model="account.withholding"
+            report_type="qweb-pdf"
+            file="l10n_ar_account_group_withholding.report_withholding"
+            name="l10n_ar_account_group_withholding.report_withholding"
+            paperformat="l10n_ar_account_group_withholding.withholding_format"
+        />
+
+        <report
+            id="report_withholding_report"
+            string="Certificados de retenciones de ganancias"
+            model="account.payment.group"
+            report_type="qweb-pdf"
+            file="l10n_ar_account_group_withholding.report_withholding_earnings"
+            name="l10n_ar_account_group_withholding.report_withholding_earnings"
+            paperformat="l10n_ar_account_group_withholding.withholding_format"
+        />
+
+    </data>
+</odoo>

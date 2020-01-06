@@ -1,0 +1,408 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_debit_credit_note
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-20 19:07+0000\n"
+"PO-Revision-Date: 2019-11-20 19:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "<span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','!=','draft'), ('type','!=','in_refund'), ('refund_type','!=','credit')]}\">Nota de Crédito Borrador</span>\n"
+"                <span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','!=','draft'), ('type','!=','in_refund'), ('refund_type','!=','debit')]}\">Nota de Débito Borrador</span>"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "<span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','=','draft'), ('type','!=','in_refund'), ('refund_type','!=','credit')]}\">Nota de Crédito</span>\n"
+"                <span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','=','draft'), ('type','!=','in_refund'), ('refund_type','!=','debit')]}\">Nota de Débito</span>"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+msgid "<span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','=','draft'), ('type','!=','out_refund'), ('refund_type','!=','credit')]}\">Nota de Crédito</span>\n"
+"                <span class=\"o_form_label\" attrs=\"{'invisible': ['|','|',('state','=','draft'), ('type','!=','out_refund'), ('refund_type','!=','debit')]}\">Nota de Débito</span>"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "A debit note from accounting and fiscal point of view is exactly as an invoice but with a parent invoice related, this module create an invoice automatically with this invoice as parent, remember Debit note will increase the payable and receivable exactly as an invoice."
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__date
+msgid "Accounting Date"
+msgstr "Fecha contable"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice__neto_gravado_signed
+msgid "Base Imponible"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_debit_note
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_debit.py:46
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_refund.py:38
+#, python-format
+msgid "Cannot refund draft/proforma/cancelled invoice."
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_debit.py:48
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_refund.py:40
+#, python-format
+msgid "Cannot refund invoice which is already reconciled, invoice should be unreconciled first. You can only refund this invoice."
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,help:l10n_ar_debit_credit_note.field_account_journal__debit_note_sequence
+msgid "Check this box if you don't want to share the same sequence for invoices and refunds and debit notes made from this journal"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,help:l10n_ar_debit_credit_note.field_account_invoice_refund__filter_refund
+msgid "Choose how you want to credit this invoice. You cannot Modify and Cancel if the invoice is already reconciled"
+msgstr "Elija cómo quiere acreditar esta factura. No puede modificarla o cancelarla si la factura ya fue conciliada"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice__reconcile_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_refund__reconcile
+msgid "Conciliar NC?"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_debit_note
+msgid "Create Debit Note"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: selection:account.invoice.refund,filter_refund:0
+msgid "Create a draft credit note"
+msgstr "Crear un borrador de nota de crédito"
+
+#. module: l10n_ar_debit_credit_note
+#: selection:account.invoice.debit,filter_debit:0
+msgid "Create a draft debit note"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_refund__filter_refund
+msgid "Credit Method"
+msgstr "Método de crédito"
+
+#. module: l10n_ar_debit_credit_note
+#: selection:account.invoice,refund_type:0
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_invoice_refund
+msgid "Credit Note"
+msgstr "Rectificativa"
+
+#. module: l10n_ar_debit_credit_note
+#: selection:account.invoice,refund_type:0
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_debit.py:70
+#: model:ir.actions.act_window,name:l10n_ar_debit_credit_note.action_account_invoice_debit
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_invoice_debit
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_debit_note
+#, python-format
+msgid "Debit Note"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_journal__debit_note_sequence_id
+msgid "Debit Note Entry Sequence"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__filter_debit
+msgid "Debit Note Method"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,help:l10n_ar_debit_credit_note.field_account_invoice_debit__filter_debit
+msgid "Debit Note base on this type. You can not Modify and Cancel if the invoice is already reconciled"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice__child_ids
+msgid "Debit and Credit Notes"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_journal__debit_note_sequence
+msgid "Dedicated Debit Note Sequence"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "Documento de referencia"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:158
+#, python-format
+msgid "Factura"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:159
+#, python-format
+msgid "Factura de proveedor"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_invoice_filter_custom
+msgid "Facturas"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Línea de factura"
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/wizards/account_invoice_refund.py:106
+#, python-format
+msgid "Invoice refund"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_journal
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__journal_id
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_refund__journal_id
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ar_debit_credit_note
+#: selection:account.invoice.refund,filter_refund:0
+msgid "Modify: create credit note and create a new draft invoice"
+msgstr "Modificar: crear una nota de crédito y crear una nueva factura borrador"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice__amount_excempt_signed
+msgid "Monto Exento"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "Nota de Crédito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+msgid "Nota de Crédito Borrador"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "Nota de Débito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+msgid "Nota de Débito Borrador"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:160
+#, python-format
+msgid "Nota de crédito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:162
+#, python-format
+msgid "Nota de crédito de proveedor"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:161
+#, python-format
+msgid "Nota de débito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:163
+#, python-format
+msgid "Nota de débito de proveedor"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_invoice_filter_custom
+msgid "Notas de Creditos"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+msgid "Notas de Crédito y Débito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_invoice_filter_custom
+msgid "Notas de Debitos"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "Notas de Débito y Crédito"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:96
+#, python-format
+msgid "Outstanding credits"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_invoice.py:99
+#, python-format
+msgid "Outstanding debits"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model,name:l10n_ar_debit_credit_note.model_res_partner
+msgid "Partner registered turns"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account.py:62
+#, python-format
+msgid "Please define a sequence for the credit notes"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account.py:66
+#: code:addons/l10n_ar_debit_credit_note/models/account_move.py:32
+#, python-format
+msgid "Please define a sequence for the debit notes"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account_move.py:28
+#, python-format
+msgid "Please define a sequence for the refunds"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: code:addons/l10n_ar_debit_credit_note/models/account.py:71
+#: code:addons/l10n_ar_debit_credit_note/models/account_move.py:36
+#, python-format
+msgid "Please define a sequence on the journal."
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__description
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice_debit__date_invoice
+msgid "Refund Date"
+msgstr "Fecha de NC"
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,field_description:l10n_ar_debit_credit_note.field_account_invoice__refund_type
+msgid "Refund type"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_customer_invoice_form
+msgid "Registrar Cobro"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.ncnd_supplier_invoice_form
+msgid "Registrar Pago"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,help:l10n_ar_debit_credit_note.field_account_invoice__child_ids
+msgid "These are all credit and debit to this invoice"
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model:ir.model.fields,help:l10n_ar_debit_credit_note.field_account_journal__debit_note_sequence_id
+msgid "This field contains the information related to the numbering of the debit note entries of this journal."
+msgstr ""
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_inherit_account_invoice_refund
+msgid "Use this option if you want to cancel an invoice and create a new\n"
+"                        one. The credit note will be created and reconciled\n"
+"                        with the current invoice. A new draft invoice will be created\n"
+"                        so that you can edit it."
+msgstr ""
+"Use esta opción si desea cancelar una factura y crear una nueva.\n"
+"La factura rectificativa será creada en borrador. Se creará un nuevo borrador de factura\n"
+"para que pueda editarlo."
+
+#. module: l10n_ar_debit_credit_note
+#: model_terms:ir.ui.view,arch_db:l10n_ar_debit_credit_note.view_account_debit_note
+msgid "You will be able to edit and validate this\n"
+"                                credit note directly or keep it draft,\n"
+"                                waiting for the document to be issued by\n"
+"                                your supplier/customer."
+msgstr "Podrá editar y validar esta\n"
+"factura rectificativa directamente o dejarla como borrador, \n"
+"en espera de que su proveedor/cliente expida el \n"
+"documento correspondiente."
+

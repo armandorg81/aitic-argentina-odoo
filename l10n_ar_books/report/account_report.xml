@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Creating new PaperFormat -->
+        <record id="l10n_ar_book_paperformat" model="report.paperformat">
+            <field name="name">Formato Papel Libros</field>
+            <field name="default" eval="False"/>
+            <field name="format">Letter</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">7</field>
+            <field name="margin_bottom">7</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">10</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report 
+            id="l10n_ar_account_books"
+            model="account.book"
+            string="Libro de Venta/Compra"
+            report_type="qweb-pdf"
+            name="l10n_ar_books.book_report_view"
+            file="l10n_ar_books.book_report"
+            paperformat="l10n_ar_books.l10n_ar_book_paperformat" />
+    
+    </data>
+</odoo>

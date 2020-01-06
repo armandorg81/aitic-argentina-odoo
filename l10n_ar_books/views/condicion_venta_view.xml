@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_form_condicion_venta_inh" model="ir.ui.view">
+            <field name="name">view.form.condicion.venta.inh</field>
+            <field name="model">condicion.venta</field>
+            <field name="inherit_id" ref="l10n_ar_base.view_form_condicion_venta"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="book_desc"/>
+                </field>
+            </field>
+        </record>
+    </data>
+
+</odoo>

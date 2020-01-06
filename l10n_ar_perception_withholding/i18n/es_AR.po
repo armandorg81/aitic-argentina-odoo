@@ -1,0 +1,806 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_perception_withholding
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-25 00:48+0000\n"
+"PO-Revision-Date: 2018-11-25 00:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> A - Datos del agente de retención</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> B - Datos del sujeto retenido</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> C - Datos de la retención</strong></span><br/><br/>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Alícutoa:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>C.U.I.T:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Domicilio:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<span> -C.P. </span>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<span> -Loc. </span>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<span> -Prov. Buenos Aires</span><br/>\n"
+"                                        <strong>C.U.I.T:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<span>)</span><br/>\n"
+"                                        <strong>Domicilio:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong><span>__________________________________ </span></strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Certificado Nro:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Comprobantes que originan la retención:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Fecha:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Firma del agente de retención:    </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Importe de la retención en letras:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Importe de la retención:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Importe sujeto a retención:     </strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "<strong>Otros Tributos</strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "<strong>Percep. IIBB Prov. BS. AS.</strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "<strong>Percepciones IIBB</strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "<strong>Régimen:    </strong><span>Retención</span><br/>\n"
+"                                            <strong>Jurisdicción:     </strong><span>BUENOS AIRES</span><br/>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.res_company_form_arba_config
+msgid "ARBA"
+msgstr "ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding.res_arba_config_root_menu
+msgid "ARBA Configuration"
+msgstr "Configuración ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding.res_arba_config_menu
+msgid "ARBA Connection"
+msgstr "Conexión ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_arba_config
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.res_arba_config_view
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding.res_arba_config_action
+msgid "ARBA Connection Config"
+msgstr "Configuración de conexión ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__calculate_pw_arba
+msgid "ARBA perception withholding agent"
+msgstr "Agente de retención, percepción ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_check
+msgid "Account Check"
+msgstr "Cheque"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,help:l10n_ar_perception_withholding.field_res_company__customer_perc_arba_account_id
+msgid "Account where the value of the ARBA perception will be reflected in the customer invoice."
+msgstr "Cuenta donde el valor de la percepción ARBA se reflejará en la factura del cliente."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__activity_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "Alic(%)"
+msgstr "Alic(%)"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_aliquot_arba_wizard
+msgid "Aliquot ARBA Export"
+msgstr "Exportación de alícuotas ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__mark_aliq
+msgid "Aliquot Brand"
+msgstr "Marca alícuota"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.view_res_partner_arba_form
+msgid "Aliquot Info"
+msgstr "Información de alícuotas"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_partner__aliquot_ids
+msgid "Aliquots"
+msgstr "Alícuotas"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__arba_cit_key
+msgid "Arba CIT Key"
+msgstr "Llave ARBA CIT"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__arba_crt
+msgid "Arba Certified"
+msgstr "Certificado ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__arba_env_type
+msgid "Arba Enviroment Type"
+msgstr "Tipo de entorno ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: selection:res.arba.activity,period:0
+msgid "Biweekly"
+msgstr "Quincenal"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "Certificado de Retención"
+msgstr "Certificado de Retención"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.actions.report,name:l10n_ar_perception_withholding.report_aliquot
+msgid "Certificados de Retenciones de IIBB"
+msgstr "Certificados de Retenciones de IIBB"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_download
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.view_wizard_aliquot_data
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__company_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__company_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__is_server
+msgid "Connect to the ARBA web service"
+msgstr "Conectarse al servicio web ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__cuit_taxpayer
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__cuit_taxpayer
+msgid "Cuit Taxpayer"
+msgstr "Cuit impuestos"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.res_company_form_arba_config
+msgid "Data of aliquots"
+msgstr "Datos de alícuotas"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__mark_declared
+msgid "Declared withholding"
+msgstr "Declarar retenciones"
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:203
+#, python-format
+msgid "You must specify the directory of the ARBA aliquot file to import."
+msgstr "Debe especificar el directorio del archivo de alícuota ARBA a importar."
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__directory_arba
+msgid "Directory of the ARBA aliquot file to import"
+msgstr "Directorio del archivo de alícuota ARBA a importar"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ar_perception_withholding
+#: selection:account.payment,type_aliquot:0
+msgid "Earnings"
+msgstr "Ganancias"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_partner__date_arba_to
+msgid "End date exempt IIBB Prov. BS. AS."
+msgstr "Fecha fin de exclusión IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__enviroment_type
+msgid "Enviroment Type"
+msgstr "Tipo de entorno"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_partner__exempt_arba
+msgid "Exempt Aliquot Prov. BS. AS."
+msgstr "Exento de Aliquotas Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding.aliquot_arba_wizard_action
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding.aliquot_arba_wizard_menu
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_download
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_form
+msgid "Export Aliquot ARBA"
+msgstr "Exportar alícuotas ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_company
+msgid "Factura Electronica"
+msgstr "Factura Electronica"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__from_date
+msgid "From"
+msgstr "De"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__date_from
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__date_from
+msgid "From Date"
+msgstr "Fecha desde"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.view_res_partner_arba_form
+msgid "Get ARBA Data"
+msgstr "Obtener datos de ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__hash_code
+msgid "Hash Code"
+msgstr "Código hash"
+
+#. module: l10n_ar_perception_withholding
+#: selection:account.aliquot.arba.wizard,type_operation:0
+msgid "High"
+msgstr "Alta"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__mark_hs
+msgid "High brand"
+msgstr "Alta de marca"
+
+#. module: l10n_ar_perception_withholding
+#: selection:res.arba.config,enviroment_type:0
+msgid "Homologation"
+msgstr "Homologación"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ar_perception_withholding
+#: selection:account.payment,type_aliquot:0
+#: selection:account.tax,type_aliquot:0
+#: selection:res.aliquot,type:0
+msgid "IIBB Prov. BS. AS."
+msgstr "IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,help:l10n_ar_perception_withholding.field_res_company__is_server
+msgid "If this field is marked to connect to ARBA, it will be done through a web service, but it will be done from the standard that is downloaded from the site."
+msgstr "Si es marcado este campo para conectarse a ARBA lo realizará a partir servicio web sino lo realizará a partir del padrón que se descargue de la sitio oficial."
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.invoice_report_content
+msgid "Importe"
+msgstr "Importe"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,help:l10n_ar_perception_withholding.field_account_tax__is_perception
+msgid "Indicates if the tax is IIBB aliquot"
+msgstr "Indica si el impuesto es alícuota IIBB"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.report_aliquot_withholding
+msgid "Ingresos Brutos"
+msgstr "Ingresos Brutos"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__is_data
+msgid "Is data"
+msgstr "Es dato"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_invoice__is_total_withholding_iibb
+msgid "Is total IIBB withholding"
+msgstr "Tiene total retenciones IIBB"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_wizard_arba_data__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ar_perception_withholding
+#: selection:account.aliquot.arba.wizard,type_operation:0
+msgid "Low"
+msgstr "Baja"
+
+#. module: l10n_ar_perception_withholding
+#: selection:account.aliquot.arba.wizard,type_operation:0
+msgid "Modification"
+msgstr "Modificación"
+
+#. module: l10n_ar_perception_withholding
+#: selection:res.arba.activity,period:0
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__code
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_payment__number_arba
+msgid "Number Arba"
+msgstr "Número ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_partner__cuit_origin
+msgid "Número Documento"
+msgstr "Número Documento"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_invoice__amount_other_tax
+msgid "Otros Impuestos"
+msgstr "Otros Impuestos"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_partner
+msgid "Partner registered turns"
+msgstr "Partner registered turns"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_payment_group
+msgid "Payment group"
+msgstr "Grupo de pago"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_invoice__amount_perception
+msgid "Percep. IIBB"
+msgstr "Percep. IIBB"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_invoice__amount_perception_arba
+msgid "Percep. IIBB Prov. BS. AS."
+msgstr "Percep. IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_tax__is_perception
+#: selection:res.arba.activity,type:0
+msgid "Perception"
+msgstr "Percepción"
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:183
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:292
+#, python-format
+msgid "Perception ARBA "
+msgstr "Percepción ARBA "
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__perception_aliquot
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__perception_aliquot
+msgid "Perception Aliquot"
+msgstr "Alícuota de percepción"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__perception_group
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__perception_group
+msgid "Perception Group"
+msgstr "Grupo de percepción"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__customer_perc_arba_account_id
+msgid "Perception account IIBB BSAS"
+msgstr "Cuenta de percepción IIBB BSAS"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__period
+msgid "Period"
+msgstr "Período"
+
+#. module: l10n_ar_perception_withholding
+#: selection:res.arba.config,enviroment_type:0
+msgid "Production"
+msgstr "Producción"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_partner__date_arba_from
+msgid "Start date exempt IIBB Prov. BS. AS."
+msgstr "Fecha inicio de exclusión IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,help:l10n_ar_perception_withholding.field_res_company__calculate_pw_arba
+msgid "The company is ARBA perception withholding agent."
+msgstr "La compañía es agente de retención, percepción ARBA."
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.view_wizard_aliquot_data
+msgid "The loading of the aliquots was carried out satisfactorily."
+msgstr "La carga de las alícuotas se realizó satisfactoriamente."
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_download
+msgid "There are no data in the period to export."
+msgstr "No hay datos en el período para exportar."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__to_date
+msgid "To"
+msgstr "Para"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__date_to
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__date_to
+msgid "To Date"
+msgstr "Fecha hasta"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__txt_binary
+msgid "Txt Binary"
+msgstr "Txt Binario"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__txt_filename
+msgid "Txt Filename"
+msgstr "Nombre Txt"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__type
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_activity__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_tax__type_aliquot
+msgid "Type Aliquot"
+msgstr "Tipo alícuota"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_payment__type_aliquot
+msgid "Type aliquot"
+msgstr "Tipo alícuota"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__type_ci
+msgid "Type of registered taxpayer"
+msgstr "Tipo de contribuyente registrado"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_aliquot_arba_wizard__type_operation
+msgid "Type operation"
+msgstr "Tipo operación"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_arba_config__url_connection
+msgid "URL Connection"
+msgstr "Conexión URL"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.actions.server,name:l10n_ar_perception_withholding.action_update_perception_withholding_arba
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding.menu_update_pw_arba
+msgid "Update ARBA Aliquot"
+msgstr "Actualizar alícuotas ARBA"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.actions.server,name:l10n_ar_perception_withholding.get_data_arba_partner_server_action
+msgid "Update ARBA Aliquot Partner"
+msgstr "Actualizar alícuotas ARBA para la empresa"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding.action_wizard_aliquot_data
+msgid "Update Aliquot"
+msgstr "Actualización de alícuotas"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__date_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__date_update
+msgid "Update date"
+msgstr "Fecha de actualización"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__voucher_number
+msgid "Voucher Number"
+msgstr "Número de Vales"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_payment_group__amount_arba_withholding
+msgid "Withhol. IIBB Prov. BS. AS."
+msgstr "Ret. IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: selection:res.arba.activity,type:0
+msgid "Withholding"
+msgstr "Retención"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__withholding_aliquot
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__withholding_aliquot
+msgid "Withholding Aliquot"
+msgstr "Alícuotas de retención"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot__withholding_group
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_aliquot_arba__withholding_group
+msgid "Withholding Group"
+msgstr "Grupo de retención"
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/account_payment_group.py:71
+#, python-format
+msgid "Withholding IIBB Prov. BS. AS."
+msgstr "Retención IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_res_company__supplier_wh_arba_journal_id
+msgid "Withholding journal IIBB BSAS"
+msgstr "Diario de retención IIBB BSAS"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_withholding__withholding_arba_aliquot
+msgid "Withholding IIBB Prov. BS. AS. Aliquot"
+msgstr "Alícuota de retención Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding.field_account_invoice__exempt_percep
+msgid "Without perception"
+msgstr "Sin percepción"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_wizard_arba_data
+msgid "Wizard to update the aliquots of IIBB of Federer Capital."
+msgstr Asistente para actualizar las alícuotas de IIBB de Capital Federal."
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/account_payment_group.py:62
+#, python-format
+msgid "You must comfigurate in the company the withholding ARBA journal."
+msgstr "Debe configurar en la compañía el diario de retención ARBA."
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:84
+#, python-format
+msgid "You must configure ARBA CIT Key on company %s"
+msgstr "Debe configurar Llave ARBA CIT en la compañía %s"
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:89
+#, python-format
+msgid "You must configure Arba Enviroment Type on company %s"
+msgstr "Debe configurar el tipo de entorno ARBA en la compañía %s"
+
+#. module: l10n_ar_perception_withholding
+#: code:addons/l10n_ar_perception_withholding/models/res_company.py:80
+#, python-format
+msgid "You must configure CUIT con company %s related partner"
+msgstr "Debe configurar el CUIT con compañía %s relacionado con la empresa"
+
+#. module: l10n_ar_perception_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding.account_aliquot_arba_wizard_form
+msgid "or"
+msgstr "o"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_aliquot
+msgid "res.aliquot"
+msgstr "res.aliquot"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_aliquot_arba
+msgid "res.aliquot.arba"
+msgstr "res.aliquot.arba"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_arba_activity
+msgid "res.arba.activity"
+msgstr "res.arba.activity"
+
+#. module: l10n_ar_perception_withholding
+#: model:ir.model,name:l10n_ar_perception_withholding.model_res_arba_config
+msgid "res.arba.config"
+msgstr "res.arba.config"
+

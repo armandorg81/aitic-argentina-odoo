@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- CUSTOMER -->
+    <record id="ncnd_customer_invoice_form" model="ir.ui.view">
+        <field name="name">ncnd.customer.invoice.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form" />
+        <field name="arch" type="xml">
+
+            <button name="%(account.action_account_invoice_refund)d" position="attributes">
+                <attribute name="string">Nota de Crédito</attribute>
+                <attribute name="icon">fa-file</attribute>
+            </button>
+
+            <button name="%(account.action_account_invoice_payment)d" position="replace">
+                <button name="%(account.action_account_invoice_payment)d"
+                        icon="fa-file"
+                        type="action"
+                        states="open" string="Registrar Cobro" groups="account.group_account_invoice"
+                        class="oe_highlight"/>
+            </button>
+
+            <xpath expr="//button[@name='%(account.action_account_invoice_refund)d']" position="after">
+                <button name="%(action_account_invoice_debit)d"
+                        type='action'
+                        string='Nota de Débito'
+                        attrs="{'invisible':['|',('refund_type','=','debit'),('state','in',['proforma2','proforma','cancel', 'draft'])]}"
+                        icon='fa-file'/>
+            </xpath>
+
+            <xpath expr="//div[@groups='base.group_multi_currency']" position="after">
+                <field name="refund_invoice_id" readonly="1" string="Documento de referencia" attrs="{'invisible': ['|',('type','=','in_invoice'), ('type','=','out_invoice')]}"/>
+            </xpath>
+
+            <xpath expr="//label[@for='number'][2]" position="replace">
+                <label for="number" string="Nota de Crédito Borrador" attrs="{'invisible': ['|','|',('state','not in',('draft',)), ('type','!=','out_refund'), ('refund_type','!=','credit')]}"/>
+                <label for="number" string="Nota de Débito Borrador" attrs="{'invisible': ['|','|',('state','not in',('draft',)), ('type','!=','out_refund'), ('refund_type','!=','debit')]}"/>
+            </xpath>
+
+            <xpath expr="//span[@class='o_form_label']" position="replace">
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','=','draft'), ('type','!=','out_refund'), ('refund_type','!=','credit')]}">Nota de Crédito</span>
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','=','draft'), ('type','!=','out_refund'), ('refund_type','!=','debit')]}">Nota de Débito</span>
+            </xpath>
+
+            <page name="other_info" position="after">
+                <page string="Notas de Crédito y Débito" attrs="{'invisible':['|',('type','=','in_refund'),('type','=','out_refund')]}">
+                    <field name="refund_type" invisible="1"/>
+                    <field name="child_ids" readonly="1" nolabel="1" widget="many2many" domain="[('partner_id','=',partner_id),('id', '!=', active_id),('type','in',['out_invoice', 'out_refund'])]"/>
+                </page>
+            </page>
+
+        </field>
+    </record>
+
+    <record id="account.action_invoice_tree1" model="ir.actions.act_window">
+        <field name="name">Customer Invoices</field>
+        <field name="domain">[('type','in',['out_invoice','out_refund'])]</field>
+    </record>
+
+    <!-- SUPPLIER -->
+    <record id="ncnd_supplier_invoice_form" model="ir.ui.view">
+        <field name="name">ncnd.supplier.invoice.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form" />
+        <field name="arch" type="xml">
+
+            <button name="%(account.action_account_invoice_refund)d" position="attributes">
+                <attribute name="string">Nota de Crédito</attribute>
+                <attribute name="icon">fa-file</attribute>
+            </button>
+
+            <button name="%(account.action_account_invoice_payment)d" position="replace">
+                <button name="%(account.action_account_invoice_payment)d"
+                        type="action"
+                        icon='fa-file'
+                        states="open" string="Registrar Pago" groups="account.group_account_invoice"
+                        class="oe_highlight"
+                />
+            </button>
+
+            <xpath expr="//button[@name='%(account.action_account_invoice_refund)d']" position="after">
+                <button name="%(action_account_invoice_debit)d"
+                        type='action' string='Nota de Débito' states='open,paid' icon='fa-file-o'
+                        attrs="{'invisible':['|',('state','in',['proforma2','proforma','cancel', 'draft']),('refund_type','=','debit')]}"
+                        help="A debit note from accounting and fiscal point of view is exactly as an invoice but with a parent invoice related, this module create an invoice automatically with this invoice as parent, remember Debit note will increase the payable and receivable exactly as an invoice."
+                />
+            </xpath>
+            <xpath expr="//field[@name='company_currency_id']" position="after">
+                <field name="refund_invoice_id" readonly="1" string="Documento de referencia" attrs="{'invisible': ['|',('type','=','in_invoice'), ('type','=','out_invoice')]}"/>
+            </xpath>
+            <xpath expr="//span[@class='o_form_label'][3]" position="replace">
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','!=','draft'), ('type','!=','in_refund'), ('refund_type','!=','credit')]}">Nota de Crédito Borrador</span>
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','!=','draft'), ('type','!=','in_refund'), ('refund_type','!=','debit')]}">Nota de Débito Borrador</span>
+            </xpath>
+            <xpath expr="//span[@class='o_form_label'][6]" position="replace">
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','=','draft'), ('type','!=','in_refund'), ('refund_type','!=','credit')]}">Nota de Crédito</span>
+                <span class="o_form_label" attrs="{'invisible': ['|','|',('state','=','draft'), ('type','!=','in_refund'), ('refund_type','!=','debit')]}">Nota de Débito</span>
+            </xpath>
+            <notebook position="inside">
+                <page string="Notas de Débito y Crédito" attrs="{'invisible':['|',('type','=','out_refund'),('type','=','in_refund')]}">
+                    <field name="refund_type" invisible="1"/>
+                    <field name="child_ids" nolabel="1" widget="many2many" domain="[('partner_id','=',partner_id),('id', '!=', active_id),('type','in',['in_invoice', 'in_refund'])]"/>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="view_account_invoice_filter_custom" model="ir.ui.view">
+        <field name="name">view.account.invoice.filter.custom</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='activities_my']" position="before">
+                <filter string="Facturas" name="invoices"
+                        domain="[('type', 'in', ('out_invoice', 'in_invoice'))]"/>
+                <filter string="Notas de Creditos" name="nc"
+                        domain="[('type', 'in', ['out_refund', 'in_refund']),
+                                 ('refund_type', '=', 'credit')]"/>
+                <filter string="Notas de Debitos" name="nd"
+                        domain="[('type', 'in', ['out_refund', 'in_refund']),
+                                 ('refund_type', '=', 'debit')]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account.action_vendor_bill_template" model="ir.actions.act_window">
+        <field name="domain">[('type','in',['in_invoice','in_refund'])]</field>
+    </record>
+
+    <record id="account.action_invoice_refund_out_tree" model="ir.actions.act_window">
+        <field name="domain">[('type','in', ['out_invoice', 'out_refund'])]</field>
+    </record>
+
+    <delete id="account.menu_action_invoice_out_refund" model="ir.ui.menu"/>
+
+    <delete id="account.menu_action_invoice_in_refund" model="ir.ui.menu"/>
+
+</odoo>

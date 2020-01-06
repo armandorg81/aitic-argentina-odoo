@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_check_view_company_form" model="ir.ui.view">
+            <field name="name">account.check.view.company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/notebook" position="inside">
+                    <page string="Gestión Cheques">
+                        <group>
+                            <group>
+                                <field name="rejected_check_account_id" domain="[('company_id', '=', id)]"/>
+                                <field name="deferred_check_account_id" domain="[('company_id', '=', id)]"/>
+                            </group>
+                            <group>
+                                <!-- la ocultamos porque la idea es depreciarla y que si se usa cheques de terceros y manual en mismo diario, siempre se use la misma cuenta, la dejamos por compatibilidad para clientes que ya la tienen en uso -->
+                                <field name="holding_check_account_id" domain="[('company_id', '=', id)]"/>
+                                <field name="sale_check_account_id" domain="[('company_id', '=', id)]"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

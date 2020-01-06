@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="l10n_ar_report_payment">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.internal_layout">
+                        <div class="page" style="font-size: 11px;">
+                             <!--<img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo"
+                                    style="max-height:auto;max-width:30%;align:left;"/>-->
+                            <img t-if="o.company_id.logo" alt="set company logo"
+                                 t-attf-src="data:image/gif;base64, #{o.company_id.logo}"
+                                 style="max-height:auto;max-width:30%;align:left;"/>
+                            <div class="row">
+                                <span style="margin-left:499px;">Orden de Pago</span>
+                                <span style="border:1px solid black;padding:5px;margin-left:10px;width:20%;display: inline-block;" t-field="o.name"/>
+                                <br/><br/>
+                                <span style="margin-left:500px;">Fecha Emisión</span>
+                                <span style="border:1px solid black;padding:5px;margin-left:10px;width:20%;display: inline-block;"
+                                    t-field="o.payment_date" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span t-field="o.company_id"/><br/>
+                                    <span t-field="o.company_id.street"/><br/>
+                                    <span t-field="o.company_id.zip"/> <span t-field="o.company_id.city"/><br/>
+                                </div>
+                                <div class="col-xs-6" style="border:1px solid black;padding:5px;">
+                                    <div class="col-xs-6">
+                                        <strong>C.U.I.T.</strong><br/>
+                                        <span t-field="o.company_id.cuit"/><br/>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <strong>N° de ingresos brutos</strong><br/>
+                                        <span t-field="o.company_id.ingresos_brutos"/>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <strong>IVA: </strong><span t-field="o.company_id.tipo_responsable"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row" style="border:1px solid black;padding:5px;">
+                                <div class="col-xs-6">
+                                    <strong>Razón Social: </strong> <span t-field="o.partner_id.name"/><br/>
+                                    <strong>Dirección: </strong> <span t-field="o.partner_id.street"/><br/>
+                                    <strong>Localidad: </strong> <span t-field="o.partner_id.street2"/><br/>
+                                    <strong>Teléfonos: </strong> <span t-field="o.partner_id.phone"/><br/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <strong>Condición Fte. Impuesto: </strong> <span t-field="o.partner_id.responsability_id"/><br/>
+                                    <strong>CUIT: </strong> <span t-field="o.partner_id.cuit"/>
+                                </div>
+                            </div>
+                            <div class="row" style="border:1px solid black;padding:5px;">
+                                <strong><h5>Detalles del Pago:</h5></strong><br/>
+                                <table style="border: 0px;width:100%;">
+                                    <thead style="border-bottom: 1px solid black;">
+                                        <tr>
+                                            <th>Documento</th>
+                                            <th>Fecha</th>
+                                            <th>Forma de Pago</th>
+                                            <th>Moneda</th>
+                                            <th t-if="o.payment_type == 'outbound'" class="text-right">Monto Retenido</th>
+                                            <th class="text-right">Importe</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span t-field="o.communication"/></td>
+                                            <td><span t-field="o.payment_date" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/></td>
+                                            <td><span t-field="o.journal_id"/></td>
+                                            <td><span t-field="o.currency_id"/></td>
+                                            <td class="text-right" t-if="o.payment_type == 'outbound'"><span t-field="o.withholding_base_amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                            <td class="text-right" t-if="o.payment_type == 'outbound'"><span t-esc="o.amount - o.withholding_base_amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                            <td class="text-right" t-if="not o.payment_type == 'outbound'"><span t-field="o.amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

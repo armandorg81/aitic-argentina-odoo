@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <record id="view_form_jurisdiction" model="ir.ui.view">
+        <field name="name">view.form.jurisdiction</field>
+        <field name="model">jurisdiction</field>
+        <field name="arch" type="xml">
+            <form string="Jurisdicción">
+            <sheet>
+                <group>
+                    <group>
+                        <field name="name" required="True"/>
+                        <field name="perception_design" required="True"/>
+                    </group>
+                    <group>
+                        <field name="code" required="True"/>
+                        <field name="withholding_design" required="True"/>
+                    </group>
+               </group>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_jurisdiction" model="ir.ui.view">
+         <field name="name">view.tree.jurisdiction</field>
+         <field name="model">jurisdiction</field>
+         <field name="arch" type="xml">
+            <tree>
+                <field name="name" required="True"/>
+                <field name="code" required="True"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_jurisdiction" model="ir.actions.act_window">
+        <field name="name">Jurisdiction</field>
+        <field name="res_model">jurisdiction</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Presione para crear nuevo Registro</p>
+        </field>
+    </record>
+
+    <menuitem id="action_jurisdiction_menu"
+        name="Jurisdiction"
+        parent="l10n_ar_account_group_withholding.menu_retenciones"
+        sequence="33"
+        action="action_jurisdiction" />
+
+    <record id="view_form_article_section" model="ir.ui.view">
+        <field name="name">view.form.article.section</field>
+        <field name="model">article.section</field>
+        <field name="arch" type="xml">
+            <form string="Withholding and perception regimes">
+            <sheet>
+                <group>
+                    <group>
+                        <field name="name" required="True"/>
+                        <field name="jurisdiction_id" required="True"/>
+                    </group>
+                    <group>
+                        <field name="code" required="True"/>
+                        <field name="concept" required="True"/>
+                    </group>
+               </group>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_article_section" model="ir.ui.view">
+         <field name="name">view.tree.article.section</field>
+         <field name="model">article.section</field>
+         <field name="arch" type="xml">
+            <tree>
+                <field name="name" required="True"/>
+                <field name="code" required="True"/>
+                <field name="concept" required="True"/>
+                <field name="jurisdiction_id" required="True"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_article_section" model="ir.actions.act_window">
+        <field name="name">Withholding and perception regimes</field>
+        <field name="res_model">article.section</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Presione para crear nuevo Registro</p>
+        </field>
+    </record>
+
+    <menuitem id="action_article_section_menu"
+        name="Withholding and perception regimes"
+        parent="l10n_ar_account_group_withholding.menu_retenciones"
+        sequence="33"
+        action="action_article_section" />
+
+    </data>
+</odoo>

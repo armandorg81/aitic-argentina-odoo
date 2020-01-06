@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_account_group_payment" inherit_id="account_payment_group.report_account_group_payment">
+            <xpath expr="//table[@class='class']" position="replace">
+                <table style="border: 0px;width:100%;" class="pago">
+                    <thead style="border-bottom: 1px solid black;">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Documento</th>
+                            <th>Fecha</th>
+                            <th>Concepto</th>
+                            <th>Moneda</th>
+                            <th class="text-right">Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-set="total_invoice" t-value="0.00"/>
+                        <t t-foreach="o.debt_move_line_ids" t-as="move">
+                            <t t-set="move" t-value="move.with_context({'payment_group_id':o.id})" />
+                            <tr t-if="move.report_payment_group_advance_amount != 0.0">
+                                <t t-set="total_invoice" t-value="total_invoice + move.report_payment_group_advance_amount"/>
+                                <t t-if="move.payment_id">
+                                    <td><span>Orden de pago</span></td>
+                                    <td><span t-field="move.payment_id.name" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/></td>
+                                    <td><span t-field="move.payment_id.payment_date"/></td>
+                                </t>
+                                <t t-if="move.invoice_id">
+                                    <td><span t-field="move.invoice_id.type"/></td>
+                                    <td><span t-field="move.invoice_id.number" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/></td>
+                                    <td><span t-field="move.invoice_id.date_invoice"/></td>
+                                </t>
+                                <td><span></span></td>
+                                <td><span t-field="move.currency_id"/></td>
+                                <td class="text-right"><span t-field="move.report_payment_group_advance_amount" t-options='{"widget": "monetary", "display_currency": move.currency_id}'/></td>
+                            </tr>
+                        </t>
+                        <tr style="border-top: 1px solid black;">
+                            <td colspan="5" class="text-right"><span>Total a Pagar</span></td>
+                            <td class="text-right"><span t-esc="total_invoice" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </xpath>
+        </template>
+    </data>
+</odoo>

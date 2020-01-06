@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_res_partner_iva_form" model="ir.ui.view">
+            <field name="name">view.res.partner.iva.form</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="l10n_ar_perception_withholding.view_res_partner_arba_form"/>
+            <field name="arch" type="xml">
+                <group name="aliquot" position="inside">
+                    <group>
+                        <field name="exempt_iva"/>
+                        <field name="date_iva_from" attrs="{'invisible': [('exempt_iva','=',False)], 'required': [('exempt_iva','=',True)]}"/>
+                        <field name="date_iva_to" attrs="{'invisible': [('exempt_iva','=',False)], 'required': [('exempt_iva','=',True)]}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>

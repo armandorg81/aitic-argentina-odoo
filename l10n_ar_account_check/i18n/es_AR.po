@@ -1,0 +1,1364 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_account_check
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-02 15:11+0000\n"
+"PO-Revision-Date: 2019-04-02 15:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_checkbook.py:84
+#, python-format
+msgid " up to %s"
+msgstr " hasta %s"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_payment_form_inherited
+msgid "<b>Importante:</b> Recomendamos que <b>solo</b> deposite <b>varios cheques</b> a la vez si no utiliza los extractos bancarios o si el banco acredita los cheques en una sola línea.<br/>\n"
+"                        Para el resto de los casos recomendamos que registre <b>una transferencia para cada cheque</b>."
+msgstr ""
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Plantilla de Plan de Cuentas"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_check
+msgid "Account Check"
+msgstr "Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_check_action_wizard
+msgid "Account Check Action Wizard"
+msgstr "Asistente para acción de cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_checkbook
+msgid "Account Checkbook"
+msgstr "Chequera"
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_move
+msgid "Account Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__expense_check_account_id
+msgid "Account Expense"
+msgstr "Cuenta de gasto"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_res_company__sale_check_account_id
+msgid "Account for the Sale of Check"
+msgstr "Cuenta para la venta de cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_res_company__sale_check_account_id
+msgid "Account where the balance of the debt contracted with the buyer of the check is recorded."
+msgstr "Cuenta donde se registra el saldo de la deuda contraída con el comprador del cheque."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:303
+#, python-format
+msgid "Action %s not implemented for checks!"
+msgstr "Acción %s no implementada para cheques!"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/wizard/account_check_action_wizard.py:84
+#, python-format
+msgid "Action %s not supported on checks"
+msgstr "Acción %s no soportadas en cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__action_type
+msgid "Action type passed on the context"
+msgstr "Tipo de acción pasada en el contexto"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__amount_currency
+msgid "Amount Currency"
+msgstr "Importe en moneda"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__amount_total
+msgid "Amount total"
+msgstr "Importe total"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_bank_id
+msgid "Banco del cheque"
+msgstr "Banco del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Bank Debit"
+msgstr "Débito del Banco"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Bank Rejection"
+msgstr "Rechazo del Banco"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Línea de extracto bancario"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:211
+#, python-format
+msgid "Beginning balance"
+msgstr "Saldo inicial"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__block_manual_number
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__checkbook_block_manual_number
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__checkbook_block_manual_number
+msgid "Block manual number?"
+msgstr "¿Bloquear el número manual?"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_checkbook__block_manual_number
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_payment__checkbook_block_manual_number
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_register_payments__checkbook_block_manual_number
+msgid "Block user to enter manually another number than the suggested"
+msgstr "Bloquear usuario para ingresar manualmente otro número"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_check_action_wizard_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Cancel Deposited"
+msgstr "Cancelar depósito"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Changed"
+msgstr "Cambiado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__check_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_move__check_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_id
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_graph
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_pivot
+msgid "Check"
+msgstr "Cheque"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:293
+#: code:addons/l10n_ar_account_check/models/account_check.py:297
+#, python-format
+msgid "Check \"%s\" debit"
+msgstr "Cheque \"%s\" débito"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:301
+#, python-format
+msgid "Check \"%s\" rejection"
+msgstr "Cheque \"%s\" rechazado"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:530
+#, python-format
+msgid "Lot check \"%s\" sold"
+msgstr "Lote de cheque \"%s\" vendido"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:337
+#: code:addons/l10n_ar_account_check/models/account_check.py:378
+#, python-format
+msgid "Check \"%s\" use"
+msgstr "Cheque \"%s\" usado"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.action_account_check_action_wizard
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_check_action_wizard_form_view
+msgid "Check Action"
+msgstr "Acción en Cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_bank_id
+msgid "Check Bank"
+msgstr "Banco del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__check_name
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_name
+msgid "Check Name"
+msgstr "Nombre del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_number
+msgid "Check Number"
+msgstr "Número del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_move__check_operation
+msgid "Check Operation"
+msgstr "Operación cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_owner_name
+msgid "Check Owner Name"
+msgstr "Nombre del Propietario del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_owner_vat
+msgid "Check Owner Vat"
+msgstr "CUIT del Propietario del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_payment_date
+msgid "Check Payment Date"
+msgstr "Fecha de pago del Cheque"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:170
+#, python-format
+msgid "Check Payment Date must be greater than own Date"
+msgstr "La fecha de pago del cheque debe ser mayor que la fecha propia"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_type
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_type
+msgid "Check Type"
+msgstr "Tipo de cheque"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:674
+#, python-format
+msgid "Check nbr (id): %s (%s)"
+msgstr "Cheque nbr (id): %s (%s)"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_own_date
+msgid "Check own Date"
+msgstr "Fecha de emisión del Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__checkbook_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__checkbook_id
+msgid "Checkbook"
+msgstr "Chequera"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_journal__checkbook_ids
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_checkbook_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_checkbook_tree
+msgid "Checkbooks"
+msgstr "Chequeras"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__check_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__transfer_check_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_own_ids
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_calendar
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_tree
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Checks"
+msgstr "Cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_id
+msgid "Cheque"
+msgstr "Cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__checkbook_id
+msgid "Chequera"
+msgstr "Chequera"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_ids_copy
+msgid "Cheques"
+msgstr "Cheques"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Claim to Customer"
+msgstr "Reclamar al Cliente"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__company_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__company_id
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check_action_wizard__company_id
+msgid "Company related to this journal"
+msgstr "Compañía relacionada con este diario"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_check_action_wizard_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__company_currency_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__currency_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__company_currency_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__readonly_currency_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__readonly_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_ar_account_check
+#: selection:account.checkbook,own_check_subtype:0
+msgid "Currents"
+msgstr "Corrientes"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_checkbook.py:80
+#, python-format
+msgid "Currents Checks"
+msgstr "Cheques corrientes"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.bank_debit_account_check_action_wizard
+msgid "Debit checks"
+msgstr "Débito del banco"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__debit_note
+msgid "Debit note"
+msgstr "Nota de débito"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:655
+#, python-format
+msgid "Debit note for operation %s not implemented!"
+msgstr "Nota de débito para la operación %s no implementada!"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Debited"
+msgstr "Debitado"
+
+#. module: l10n_ar_account_check
+#: selection:account.checkbook,own_check_subtype:0
+msgid "Deferred"
+msgstr "Diferidos"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_chart_template__deferred_check_account_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_res_company__deferred_check_account_id
+msgid "Deferred Check Account"
+msgstr "Cuenta de Cheque Propio"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_checkbook.py:78
+#, python-format
+msgid "Deferred Checks"
+msgstr "Cheques diferidos"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_chart_template__deferred_check_account_id
+#: model:ir.model.fields,help:l10n_ar_account_check.field_res_company__deferred_check_account_id
+msgid "Deferred Checks account, for eg. \"Deferred Checks\""
+msgstr "Cuenta de Cheques Diferidos, por ej: \"Cheques Diferidos\""
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:426
+#: code:addons/l10n_ar_account_check/models/account_payment.py:531
+#, python-format
+msgid "Deliver checks %s"
+msgstr "Cheques entregados %s"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Delivered"
+msgstr "Endosado"
+
+#. module: l10n_ar_account_check
+#: model:account.payment.method,name:l10n_ar_account_check.account_payment_method_delivered_third_check
+msgid "Delivered Third Check"
+msgstr "Cheque de Tercero Entregado"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:408
+#: code:addons/l10n_ar_account_check/models/account_payment.py:560
+#, python-format
+msgid "Deposit checks %s"
+msgstr "Cheques depositados %s"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.deposited_account_check_action_wizard
+msgid "Deposite checks"
+msgstr "Depositar cheques"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Deposited"
+msgstr "Depositado"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Deposite"
+msgstr "Depositar"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__deposited_bank_id
+msgid "Deposited Bank"
+msgstr "Banco de depósito"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:489
+#, python-format
+msgid "Deposited Checks"
+msgstr "Depositar cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__deposited_journal_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__transfer_journal_id
+msgid "Deposited Journal"
+msgstr "Diario de depósito"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__deposited_date
+msgid "Deposited date"
+msgstr "Fecha de depósito"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+#: selection:account.checkbook,state:0
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:218
+#, python-format
+msgid "Draft Check"
+msgstr "Cheques en borrador"
+
+#. module: l10n_ar_account_check
+#: selection:account.checkbook,own_check_subtype:0
+msgid "Electronic"
+msgstr "Cheque electrónico"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_checkbook.py:82
+#, python-format
+msgid "Electronic Checks"
+msgstr "Cheques electrónicos"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_owner_name
+msgid "Emisor"
+msgstr "Emisor"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__emission_date
+msgid "Emission Date"
+msgstr "Fecha de emisión"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "En mano"
+msgstr "En mano"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:737
+#, python-format
+msgid "Error not specified"
+msgstr "Error no especificado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__amount
+msgid "Expense amount"
+msgstr "Importe de gasto"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_res_company
+msgid "Factura Electronica"
+msgstr "Factura Electronica"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_register_payments.py:175
+#, python-format
+msgid "Fecha de pago del cheque debe ser mayor a fecha del cheque"
+msgstr "Fecha de pago del cheque debe ser mayor a fecha del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_own_date
+msgid "Fecha del cheque"
+msgstr "Fecha del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_payment_date
+msgid "Fecha del pago de cheque"
+msgstr "Fecha del pago de cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Empresas)"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_check_view_company_form
+msgid "Gestión Cheques"
+msgstr "Gestión Cheques"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:454
+#: code:addons/l10n_ar_account_check/models/account_payment.py:508
+#, python-format
+msgid "Hand check %s"
+msgstr "Cheques en mano %s"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Handed"
+msgstr "Entregado"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Holding"
+msgstr "En Mano"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_chart_template__holding_check_account_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_res_company__holding_check_account_id
+msgid "Holding Check Account"
+msgstr "Cuenta de Cheque de tercero"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_chart_template__holding_check_account_id
+#: model:ir.model.fields,help:l10n_ar_account_check.field_res_company__holding_check_account_id
+msgid "Holding Checks account for third checks, for eg. \"Holding Checks\""
+msgstr "Cuenta de Cheques en mano para cheques de terceros, por ej: \"Cheques en Mano\""
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención."
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_checkbook__to_number
+msgid "If you set a number here, this checkbook will be automatically set as used when this number is raised."
+msgstr "Si establece un número aquí, esta chequera se establecerá automáticamente como usada cuando este número crezca."
+
+#. module: l10n_ar_account_check
+#: selection:account.checkbook,state:0
+msgid "In Use"
+msgstr "En Uso"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "In use"
+msgstr "En uso"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Is use"
+msgstr "En uso"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It is used when an own check is used to pay for an operation of the company."
+msgstr "Se utiliza cuando se emite un cheque propio para pagar una operación de la empresa."
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It is used when confirming the sale of a check with a third party."
+msgstr "Se utiliza para confirmar la venta de un cheque con un tercero."
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It is used when deposited a third check."
+msgstr "Se utiliza para depositar un cheque de tercero."
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It is used when negotiating the sale of a check with a third party."
+msgstr "Se utiliza al negociar la venta de un cheque con un tercero."
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will cancel the deposit or change the check for a mistake in the process by passing the check in hand"
+msgstr "Cancelar el depósito o el cambio de cheque por una equivocación en la operación pasando el cheque a la mano"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will create a debit note from supplier in draft state and change check state"
+msgstr "Creará una nota de débito desde el proveedor en estado borrador y cambia el estado del cheque"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will create a draft debit note from supplier and change check state"
+msgstr "Se va a crear una nota de débito del proveedor y cambiar el cheque de estado"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will create a draft debit note to customer and change check state"
+msgstr "Se va a crear una nota de débito en borrador para el cliente y cambiar el cheque de estado"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will create a journal entry from Deferred Check Account to bank account and change check state"
+msgstr "Creará un asiento contable desde la Cuenta de Cheques Diferidos a la cuenta del banco y cambia el estado del cheque"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "It will create an account entry from bank account to company rejection account and change check state"
+msgstr "Creará un asiento contable desde la cuenta del banco a la cuenta de rechazo de la compañía y cambia el estado del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_journal
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__journal_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__journal_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__journal_id
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_checkbook__journal_id
+msgid "Journal where it is going to be used"
+msgstr "Diario en el cual va  a ser utilizado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__communication
+msgid "Memo"
+msgstr "Circular"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__move_id
+msgid "Move"
+msgstr "Movimiento"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__name
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.negotiated_account_check_action_wizard
+msgid "Negotiate checks"
+msgstr "Negociar cheques"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Negotiated"
+msgstr "Negociados"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:216
+#, python-format
+msgid "Negotiation of sale check"
+msgstr "Negociación de venta de cheque."
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__next_number
+msgid "Next Number"
+msgstr "Próximo número"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/res_company.py:51
+#, python-format
+msgid "No checks %s account defined for company %s"
+msgstr "La cuenta de cheques %s no esta definida para la compañía %s"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_name
+msgid "Nombre del cheque"
+msgstr "Nombre del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__note
+msgid "Nota"
+msgstr "Nota"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__notes
+msgid "Note"
+msgstr "Nota"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__number
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_number
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_number_readonly
+msgid "Número del cheque"
+msgstr "Número del cheque"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_payment__check_payment_date
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_register_payments__check_payment_date
+msgid "Only if this check is post dated"
+msgstr "Solo si el cheque es diferido"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__operation_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__operation
+msgid "Operation"
+msgstr "Operación"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__operation_no
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__operation_no
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__operation_no
+msgid "Operation No."
+msgstr "No. de Operación"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__operation_partner_id
+msgid "Operation Partner"
+msgstr "En mano de"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Origin"
+msgstr "Origen"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__origin
+msgid "Origin Document"
+msgstr "Documento origen"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__origin_name
+msgid "Origin name"
+msgstr "Nombre origen"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,type:0
+#: model:account.payment.method,name:l10n_ar_account_check.account_payment_method_own_check
+msgid "Own Check"
+msgstr "Cheque Propio"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__own_check_subtype
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__own_check_subtype
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__check_subtype
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_subtype
+msgid "Own Check Subtype"
+msgstr "Subtipo de Cheque Propio"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.action_own_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__own_check_ids
+#: model:ir.ui.menu,name:l10n_ar_account_check.menu_own_check
+msgid "Own Checks"
+msgstr "Cheques Propios"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__owner_cuit
+msgid "Owner CUIT"
+msgstr "CUIT propietario"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__owner_name
+msgid "Owner Name"
+msgstr "Nombre del Propietario"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__owner_vat
+msgid "Owner Vat"
+msgstr "CUIT del Propietario"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__partner_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__partner_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_operation__partner_id
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_payment__readonly_amount
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__readonly_amount
+msgid "Payment Amount"
+msgstr "Importe del Pago"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__payment_date
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Payment Date"
+msgstr "Fecha de Pago"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__lot_sale
+msgid "Lot of sale"
+msgstr "Lote de venta"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__payment_method_id
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:346
+#: code:addons/l10n_ar_account_check/models/account_payment.py:521
+#, python-format
+msgid "Receive check %s"
+msgstr "Cheque recibido %s"
+
+#. module: l10n_ar_account_check
+#: model:account.payment.method,name:l10n_ar_account_check.account_payment_method_received_third_check
+msgid "Received Third Check"
+msgstr "Cheque de Tercero Recibido"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Reclaimed"
+msgstr "Reclamado"
+
+#. module: l10n_ar_account_check
+#: model:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_create_form
+msgid "Recuerde que los cheques se crean con los pagos.<br/><b>Solamente</b> debe crear cheques manualmente para realizar algún <b>ajuste</b> o para la <b>carga incial</b> de los mismos.<br/>Podrá cargar las operaciones correspondientes una vez que haya guardado el cheque."
+msgstr "Recuerde que los cheques se crean con los pagos.<br/><b>Solamente</b> debe crear cheques manualmente para realizar algún <b>ajuste</b> o para la <b>carga incial</b> de los mismos.<br/>Podrá cargar las operaciones correspondientes una vez que haya guardado el cheque."
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_register_payments
+msgid "Register Payments"
+msgstr "Registrar pagos"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_invoice__rejected_check_id
+msgid "Rejected Check"
+msgstr "Cheque Rechazado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_chart_template__rejected_check_account_id
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_res_company__rejected_check_account_id
+msgid "Rejected Check Account"
+msgstr "Cuenta de Cheque Rechazado de Terceros"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_chart_template__rejected_check_account_id
+#: model:ir.model.fields,help:l10n_ar_account_check.field_res_company__rejected_check_account_id
+msgid "Rejection Checks account, for eg. \"Rejected Checks\""
+msgstr "Cuenta de Cheques rechazados de terceros, por ej: \"Cheques Rechazados\""
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Return to Customer"
+msgstr "Devolución a Cliente"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Returned"
+msgstr "Devuelto"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:390
+#: code:addons/l10n_ar_account_check/models/account_payment.py:544
+#, python-format
+msgid "Sell check %s"
+msgstr "Cheque vendido %s"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Selled"
+msgstr "Vendido"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Show the checks that are already used in the case of your own."
+msgstr "Muestra los cheques que ya se utilizaron en caso de los cheques propios."
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__state
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__state
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Supplier Rejection"
+msgstr "Rechazo del Proveedor"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_form
+msgid "Supplier Return/Rejection"
+msgstr "Devolución/Rechazo de Proveedor"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check_action_wizard__tax_ids
+msgid "Taxes"
+msgstr "Tasas"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:247
+#, python-format
+msgid "The Check must be in draft state for unlink !"
+msgstr "El cheque debe estar en estado borrador para borrarlo !"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:362
+#, python-format
+msgid "The amount of the check must be greater than zero"
+msgstr "El importe del cheque debe ser mayor que cero."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:371
+#, python-format
+msgid "The check must be issued in the name of a partner"
+msgstr "El cheque debe ser emitido a nombre de una empresa o contacto."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:207
+#, python-format
+msgid "The date of a new check operation can not be minor than last operation date"
+msgstr "La fecha de una nueva operación de cheque no puede ser menor que la fecha de la última operación"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,type:0
+msgid "Third Check"
+msgstr "Cheque de Tercero"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_journal_dashboard_kanban_view_inherited
+msgid "Third Check(s) on hand"
+msgstr "Cheque(s) de Tercero en mano"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.action_third_check
+#: model:ir.ui.menu,name:l10n_ar_account_check.menu_third_check
+msgid "Third Checks"
+msgstr "Cheque de Terceros"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:482
+#: code:addons/l10n_ar_account_check/models/account_payment.py:586
+#, python-format
+msgid "This operatios is not implemented for checks:\n"
+"* Payment type: %s\n"
+"* Partner type: %s\n"
+"* Payment method: %s\n"
+"* Destination journal: %s\n"
+""
+msgstr "Esta operación no está implementada para cheques:\n"
+"* Tipo de pago: %s\n"
+"* Tipo de empresa: %s\n"
+"* Método de pago: %s\n"
+"* Diario de destino: %s\n"
+""
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_checkbook__to_number
+msgid "To Number"
+msgstr "Hasta Número"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:359
+#, python-format
+msgid "To use the check can not be selected in any payment"
+msgstr "Para utilizar el cheque no se puede seleccionar en ningún pago."
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.checks_view_account_payment_from_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.checks_view_account_payment_invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_payment_form_inherited
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_account_check_tree
+msgid "Total Amount"
+msgstr "Importe total"
+
+#. module: l10n_ar_account_check
+#: model:account.payment.method,name:l10n_ar_account_check.account_payment_method_transfer_check
+msgid "Transfer Check"
+msgstr "Cheque transferido"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:378
+#, python-format
+msgid "Transfer checks %s"
+msgstr "Cheque transferido %s"
+
+#. module: l10n_ar_account_check
+#: selection:account.check,state:0
+#: selection:account.check.operation,operation:0
+msgid "Transfered"
+msgstr "Transferido"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:578
+#, python-format
+msgid "Transfered check %s"
+msgstr "Transferencia entre banco cheque %s"
+
+#. module: l10n_ar_account_check
+#: model:ir.ui.menu,name:l10n_ar_account_check.menu_finance_treasury
+msgid "Treasury"
+msgstr "Tesorería"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/res_company.py:49
+#, python-format
+msgid "Type %s not implemented!"
+msgstr "Tipo %s no implementado!"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes por leer"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes sin leer"
+
+#. module: l10n_ar_account_check
+#: selection:account.checkbook,state:0
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "Used"
+msgstr "Usado"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_register_payments__check_owner_vat
+msgid "Vat del emisor"
+msgstr "Vat del emisor"
+
+#. module: l10n_ar_account_check
+#: model:ir.actions.act_window,name:l10n_ar_account_check.selled_account_check_action_wizard
+msgid "Sell checks"
+msgstr "Vender Cheques"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,field_description:l10n_ar_account_check.field_account_check__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: l10n_ar_account_check
+#: model:ir.model.fields,help:l10n_ar_account_check.field_account_check__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:467
+#, python-format
+msgid "Withdraw with checks %s"
+msgstr "Retirar con cheques %s"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_checkbook.py:98
+#, python-format
+msgid "You can drop a checkbook if it has been used on checks!"
+msgstr "Puede eliminar una chequera si ha sido utilizada en cheques!"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:888
+#, python-format
+msgid "You can only deposit a check that the deposit date is less than the date of the operation."
+msgstr "Solo puede depositar cheques que la fecha del depósito es menor que la fecha de pago."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:599
+#, python-format
+msgid "You can not make a payment with checks without associated checks."
+msgstr "No se puede realizar un pago con cheques sin cheques asociados."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_payment.py:278
+#, python-format
+msgid "You can not register more than one check with the same number for the company and the registered bank."
+msgstr "No se puede registrar más de un cheque con el mismo número para la empresa y el banco seleccionado."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:644
+#, python-format
+msgid "You can not reprint a third party check generated by a bill."
+msgstr "No puede volver a borrador un cheque de tercero generado por una cobranza."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:209
+#, python-format
+msgid "You cannot cancel a payment with a %s check because you are in another state unrelated to the payment, this check operation must be changed."
+msgstr "No puede cancelar un pago con un cheque %s por estar en otro estado no relacionado con el pago, debe retoceder esta opereción del cheque."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:365
+#, python-format
+msgid "You must complete the payment date"
+msgstr "Debes completar la fecha de pago"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:884
+#, python-format
+msgid "You must specify the check payment date."
+msgstr "Debe especificar la fecha de pago de los cheques."
+
+#. module: l10n_ar_account_check
+#: model:ir.model,name:l10n_ar_account_check.model_account_check_operation
+msgid "account.check.operation"
+msgstr ""
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_check_action_wizard_form_view
+msgid "or"
+msgstr "o"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.account_journal_dashboard_kanban_view_inherited
+msgid "own Check(s) handed"
+msgstr "Cheque(s) Propio en Mano"
+
+#. module: l10n_ar_account_check
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_checks_search
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_check.view_own_checks_search
+msgid "own Date"
+msgstr "fecha propietario"
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:821
+#, python-format
+msgid "You can not sell checks that have been negotiated with different contacts."
+msgstr "No se pueden vender cheques que se han negociado con diferentes contactos."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:817
+#, python-format
+msgid "You can only sell checks that have not been negotiated."
+msgstr "Solo puedes vender cheques que hayan sido negociados."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:433
+#, python-format
+msgid "You can only negotiate checks that are in draft."
+msgstr "Solo puede negociar cheques que esten en borrador."
+
+#. module: l10n_ar_account_check
+#: code:addons/l10n_ar_account_check/models/account_check.py:428
+#, python-format
+msgid "You can only negotiate checks that are in hand."
+msgstr "Solo puede negociar cheques que esten en mano."
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ag_base_invoice_tree" model="ir.ui.view">
+            <field name="name">l10n.ag.base.invoice.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="before">
+                    <field name="tipo_comprobante"/>
+                    <field name="punto_venta" />
+                    <field name="move_id" />
+                    <field name="provincia" />
+                </field>
+
+                <field name="amount_total_signed" position="after">
+                    <field name="amount_total_company_signed"/>
+                </field>
+            </field>
+        </record>
+        
+        <record id="l10n_ar_view_account_invoice_filter" model="ir.ui.view">
+            <field name="name">l10n.ar.view.account.invoice.filter</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <field name="date" position="after">
+                    <field name="provincia" string="Provincia"/>
+                </field>
+                <filter name="status" position="after">
+                    <filter name="provincia" string="Provincia" context="{'group_by':'provincia'}"/>
+                </filter>
+            </field>
+        </record>
+
+        <record id="l10n_ag_base_invoice_form" model="ir.ui.view">
+            <field name="name">l10n.ag.base.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="voucher_control" invisible="1"/>
+                    <field name="tipo_comprobante" widget="selection"
+                          attrs="{'readonly': [('state','!=','draft')], 'required': [('voucher_control', '=', True)],
+                                  'invisible': [('voucher_control','=',False)]}"/>
+
+                    <field name="punto_venta" widget="selection"
+                        attrs="{'readonly': [('state','!=','draft')], 'required': [('voucher_control', '=', True)],
+                                                'invisible': ['|','|',('partner_id','=',False),('tipo_comprobante','=',False)]}" />
+                </field>
+                <field name="amount_untaxed" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </field>
+                <field name="amount_untaxed" position="after">
+                    <field name="neto_gravado"/>
+                    <field name="amount_excempt"/>
+                    <field name="no_gravado"/>
+                    <field name="amount_iva"/>
+                    <field name="amount_other_tax"/>
+                </field>
+                <field name="amount_tax" position="attributes">
+                    <attribute name="string">Total Impuestos</attribute>
+                    <attribute name="class">oe_subtotal_footer_separator</attribute>
+                </field>
+                <field name="date_invoice" position="replace" >
+                    <field name="date_invoice" required="True"/>
+                </field>
+                <field name="payment_term_id" position="after" >
+                    <field name="other_info"/>
+                </field>
+            </field>
+        </record>
+
+
+        <record id="l10n_ag_base_supplier_tree" model="ir.ui.view">
+            <field name="name">l10n.ag.base.supplier.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="before">
+                    <field name="tipo_comprobante" />
+                    <field name="punto_venta_proveedor" />
+                    <field name="move_id" />
+                    <field name="provincia" />
+                </field>
+                <field name="amount_total_signed" position="after">
+                    <field name="amount_total_company_signed"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="l10n_ag_base_supplier_form" model="ir.ui.view">
+            <field name="name">l10n.ag.base.supplier.form</field>
+            <field name="model">account.invoice</field>
+<!--
+            <field name="inherit_id" ref="l10n_ar_debit_credit_note.invoice_supplier_credit_debit_form" />
+-->
+            <field name="inherit_id" ref="account.invoice_supplier_form" />
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="voucher_control" invisible="1"/>
+                    <field name="tipo_comprobante"
+                          options="{'no_create':True, 'no_quick_create': True, 'no_create_edit' : True}"
+                           attrs="{'readonly': [('state','!=','draft')], 'required': [('voucher_control', '=', True)],
+                                   'invisible': [('partner_id','=',False), ('voucher_control','=',False)]}"/>
+                    <field name="desc"/>
+                    <field name="punto_venta_proveedor" attrs="{'readonly': [('state','!=','draft')], 'required': [('voucher_control', '=', True)],
+                                                                'invisible': ['|','|',('partner_id','=',False),('tipo_comprobante','=',False),('voucher_control','=',False)]}" placeholder="0000"/>
+                </field>
+                <field name="amount_untaxed" position="attributes">
+                    <attribute name="string">Subtotal</attribute>
+                    <attribute name="attrs">{'invisible': [('desc','!=','C'),('type','!=','in_invoice')]}</attribute>
+                </field>
+                <field name="reference" position="after">
+                    <field name="comprobante_01" />
+                </field>
+
+
+
+                <field name="amount_untaxed" position="after">
+                    <field name="neto_gravado" attrs="{'invisible': [('desc','=','C'),('type','=','in_invoice')]}"/>
+                    <field name="amount_excempt" attrs="{'invisible': [('desc','=','C'),('type','=','in_invoice')]}"/>
+                    <field name="no_gravado" attrs="{'invisible': [('desc','=','C'),('type','=','in_invoice')]}"/>
+                    <field name="amount_iva"/>
+                    <field name="amount_other_tax"/>
+                </field>
+                <field name="amount_tax" position="attributes">
+                    <attribute name="string">Total Impuestos</attribute>
+                    <attribute name="class">oe_subtotal_footer_separator</attribute>
+                </field>
+            </field>
+        </record>
+
+        <record id="account.action_invoice_tree1" model="ir.actions.act_window">
+            <field name="domain">[('type','in',['out_invoice','out_refund'])]</field>
+        </record>
+
+    </data>
+</odoo>

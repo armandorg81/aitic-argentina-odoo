@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_res_aliquot_form" model="ir.ui.view">
+            <field name="name">view.res.aliquot.form</field>
+            <field name="model">res.aliquot</field>
+            <field name="arch" type="xml">
+                <form string="Aliquots">
+                    <sheet>
+                        <group>
+                            <group name="column1">
+                                <field name="partner_id"/>
+                                <field name="company_id"/>
+                                <field name="type"/>
+                                <field name="perception_aliquot"/>
+                                <field name="perception_group" attrs="{'invisible': [('type','!=','arba')]}"/>
+                                <field name="voucher_number" attrs="{'invisible': [('type','!=','arba')]}"/>
+                                <field name="hash_code" attrs="{'invisible': [('type','!=','arba')]}"/>
+                            </group>
+                            <group name="column2">
+                                <field name="date_from" required="1"/>
+                                <field name="date_to" required="1"/>
+                                <field name="date_update" required="1"/>
+                                <field name="withholding_aliquot"/>
+                                <field name="withholding_group" attrs="{'invisible': [('type','!=','arba')]}"/>
+                                <field name="cuit_taxpayer" attrs="{'invisible': [('type','!=','arba')]}"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_res_partner_arba_form" model="ir.ui.view">
+            <field name="name">view.res.partner.arba.form</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button class="oe_stat_button" name="get_arba_info_partner" string="Get ARBA Data" type="object"
+                            attrs="{'invisible': [('supplier', '=', False)]}">
+                    </button>
+                </div>
+                <notebook position="inside">
+                    <page string="Aliquot Info" groups="account.group_account_invoice">
+                        <group name="aliquot">
+                            <group name="arba">
+                                <field name="exempt_arba"/>
+                                <field name="date_arba_from" attrs="{'invisible': [('exempt_arba','=',False)], 'required': [('exempt_arba','=',True)]}"/>
+                                <field name="date_arba_to" attrs="{'invisible': [('exempt_arba','=',False)], 'required': [('exempt_arba','=',True)]}"/>
+                            </group>
+                            <group name="agip"></group>
+                        </group>
+                        <field name="aliquot_ids" groups="account.group_account_invoice" context="{'default_partner_id': id, 'default_company_id': company_id}">
+                            <tree>
+                                <field name="date_from"/>
+                                <field name="date_to"/>
+                                <!--<field name="voucher_number"/>-->
+                                <!--<field name="hash_code"/>-->
+                                <field name="perception_aliquot"/>
+                                <field name="withholding_aliquot"/>
+                                <field name="perception_group"/>
+                                <field name="withholding_group"/>
+                                <field name="type"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+        <record id="get_data_arba_partner_server_action" model="ir.actions.server">
+            <field name="name">Update ARBA Aliquot Partner</field>
+            <field name="condition">True</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="l10n_ar_perception_withholding.model_res_partner"/>
+            <field name="state">code</field>
+            <field name="code">records.update_arba_data_partner()</field>
+        </record>
+    </data>
+</odoo>

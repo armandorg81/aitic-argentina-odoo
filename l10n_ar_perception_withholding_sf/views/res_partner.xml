@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_res_partner_sf_form" model="ir.ui.view">
+            <field name="name">view.res.partner.sf.form</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Aliquot Info" groups="account.group_account_invoice">
+                        <group name="aliquotsf">
+                            <group>
+                                <field name="exempt_sf"/>
+                                <field name="date_sf" attrs="{'invisible': [('exempt_sf','in', ('none', 'article'))], 'required': [('exempt_sf', 'not in', ('none', 'article'))]}"/>
+                                <field name="certificate_exemption" attrs="{'invisible': [('exempt_sf','in', ('none', 'article'))], 'required': [('exempt_sf', 'not in', ('none', 'article'))]}"/>
+                            </group>
+                            <group></group>
+                        </group>
+                        <field colspan="4" name="aliquot_ids" groups="account.group_account_invoice">
+                            <tree editable="bottom">
+                                <field name="date_update"/>
+                                <field name="company_id" invisible="1"/>
+                                <field name="jurisdiction_id" invisible="1"/>
+                                <field name="calculate_perc_sf" invisible="1"/>
+                                <field name="article_perc_id" attrs="{'required': [('calculate_perc_sf', '=', True)]}"
+                                    domain="[('type', '=', 'partner'), ('concept', '=', 'perception'), ('jurisdiction_id', '=', jurisdiction_id)]"/>
+                                <field name="perception_aliquot"  attrs="{'required': [('calculate_perc_sf', '=', True)]}"/>
+                                <field name="calculate_wh_sf" invisible="1"/>
+                                <field name="article_wh_id"  attrs="{'required': [('calculate_wh_sf', '=', True)]}"
+                                    domain="[('type', '=', 'partner'), ('concept', '=', 'withholding'), ('jurisdiction_id', '=', jurisdiction_id)]"/>
+                                <field name="withholding_aliquot"  attrs="{'required': [('calculate_wh_sf', '=', True)]}"/>
+                                <field name="type"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

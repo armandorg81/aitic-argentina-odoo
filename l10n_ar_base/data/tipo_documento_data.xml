@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data noupdate="1">
+               <record id="tipo_documento_80" model="tipo.documento">
+                   <field name="codigo">80</field>
+                   <field name="name">CUIT</field>
+               </record>
+               <record id="tipo_documento_86" model="tipo.documento">
+                   <field name="codigo">86</field>
+                   <field name="name">CUIL</field>
+               </record>
+               <record id="tipo_documento_87" model="tipo.documento">
+                   <field name="codigo">87</field>
+                   <field name="name">CDI</field>
+               </record>
+               <record id="tipo_documento_89" model="tipo.documento">
+                   <field name="codigo">89</field>
+                   <field name="name">LE</field>
+               </record>
+               <record id="tipo_documento_90" model="tipo.documento">
+                   <field name="codigo">90</field>
+                   <field name="name">LC</field>
+               </record>
+               <record id="tipo_documento_91" model="tipo.documento">
+                   <field name="codigo">91</field>
+                   <field name="name">CI Extranjera</field>
+               </record>
+               <record id="tipo_documento_92" model="tipo.documento">
+                   <field name="codigo">92</field>
+                   <field name="name">en trámite</field>
+               </record>
+               <record id="tipo_documento_93" model="tipo.documento">
+                   <field name="codigo">93</field>
+                   <field name="name">Acta Nacimiento</field>
+               </record>
+               <record id="tipo_documento_95" model="tipo.documento">
+                   <field name="codigo">95</field>
+                   <field name="name">CI Bs. As. RNP</field>
+               </record>
+               <record id="tipo_documento_96" model="tipo.documento">
+                   <field name="codigo">96</field>
+                   <field name="name">DNI</field>
+               </record>
+               <record id="tipo_documento_94" model="tipo.documento">
+                   <field name="codigo">94</field>
+                   <field name="name">Pasaporte</field>
+               </record>
+               <record id="tipo_documento_0" model="tipo.documento">
+                   <field name="codigo">0</field>
+                   <field name="name">CI Policía Federal</field>
+               </record>
+               <record id="tipo_documento_1" model="tipo.documento">
+                   <field name="codigo">1</field>
+                   <field name="name">CI Buenos Aires</field>
+               </record>
+               <record id="tipo_documento_2" model="tipo.documento">
+                   <field name="codigo">2</field>
+                   <field name="name">CI Catamarca</field>
+               </record>
+               <record id="tipo_documento_3" model="tipo.documento">
+                   <field name="codigo">3</field>
+                   <field name="name">CI Córdoba</field>
+               </record>
+               <record id="tipo_documento_4" model="tipo.documento">
+                   <field name="codigo">4</field>
+                   <field name="name">CI Corrientes</field>
+               </record>
+               <record id="tipo_documento_5" model="tipo.documento">
+                   <field name="codigo">5</field>
+                   <field name="name">CI Entre Ríos</field>
+               </record>
+               <record id="tipo_documento_6" model="tipo.documento">
+                   <field name="codigo">6</field>
+                   <field name="name">CI Jujuy</field>
+               </record>
+               <record id="tipo_documento_7" model="tipo.documento">
+                   <field name="codigo">7</field>
+                   <field name="name">CI Mendoza</field>
+               </record>
+               <record id="tipo_documento_8" model="tipo.documento">
+                   <field name="codigo">8</field>
+                   <field name="name">CI La Rioja</field>
+               </record>
+               <record id="tipo_documento_9" model="tipo.documento">
+                   <field name="codigo">9</field>
+                   <field name="name">CI Salta</field>
+               </record>
+               <record id="tipo_documento_10" model="tipo.documento">
+                   <field name="codigo">10</field>
+                   <field name="name">CI San Juan</field>
+               </record>
+               <record id="tipo_documento_11" model="tipo.documento">
+                   <field name="codigo">11</field>
+                   <field name="name">CI San Luis</field>
+               </record>
+               <record id="tipo_documento_12" model="tipo.documento">
+                   <field name="codigo">12</field>
+                   <field name="name">CI Santa Fe</field>
+               </record>
+               <record id="tipo_documento_13" model="tipo.documento">
+                   <field name="codigo">13</field>
+                   <field name="name">CI Santiago del Estero</field>
+               </record>
+               <record id="tipo_documento_14" model="tipo.documento">
+                   <field name="codigo">14</field>
+                   <field name="name">CI Tucumán</field>
+               </record>
+               <record id="tipo_documento_16" model="tipo.documento">
+                   <field name="codigo">16</field>
+                   <field name="name">CI Chaco</field>
+               </record>
+               <record id="tipo_documento_17" model="tipo.documento">
+                   <field name="codigo">17</field>
+                   <field name="name">CI Chubut</field>
+               </record>
+               <record id="tipo_documento_18" model="tipo.documento">
+                   <field name="codigo">18</field>
+                   <field name="name">CI Formosa</field>
+               </record>
+               <record id="tipo_documento_19" model="tipo.documento">
+                   <field name="codigo">19</field>
+                   <field name="name">CI Misiones</field>
+               </record>
+               <record id="tipo_documento_20" model="tipo.documento">
+                   <field name="codigo">20</field>
+                   <field name="name">CI Neuquén</field>
+               </record>
+               <record id="tipo_documento_21" model="tipo.documento">
+                   <field name="codigo">21</field>
+                   <field name="name">CI La Pampa</field>
+               </record>
+               <record id="tipo_documento_22" model="tipo.documento">
+                   <field name="codigo">22</field>
+                   <field name="name">CI Río Negro</field>
+               </record>
+               <record id="tipo_documento_23" model="tipo.documento">
+                   <field name="codigo">23</field>
+                   <field name="name">CI Santa Cruz</field>
+               </record>
+               <record id="tipo_documento_24" model="tipo.documento">
+                   <field name="codigo">24</field>
+                   <field name="name">CI Tierra del Fuego</field>
+               </record>
+               <record id="tipo_documento_99" model="tipo.documento">
+                   <field name="codigo">99</field>
+                   <field name="name">Doc. (Otro)</field>
+               </record>
+        </data>
+    </odoo>

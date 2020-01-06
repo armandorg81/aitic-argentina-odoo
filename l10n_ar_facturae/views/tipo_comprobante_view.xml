@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_form_tipo_comprobante_credit" model="ir.ui.view">
+             <field name="name">view.form.tipo.comprobante.credit</field>
+             <field name="model">tipo.comprobante</field>
+             <field name="inherit_id" ref="l10n_ar_base.view_form_tipo_comprobante"/>
+             <field name="arch" type="xml">
+                <field name="not_date_due" position="after">
+                    <field name="comprobante_credito"/>
+                </field>
+            </field>
+    </record>
+</odoo>

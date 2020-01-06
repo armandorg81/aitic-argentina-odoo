@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pw_account_payment_group_form" model="ir.ui.view">
+            <field name="name">account.payment.group.form</field>
+            <field name="model">account.payment.group</field>
+            <field name="inherit_id" ref="l10n_ar_account_group_withholding.view_pw_account_payment_group_form"/>
+            <field name="arch" type="xml">
+                <field name="withholding_base_amount" position="after">
+                    <!--<group class="oe_subtotal_footer oe_right" colspan="2" name="sale_total" >-->
+                        <!--<field name="amount_alicuot_withholding" invisible="1"/>-->
+                        <field name="amount_sf_withholding" attrs="{'invisible': [('partner_type','!=','supplier')]}" readonly="1" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <!--<field name="amount_total_payable" readonly="1" widget='monetary'  class="oe_subtotal_footer_separator" options="{'currency_field': 'currency_id'}"/>-->
+                    <!--</group>-->
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+

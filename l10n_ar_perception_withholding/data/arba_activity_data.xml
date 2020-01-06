@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="arba_activities_01" model="res.arba.activity">
+            <field name="name">REGIMEN DE RETEN. EMPRESAS CONTRUCTORAS - Mensual- Retencion</field>
+            <field name="code">1</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_02" model="res.arba.activity">
+            <field name="name">REGIMEN DE PERCEP. TERMINALES AUTOMITRIC - Mensual- Percepcion</field>
+            <field name="code">2</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_03" model="res.arba.activity">
+            <field name="name">COOP. DE PROVISION MINORISTA- Mensual - Percepcion</field>
+            <field name="code">3</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_04" model="res.arba.activity">
+            <field name="name">REG. DE RET. ENT. DE AHORRO FINES DETERMIN - Mensual- Retencion</field>
+            <field name="code">4</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_05" model="res.arba.activity">
+            <field name="name">EMPRESAS EDITORAS DE DIARIOS, ETC - Mensual- Percepcion</field>
+            <field name="code">5</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_06" model="res.arba.activity">
+            <field name="name">REGIMEN GENERAL DE RETENCIONES - Quincenal- Retencion</field>
+            <field name="code">6</field>
+            <field name="type">withholding</field>
+            <field name="period">biweekly</field>
+        </record>
+        <record id="arba_activities_07" model="res.arba.activity">
+            <field name="name">REGIMEN GENERAL DE PERCEPCIONES - Quincenal- Percepcion</field>
+            <field name="code">7</field>
+            <field name="type">perception</field>
+            <field name="period">biweekly</field>
+        </record>
+        <record id="arba_activities_071" model="res.arba.activity">
+            <field name="name">REGIMEN GENERAL DE PERCEPCIONES - Mensual- Percepcion</field>
+            <field name="code">7</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_08" model="res.arba.activity">
+            <field name="name">COMER. DE COMB. LIQUIDOS DERIV. PETROLEO - Mensual- Percepcion</field>
+            <field name="code">8</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_10" model="res.arba.activity">
+            <field name="name">ACTIVIDAD AGROPECUARIA - Mensual- Retencion</field>
+            <field name="code">10</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_12" model="res.arba.activity">
+            <field name="name">FRIGORIFICOS - Quincenal- Percepcion</field>
+            <field name="code">12</field>
+            <field name="type">perception</field>
+            <field name="period">biweekly</field>
+        </record>
+        <record id="arba_activities_121" model="res.arba.activity">
+            <field name="name">FRIGORIFICOS - Quincenal- Retencion</field>
+            <field name="code">12</field>
+            <field name="type">withholding</field>
+            <field name="period">biweekly</field>
+        </record>
+        <record id="arba_activities_13" model="res.arba.activity">
+            <field name="name">MUNICIPALIDAD - Mensual- Retencion</field>
+            <field name="code">13</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_14" model="res.arba.activity">
+            <field name="name">ESTADO NACIONAL - Mensual- Retencion</field>
+            <field name="code">14</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_15" model="res.arba.activity">
+            <field name="name">ESTADO PROVINCIAL - Mensual- Retencion</field>
+            <field name="code">15</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_16" model="res.arba.activity">
+            <field name="name">SEGUROS - Mensual- Retencion</field>
+            <field name="code">16</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_17" model="res.arba.activity">
+            <field name="name">FINANCIERAS/BANCOS - Mensual- Percepcion</field>
+            <field name="code">17</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_171" model="res.arba.activity">
+            <field name="name">FINANCIERAS/BANCOS - Mensual- Retencion</field>
+            <field name="code">17</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_20" model="res.arba.activity">
+            <field name="name">INSTITUTO PROV.DE LOTERIA Y CASINOS - Mensual- Retencion</field>
+            <field name="code">20</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_23" model="res.arba.activity">
+            <field name="name">HONORARIOS - Mensual- Retencion</field>
+            <field name="code">23</field>
+            <field name="type">withholding</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_24" model="res.arba.activity">
+            <field name="name">REG. ESPECIAL DE PERCEP. MEDICAMENTOS - Mensual- Percepcion</field>
+            <field name="code">24</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_25" model="res.arba.activity">
+            <field name="name">ACT. ESPECIAL DE PERCEP. CERVEZAS - Mensual- Percepcion</field>
+            <field name="code">25</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+        <record id="arba_activities_29" model="res.arba.activity">
+            <field name="name">ACT. DESARROLLAS EN AREAS COMER. NO CONV - Mensual- Percepcion</field>
+            <field name="code">29</field>
+            <field name="type">perception</field>
+            <field name="period">monthly</field>
+        </record>
+    </data>
+</odoo>

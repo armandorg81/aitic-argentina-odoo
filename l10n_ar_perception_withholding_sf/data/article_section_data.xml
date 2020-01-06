@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="jurisdiction_903" model="jurisdiction">
+            <field name="code">903</field>
+            <field name="name">CATAMARCA</field>
+        </record>
+        <record id="jurisdiction_904" model="jurisdiction">
+            <field name="code">904</field>
+            <field name="name">CORDOBA</field>
+            <field name="perception_design">n_2</field>
+            <field name="withholding_design">n_2</field>
+        </record>
+        <record id="jurisdiction_905" model="jurisdiction">
+            <field name="code">905</field>
+            <field name="name">CORRIENTES</field>
+        </record>
+        <record id="jurisdiction_906" model="jurisdiction">
+            <field name="code">906</field>
+            <field name="name">CHACO</field>
+        </record>
+        <record id="jurisdiction_907" model="jurisdiction">
+            <field name="code">907</field>
+            <field name="name">CHUBUT</field>
+        </record>
+        <record id="jurisdiction_909" model="jurisdiction">
+            <field name="code">909</field>
+            <field name="name">FORMOSA</field>
+        </record>
+        <record id="jurisdiction_910" model="jurisdiction">
+            <field name="code">910</field>
+            <field name="name">JUJUY</field>
+        </record>
+        <record id="jurisdiction_911" model="jurisdiction">
+            <field name="code">911</field>
+            <field name="name">LA PAMPA</field>
+        </record>
+        <record id="jurisdiction_912" model="jurisdiction">
+            <field name="code">912</field>
+            <field name="name">LA RIOJA</field>
+        </record>
+        <record id="jurisdiction_914" model="jurisdiction">
+            <field name="code">914</field>
+            <field name="name">MISIONES</field>
+        </record>
+        <record id="jurisdiction_915" model="jurisdiction">
+            <field name="code">915</field>
+            <field name="name">NEUQUEN</field>
+        </record>
+        <record id="jurisdiction_916" model="jurisdiction">
+            <field name="code">916</field>
+            <field name="name">RIO NEGRO</field>
+        </record>
+        <record id="jurisdiction_917" model="jurisdiction">
+            <field name="code">917</field>
+            <field name="name">SALTA</field>
+        </record>
+        <record id="jurisdiction_918" model="jurisdiction">
+            <field name="code">918</field>
+            <field name="name">SAN JUAN</field>
+        </record>
+        <record id="jurisdiction_919" model="jurisdiction">
+            <field name="code">919</field>
+            <field name="name">SAN LUIS</field>
+        </record>
+        <record id="jurisdiction_920" model="jurisdiction">
+            <field name="code">920</field>
+            <field name="name">SANTA CRUZ</field>
+        </record>
+        <record id="jurisdiction_921" model="jurisdiction">
+            <field name="code">921</field>
+            <field name="name">SANTA FE</field>
+        </record>
+        <record id="jurisdiction_922" model="jurisdiction">
+            <field name="code">922</field>
+            <field name="name">SANTIAGO DEL ESTERO</field>
+        </record>
+        <record id="jurisdiction_923" model="jurisdiction">
+            <field name="code">923</field>
+            <field name="name">TIERRA DEL FUEGO</field>
+        </record>
+
+        <record id="article_section_0101" model="article.section">
+            <field name="code">101</field>
+            <field name="name">Carácter Privado</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_903"/>
+        </record>
+        <record id="article_section_0102" model="article.section">
+            <field name="code">102</field>
+            <field name="name">Tarjetas de Crédito</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_903"/>
+        </record>
+        <record id="article_section_0103" model="article.section">
+            <field name="code">103</field>
+            <field name="name">Sector Minero</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_903"/>
+        </record>
+        <record id="article_section_0201" model="article.section">
+            <field name="code">201</field>
+            <field name="name">General</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_903"/>
+        </record>
+        <record id="article_section_4001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Operaciones sujetas al padrón general - Art. 180 Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4003" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Art. 180 Dto. No 1205/15 inc. a): Operaciones sujetas a una alícuota inferior a la general</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Régimen de Retención Liquidaciones o Rendiciones periódicas correspondientes a Tarjetas de Crédito, Compras y/o Pagos - Art. 7 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Locación de inmuebles - Art. 180 inc. c) Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">ntermediación a nombre propio y por cuenta de terceros - Art. 180 inc. d) Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Comisiones - Art. 180 inc. e) Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Contrataciones de obras y/o servicios realizadas por el Estado con personas físicas - Art. 180 Dto. No 1205/15 inc. f)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Comercio mayorista de tabaco - Art. 4 Res. SIP No 1/19 inc. a)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Comercio minorista de tabaco - Art. 4 Res. SIP No 1/19 inc. a)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Compañía de seguros y reaseguros - Art. 4 Res. SIP No 1/19 inc. b)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Compañía capitalización y ahorro y de ahorro y préstamo con excepción de las Sociedades de ahorro y préstamo para la vivienda y otros inmuebles - Art. 4 Res. SIP No 1/19 inc. c)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4012" model="article.section">
+            <field name="code">012</field>
+            <field name="name">Sociedades de ahorro y préstamo para fines determinados y operaciones de ventas de vehículos automotores a través del sistema de ahorro previo o similares - Art. 4 Res. SIP No 1/19 inc. d)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4013" model="article.section">
+            <field name="code">013</field>
+            <field name="name">Compra venta de divisas y bonos cuando los mismos circulen con poder cancelatorio - Art. 4 Res. SIP No 1/19 inc. e)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4014" model="article.section">
+            <field name="code">014</field>
+            <field name="name">Agencia de publicidad - Art. 4 Res. SIP No 1/19 inc. f)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4015" model="article.section">
+            <field name="code">015</field>
+            <field name="name">Agencia de turismo - Art. 4 Res. SIP No 1/19 inc. g)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4016" model="article.section">
+            <field name="code">016</field>
+            <field name="name">Recaudación Municipalidades de la Provincia de Córdoba servicio transporte urbano de pasajeros - Art. 214 Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4017" model="article.section">
+            <field name="code">017</field>
+            <field name="name">Recaudación por operaciones comercio electrónico - Art. 218 Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4018" model="article.section">
+            <field name="code">018</field>
+            <field name="name">Retención por medio de pago - Art. 10 Res. SIP No 1/19 inc. b)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4019" model="article.section">
+            <field name="code">019</field>
+            <field name="name">Retención por medio de cobro - Art. 12 Res. SIP No 1/19 inc. b)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4020" model="article.section">
+            <field name="code">020</field>
+            <field name="name">Lotería de la Provincia de Córdoba - Art. 207 Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4021" model="article.section">
+            <field name="code">021</field>
+            <field name="name">Sujetos con no pasibles o no alcanzados - Artículos 473 (7) y 473 (11) de la RN No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4022" model="article.section">
+            <field name="code">022</field>
+            <field name="name">Productor de Seguros, única actividad - Comercialización de billetes de lotería, única actividad</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4023" model="article.section">
+            <field name="code">023</field>
+            <field name="name">Retenciones depositadas por operaciones no efectuadas – Art. 449 inc d) RN No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4024" model="article.section">
+            <field name="code">024</field>
+            <field name="name">Retenciones realizadas a intermediarios - Art. 190 Dto. No 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4025" model="article.section">
+            <field name="code">025</field>
+            <field name="name">Retención por compra de combustibles líquidos y derivados - Art. 14 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4026" model="article.section">
+            <field name="code">026</field>
+            <field name="name">Retención por la comercialización de automotores nuevos (0 KM) - Art. 18 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4027" model="article.section">
+            <field name="code">027</field>
+            <field name="name">Retenciones por servicios de suscripción online, intermediación en la prestación de servicios, juegos y/o apuestas online - Art. 177 CT. 3° párrafo</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4028" model="article.section">
+            <field name="code">028</field>
+            <field name="name">Operaciones sujetas a una alícuota solicitada por trámite - Art. 3 Res. SIP No 1/19 inc. a)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4029" model="article.section">
+            <field name="code">029</field>
+            <field name="name">Retenciones a regímenes especiales del Convenio Multilateral - Art. 5 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4030" model="article.section">
+            <field name="code">030</field>
+            <field name="name">Retenciones efectuadas por intermediarios por cuenta y orden de un agente - Art. 6 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4031" model="article.section">
+            <field name="code">031</field>
+            <field name="name">Retenciones a productores e intermediarios de seguro - Art. 9 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4032" model="article.section">
+            <field name="code">032</field>
+            <field name="name">Sujetos con no pasibles o no alcanzados - Artículos 473 (3) y 473 (4) de la RN No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4033" model="article.section">
+            <field name="code">033</field>
+            <field name="name">Contribuyentes a los cuales se les aplicó alícuota agravada con resolución favorable de la solicitud presentada por el apartado 3) del Art. 473 (3) RN No 1/2017</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4034" model="article.section">
+            <field name="code">034</field>
+            <field name="name">Facturas de Crédito Electrónicas MiPyMES - Art. 42 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Sector A - Industria Automotriz - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Sector A - Industria Automotriz - Comercialización de vehículos automotores, motocicletas y ciclomotores producidos en el Mercosur (Art. 201 Dto. No 1205/15 y modificatorios)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Sector B - Bebidas, embotelladoras de gaseosas y cervezas - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Sector C - Combustibles - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Sector C - Combustibles - Expendio de gasoil (Art. 201 Dto. No 1205/15 y modificatorios)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Sector D - Construcción - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Sector E - Industria del neumático - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Sector F - Laboratorios- Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Sector G - Artículos para el hogar, de electrónica y similares- Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Sector H - Maquinarias - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Sector I - Pinturerías - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4012" model="article.section">
+            <field name="code">012</field>
+            <field name="name">Sector J - Papeleras y librerías - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4013" model="article.section">
+            <field name="code">013</field>
+            <field name="name">Sector K - Artículos de limpieza y perfumerías - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4014" model="article.section">
+            <field name="code">014</field>
+            <field name="name">Sector L - Productos alimentarios - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4015" model="article.section">
+            <field name="code">015</field>
+            <field name="name">Sector M - Comercios mayoristas - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4016" model="article.section">
+            <field name="code">016</field>
+            <field name="name">Sector N- Tabacaleras - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4017" model="article.section">
+            <field name="code">017</field>
+            <field name="name">Sector O - Textiles e indumentarias - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4018" model="article.section">
+            <field name="code">018</field>
+            <field name="name">Sector P - Servicios públicos - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4019" model="article.section">
+            <field name="code">019</field>
+            <field name="name">Sector Q - Colchonerías - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4020" model="article.section">
+            <field name="code">020</field>
+            <field name="name">Sector R - Agroquímicos- Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4021" model="article.section">
+            <field name="code">021</field>
+            <field name="name">Sector S - Servicios inmobiliarios y locación de inmuebles - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4022" model="article.section">
+            <field name="code">022</field>
+            <field name="name">Sector T - Vidrios, cristales y similares - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4023" model="article.section">
+            <field name="code">023</field>
+            <field name="name">Sector U – Franquicias - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4024" model="article.section">
+            <field name="code">024</field>
+            <field name="name">Sector V - Intermediarios que compren bienes a nombre propio y por cuenta de terceros - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4025" model="article.section">
+            <field name="code">025</field>
+            <field name="name">Sector W - Venta directa - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4026" model="article.section">
+            <field name="code">026</field>
+            <field name="name">Sector X - Áreas comerciales no convencionales - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4027" model="article.section">
+            <field name="code">027</field>
+            <field name="name">Sector Y - Autopartistas y GNC - Art. 19 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4028" model="article.section">
+            <field name="code">028</field>
+            <field name="name">Faenamiento o Matanza de animales - Art. 202 Dto.1205/15</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4029" model="article.section">
+            <field name="code">029</field>
+            <field name="name">Operaciones con contribuyentes locales de otras provincias – extraña jurisdicción -</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4030" model="article.section">
+            <field name="code">030</field>
+            <field name="name">Operaciones de convenio multilateral sin jurisdicción Córdoba dada de alta – extraña jurisdicción -</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4031" model="article.section">
+            <field name="code">031</field>
+            <field name="name">Lotería de la Provincia de Córdoba - Art. 207 Dto. 1205/15 y modificatorios.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4032" model="article.section">
+            <field name="code">032</field>
+            <field name="name">Intermediarios que compren bienes a nombre propio y por cuenta de terceros - Art. 205 Dto. 1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4033" model="article.section">
+            <field name="code">033</field>
+            <field name="name">Sector Z - Sector Telefonía, Internet y TV por cable o satelital - Art. 201 Dto.1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4034" model="article.section">
+            <field name="code">034</field>
+            <field name="name">Beneficiarios del exterior - operaciones por servicios digitales – Dto. 775/2018</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4035" model="article.section">
+            <field name="code">035</field>
+            <field name="name">Sector A - Industria Automotriz - Comercialización de vehículos 0 KM - Art. 35 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4036" model="article.section">
+            <field name="code">036</field>
+            <field name="name">Sector P - Servicios públicos - Art. 26 párrafo 4to Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4037" model="article.section">
+            <field name="code">037</field>
+            <field name="name">Facturas de Crédito Electrónicas MiPyMES - Art. 42 Res. SIP No 1/19</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4038" model="article.section">
+            <field name="code">038</field>
+            <field name="name">Percepciones efectuadas por intermediarios por cuenta y orden de un agente - Art. 193 último párrado Dto.1205/15 y modificatorios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_4039" model="article.section">
+            <field name="code">039</field>
+            <field name="name">Contribuyentes a los cuales se les aplicó alícuota agravada con resolución favorable de la solicitud presentada por el apartado 3) del Art. 473 (3) RN No 1/2017</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_904"/>
+        </record>
+        <record id="article_section_5001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Ag. Retención</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_905"/>
+        </record>
+        <record id="article_section_5101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Ag. Percepción</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_905"/>
+        </record>
+        <record id="article_section_6001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Com. Pn. Primaria otra jurisdicción efectuada por acopiador y/o terceros</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Pagos a Laboratorios o Proveed. de prod. medicinales de Conv. Multilateral</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Com. Prod. Primaria de otra jurisdicción efectuadas por el productor</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Com. Minorista comb. líquidos y derivados del petróleo y gas natural</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Comercialización mayorista y minorista de medicamentos de uso humano</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Comercialización Prim. Primaria de origen provincial por acopiadores</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Contribuyentes inscriptos en Convenio multilatera</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Pagos a comercios adheridos a sistemas de tarjetas de créditos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Construcción de Inmuebles, excepto viviendas</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Honorarios profesionales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Proveed. mayoristas de bienes en general salvo tratamiento específico</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6012" model="article.section">
+            <field name="code">012</field>
+            <field name="name">Sujetos pasibles de retención que emitan facturas tipo “A”</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6013" model="article.section">
+            <field name="code">013</field>
+            <field name="name">Pagos a proveedores de bienes y servicios al consumo final</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6014" model="article.section">
+            <field name="code">014</field>
+            <field name="name">Servicios de Fletes</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6015" model="article.section">
+            <field name="code">015</field>
+            <field name="name">Otros pagos sin tratamiento específico</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6016" model="article.section">
+            <field name="code">016</field>
+            <field name="name">Sujetos pasibles de retención que emitan facturas tipo B y C</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6017" model="article.section">
+            <field name="code">017</field>
+            <field name="name">Agencias de publicidad</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6018" model="article.section">
+            <field name="code">018</field>
+            <field name="name">Entidades financieras de la Ley 21526</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6019" model="article.section">
+            <field name="code">019</field>
+            <field name="name">Productores de Seguros</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6020" model="article.section">
+            <field name="code">020</field>
+            <field name="name">Comisionistas e intermediarios en general</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6021" model="article.section">
+            <field name="code">021</field>
+            <field name="name">Compañías de Seguros</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6022" model="article.section">
+            <field name="code">022</field>
+            <field name="name">Cosecha mecánica</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6023" model="article.section">
+            <field name="code">023</field>
+            <field name="name">Decreto 2042</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6024" model="article.section">
+            <field name="code">024</field>
+            <field name="name">Flete Traslado de Producción Primaria</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6025" model="article.section">
+            <field name="code">025</field>
+            <field name="name">Comercialización Pn. Primaria efectuada por propio productor</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6026" model="article.section">
+            <field name="code">026</field>
+            <field name="name">Comercialización Pn. Primaria Productor de Chaco, Convenio sin sede Chaco</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6027" model="article.section">
+            <field name="code">027</field>
+            <field name="name">Retenciones Juegos de Azar</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6028" model="article.section">
+            <field name="code">028</field>
+            <field name="name">Pagos a comercios adheridos a sistemas de tarjetas de créditos - promoción tasa 0%</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Venta en general salvo las previstas de manera específica</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6102" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Venta a contribuyentes de Convenio Multilateral</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6103" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Venta a distribuidores de productos lácteos y fiambres</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6104" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Venta de combustibles líquidos y lubricantes</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6105" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Venta de pan y carne</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6106" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Venta de medicamentos de uso humano a farmacias</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6107" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Venta de cigarrillos y tabacos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6108" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Venta mayorista de agroquímicos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6109" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Venta de medicamentos de uso humano a Droguerías y mayoristas</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6110" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Venta a sujetos no inscriptos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_6111" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Venta de bebidas alcohólicas y bebidas energizantes no alcohólicas</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_906"/>
+        </record>
+        <record id="article_section_7001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen General del CM - Artículo 2</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Régimen Especial del CM - Artículo 6</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Régimen Especial del CM - Artículo 7</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Régimen Especial del CM - Artículo 8</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Régimen Especial del CM - Artículo 9</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Régimen Especial del CM - Artículo 10</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Régimen Especial del CM - Artículo 11</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Régimen Especial del CM - Artículo 12</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Régimen Especial del CM - Artículo 13</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_7100" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Percep. Imp. IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_907"/>
+        </record>
+        <record id="article_section_9300" model="article.section">
+            <field name="code">300</field>
+            <field name="name">Retenciones IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_909"/>
+        </record>
+        <record id="article_section_9400" model="article.section">
+            <field name="code">400</field>
+            <field name="name">Percepciones IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_909"/>
+        </record>
+        <record id="article_section_10001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen de Retención Impuesto sobre los Ingresos Brutos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_910"/>
+        </record>
+        <record id="article_section_10100" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen de Percepción Impuesto sobre los Ingresos Brutos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_910"/>
+        </record>
+        <record id="article_section_10101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen de Retención Impuesto sobre los Ingresos Brutos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_910"/>
+        </record>
+        <record id="article_section_11001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Bienes y Servicios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Honorarios y Prestaciones</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Tarjetas de Compra, Debito y Similares</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Juegos de Azar</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Fletes</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Compañías de Seguro</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Empresas Comerciales y Prestadoras de Servicios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Anticipo Semovientes Municipalidades y Comisiones de Fomento</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Anticipo Cereales u Oleaginosas Municipalidades y Comisiones de Fomento</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Producción Primaria-Semovientes-Productos Apícolas</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11012" model="article.section">
+            <field name="code">012</field>
+            <field name="name">Producción Primaria-Cereales, Oleaginosas y Productos Frutihortícolas</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11013" model="article.section">
+            <field name="code">012</field>
+            <field name="name">Anticipo Cereales u Oleaginosas Puestos Camineros y Comisarías Departamentales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Percepciones</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11014" model="article.section">
+            <field name="code">014</field>
+            <field name="name">Percepciones Productos Alimenticios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11015" model="article.section">
+            <field name="code">015</field>
+            <field name="name">Anticipo sobre Productos Alimenticios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_11016" model="article.section">
+            <field name="code">016</field>
+            <field name="name">Percepciones Remates Ferias</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_911"/>
+        </record>
+        <record id="article_section_12001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Retenc. Imp. IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_912"/>
+        </record>
+        <record id="article_section_12100" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Percep. Imp. IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_912"/>
+        </record>
+        <record id="article_section_14000" model="article.section">
+            <field name="code">000</field>
+            <field name="name">Retenc. Imp. IIBB a acopiadores de productores primarios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Retenc Imp IIBB por Compra raleo</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Retenc Imp IIBB por Organismos Públicos Provinciales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Retenc Imp IIBB a comerciante en liquidación de tarjeta de crédito</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Retenc Imp IIBB por flete de productos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14013" model="article.section">
+            <field name="code">013</field>
+            <field name="name">Retenc Imp IIBB comerciantes mayoristas de interés fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14023" model="article.section">
+            <field name="code">023</field>
+            <field name="name">Retenc Imp IIBB en la intermediación de cargas generales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14033" model="article.section">
+            <field name="code">033</field>
+            <field name="name">Retenc Imp IIBB Molinos, plantas de est, por compra yerba canchada</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14034" model="article.section">
+            <field name="code">034</field>
+            <field name="name">Retenc Imp IIBB (fideicomiso)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14038" model="article.section">
+            <field name="code">038</field>
+            <field name="name">Retenc Imp IIBB Honorarios Judiciales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14039" model="article.section">
+            <field name="code">039</field>
+            <field name="name">Retenc Imp IIBB S/Activ de Prestac de Serv Agric, Pecuario, Silvicult, Extrac de Madera y Serv Conexos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14201" model="article.section">
+            <field name="code">0201</field>
+            <field name="name">Regimen General</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14202" model="article.section">
+            <field name="code">0202</field>
+            <field name="name">Regimen de Retencion para productos y/o servicios agropecuarios, ganaderos, forestales y minerales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14203" model="article.section">
+            <field name="code">0203</field>
+            <field name="name">Regimen de compra de yerba mate</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14204" model="article.section">
+            <field name="code">0204</field>
+            <field name="name">Regimen agentes de pago</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14205" model="article.section">
+            <field name="code">0205</field>
+            <field name="name">Regimen organismos publicos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14206" model="article.section">
+            <field name="code">0206</field>
+            <field name="name">Regimen de recaudacion tarjetas de credito.</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14207" model="article.section">
+            <field name="code">0207</field>
+            <field name="name">Regimen escribanos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14208" model="article.section">
+            <field name="code">0208</field>
+            <field name="name">Regimen transporte de cargas y pasajeros</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14210" model="article.section">
+            <field name="code">0210</field>
+            <field name="name">Regimen honorarios judiciales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14211" model="article.section">
+            <field name="code">0211</field>
+            <field name="name">Regimen de franquicias</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14212" model="article.section">
+            <field name="code">0212</field>
+            <field name="name">Regimen de honorarios profesionales y locaciones de servicios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14213" model="article.section">
+            <field name="code">0213</field>
+            <field name="name">Retención en redes de cobranza y pagos electronicos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Percep Imp IIBB compra combustibles líquidos der petróleo</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14014" model="article.section">
+            <field name="code">014</field>
+            <field name="name">Percep Imp IIBB compra mayoristas</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14022" model="article.section">
+            <field name="code">022</field>
+            <field name="name">Percep Imp IIBB compra de farmacias</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14028" model="article.section">
+            <field name="code">028</field>
+            <field name="name">Percep Imp IIBB sobre mera compra</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14037" model="article.section">
+            <field name="code">037</field>
+            <field name="name">Percep Imp IIBB molinos, secaderos comisionistas y mandatarios</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="active">False</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14101" model="article.section">
+            <field name="code">101</field>
+            <field name="name">Regimen General</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14102" model="article.section">
+            <field name="code">102</field>
+            <field name="name">Regimen establecimientos procesadores de productos animales o vegetales o minerales</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14103" model="article.section">
+            <field name="code">103</field>
+            <field name="name">Regimen de mera compra</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14104" model="article.section">
+            <field name="code">104</field>
+            <field name="name">Regimen combustibles</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14105" model="article.section">
+            <field name="code">105</field>
+            <field name="name">Regimen comercio electronico</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14106" model="article.section">
+            <field name="code">106</field>
+            <field name="name">Regimen de venta directa</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_14107" model="article.section">
+            <field name="code">107</field>
+            <field name="name">Regimen de franquicias</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_914"/>
+        </record>
+        <record id="article_section_15030" model="article.section">
+            <field name="code">030</field>
+            <field name="name">Retenciones IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_915"/>
+        </record>
+        <record id="article_section_15140" model="article.section">
+            <field name="code">040</field>
+            <field name="name">Percepciones IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_915"/>
+        </record>
+        <record id="article_section_16010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">ANEXO I - Empresas públicas, cooperativas, asociaciones, etc.</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16020" model="article.section">
+            <field name="code">020</field>
+            <field name="name">ANEXO II - Empresas comerciales y prestadoras de servicios</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16030" model="article.section">
+            <field name="code">030</field>
+            <field name="name">ANEXO III - Honorarios y prestaciones</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16040" model="article.section">
+            <field name="code">040</field>
+            <field name="name">ANEXO IV - Tarjetas de compra y de crédito</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16050" model="article.section">
+            <field name="code">050</field>
+            <field name="name">ANEXO V - Juegos de azaro</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16060" model="article.section">
+            <field name="code">060</field>
+            <field name="name">ANEXO VI – Fletes</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16080" model="article.section">
+            <field name="code">080</field>
+            <field name="name">ANEXO VIII - Compañias de seguros</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16100" model="article.section">
+            <field name="code">100</field>
+            <field name="name">ANEXO IX - COMERCIO ELECTRONICO</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16070" model="article.section">
+            <field name="code">070</field>
+            <field name="name">ANEXO VII – Percepciones</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_16090" model="article.section">
+            <field name="code">090</field>
+            <field name="name">ANEXO IX - PERCEPCIONES COMERCIO ELECTRONICO</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_916"/>
+        </record>
+        <record id="article_section_17001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">A - Sin Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">B - Bajo Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">C - Medio Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">D - Alto Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Reg. Gral. Entidades Financieras y Tarjetas de Crédito</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Reg. Gral. R.G. 08/2003 y/o modificatorias, y/o las que la reemplacen y/o creen</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Reg. Especial Servicios Digitales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Reg. Especial Comercio Electrónico</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">A - Sin Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17102" model="article.section">
+            <field name="code">002</field>
+            <field name="name">B - Bajo Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17103" model="article.section">
+            <field name="code">003</field>
+            <field name="name">C - Medio Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17104" model="article.section">
+            <field name="code">004</field>
+            <field name="name">D - Alto Riesgo Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17105" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Reg. Gral. R.G. 06/2005 y/o modificatorias, y/o las que la reemplacen y/o creen</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_17106" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Reg. General ANEXO VII Venta Directa</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_917"/>
+        </record>
+        <record id="article_section_18001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen de Retención</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_918"/>
+        </record>
+        <record id="article_section_18002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Régimen de Percepción</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_918"/>
+        </record>
+        <record id="article_section_19100" model="article.section">
+            <field name="code">100</field>
+            <field name="name">REGIMEN GENERAL DE RETENCION DEL IMPUESTO SOBRE LOS INGRESOS BRUTOS</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19101" model="article.section">
+            <field name="code">101</field>
+            <field name="name">Ret. IIBB Actividades con Alicuota Gral.</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19102" model="article.section">
+            <field name="code">102</field>
+            <field name="name">Ret. IIBB Act. De Construccion</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19103" model="article.section">
+            <field name="code">103</field>
+            <field name="name">Ret. IIBB Oper. Individualizadas en el inc. c), d), e), f) y g) art. 2°</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19104" model="article.section">
+            <field name="code">104</field>
+            <field name="name">Ret. IIBB con Agentes incluidos en el Anexo IV</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19106" model="article.section">
+            <field name="code">106</field>
+            <field name="name">Ret. IIBB Oper. Individualizadas en el inc. o) art. 2°</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19200" model="article.section">
+            <field name="code">200</field>
+            <field name="name">REGIMEN GENERAL DE PERCEPCION DEL IMPUESTO SOBRE LOS INGRESOS BRUTOS</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19201" model="article.section">
+            <field name="code">201</field>
+            <field name="name">Perc. IIBB Actividades con Alicuota Gral.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19202" model="article.section">
+            <field name="code">202</field>
+            <field name="name">Perc. IIBB Comerc. Mayorista de Autos 0 km</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19203" model="article.section">
+            <field name="code">203</field>
+            <field name="name">Perc. IIBB Comerc. Mayorista de Autos 0 km - Rebaja de Alicuota</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19204" model="article.section">
+            <field name="code">204</field>
+            <field name="name">Perc. IIBB Provisión de Servicio de Energía Eléctrica</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19205" model="article.section">
+            <field name="code">205</field>
+            <field name="name">Perc. IIBB Comerci. de Prod. Alim. en Gral. a Distrib., Mayorista o Interm.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19206" model="article.section">
+            <field name="code">206</field>
+            <field name="name">Perc. IIBB Comerc. de Prod. Alim. en Gral. a Sujetos en Etapa Minorista</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19207" model="article.section">
+            <field name="code">207</field>
+            <field name="name">Perc. IIBB Comerc. de Cigarrillos, Cigarros y Tabacos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19208" model="article.section">
+            <field name="code">208</field>
+            <field name="name">Perc. IIBB Comerc. Mayor. de Medic. Utiliz. en Medicina Humana a Distrib., etc.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19209" model="article.section">
+            <field name="code">209</field>
+            <field name="name">Perc. IIBB Comerc. Mayor. de Medic. Utiliz. en Medic. Humana a Min. o de C.M.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19210" model="article.section">
+            <field name="code">210</field>
+            <field name="name">Perc. IIBB Comerc. Mayor. y Min. de Combustibles Líquidos</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19211" model="article.section">
+            <field name="code">211</field>
+            <field name="name">Perc. IIBB Comerc. Mayor. de Agroq., y/o Bs. Simil. Afect. al Sector Primario</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19212" model="article.section">
+            <field name="code">212</field>
+            <field name="name">Perc. IIBB que los Franquiciantes Percibirán a los franquiciados</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19213" model="article.section">
+            <field name="code">213</field>
+            <field name="name">Perc. IIBB de Empr. de Tel. Fija y/o Móvil a los Mayor. en la Vta. de Tarj. o Simil.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_19214" model="article.section">
+            <field name="code">214</field>
+            <field name="name">Perc. IIBB Comerc. Mayor. de Áridos, cal, y demás Materiales p/la Constr.</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_919"/>
+        </record>
+        <record id="article_section_20001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Retenciones Régimen General Contribuyentes Directos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_920"/>
+        </record>
+        <record id="article_section_20002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Retenciones Régimen General Contrib. Conv. Multilateral</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_920"/>
+        </record>
+        <record id="article_section_20003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Retenciones Régimen Especial Contrib. Conv. Multilateral</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_920"/>
+        </record>
+        <record id="article_section_20004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Percepción Régimen General</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_920"/>
+        </record>
+        <record id="article_section_21501" model="article.section">
+            <field name="code">501</field>
+            <field name="name">RG 15/97 - art. 1 - inciso a)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21502" model="article.section">
+            <field name="code">502</field>
+            <field name="name">RG 15/97 - art. 1 - inciso b)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21503" model="article.section">
+            <field name="code">503</field>
+            <field name="name">RG 15/97 - art. 1 - inciso c)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21504" model="article.section">
+            <field name="code">504</field>
+            <field name="name">RG 15/97 - art. 1 - inciso d)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21505" model="article.section">
+            <field name="code">505</field>
+            <field name="name">RG 15/97 - art. 1 - inciso e)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21506" model="article.section">
+            <field name="code">506</field>
+            <field name="name">RG 15/97 - art. 1 - inciso f)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21507" model="article.section">
+            <field name="code">507</field>
+            <field name="name">RG 15/97 - art. 1 - inciso g)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21508" model="article.section">
+            <field name="code">508</field>
+            <field name="name">RG 15/97 - art. 1 - inciso h)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21509" model="article.section">
+            <field name="code">509</field>
+            <field name="name">RG 15/97 - art. 1 - inciso i)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21510" model="article.section">
+            <field name="code">510</field>
+            <field name="name">RG 15/97 - art. 1 - inciso j)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21511" model="article.section">
+            <field name="code">511</field>
+            <field name="name">RG 15/97 - art. 1 - inciso k)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21512" model="article.section">
+            <field name="code">512</field>
+            <field name="name">RG 15/97 - art. 1 - inciso l)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21513" model="article.section">
+            <field name="code">513</field>
+            <field name="name">RG 15/97 - art. 1 - inciso ll)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21514" model="article.section">
+            <field name="code">514</field>
+            <field name="name">RG 15/97 - art. 1 - inciso m)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21515" model="article.section">
+            <field name="code">515</field>
+            <field name="name">RG 15/97 - art. 2</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21516" model="article.section">
+            <field name="code">516</field>
+            <field name="name">RG 15/97 - art. 1 - inciso n)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21550" model="article.section">
+            <field name="code">550</field>
+            <field name="name">RG 15/97 - art. 10 - inciso a)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21551" model="article.section">
+            <field name="code">551</field>
+            <field name="name">RG 15/97 - art. 10 - inciso b)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21552" model="article.section">
+            <field name="code">552</field>
+            <field name="name">RG 15/97 - art. 10 - inciso c)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21553" model="article.section">
+            <field name="code">553</field>
+            <field name="name">RG 15/97 - art. 10 - inciso d)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21554" model="article.section">
+            <field name="code">554</field>
+            <field name="name">RG 15/97 - art. 10 - inciso e)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21555" model="article.section">
+            <field name="code">555</field>
+            <field name="name">RG 15/97 - art. 10 - inciso f)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21556" model="article.section">
+            <field name="code">556</field>
+            <field name="name">RG 15/97 - art. 10 - inciso g)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21557" model="article.section">
+            <field name="code">557</field>
+            <field name="name">RG 15/97 - art. 10 - inciso h)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21558" model="article.section">
+            <field name="code">558</field>
+            <field name="name">RG 15/97 - art. 10 - inciso i)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21559" model="article.section">
+            <field name="code">559</field>
+            <field name="name">RG 15/97 - art. 10 - inciso j)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21560" model="article.section">
+            <field name="code">560</field>
+            <field name="name">RG 15/97 - art. 10 - inciso l)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21561" model="article.section">
+            <field name="code">561</field>
+            <field name="name">RG 15/97 - art. 10 inciso m)</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21600" model="article.section">
+            <field name="code">600</field>
+            <field name="name">RG 15/97 - art. 11</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_21650" model="article.section">
+            <field name="code">650</field>
+            <field name="name">RG 19/14 - Art. 177- inciso h) del Código Fiscal (t.o.2014 y modif) Mera Compra</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_921"/>
+        </record>
+        <record id="article_section_22001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Retenciones Imp. IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_922"/>
+        </record>
+        <record id="article_section_22101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Percepciones Imp. IIBB</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_922"/>
+        </record>
+        <record id="article_section_23001" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Retenciones aplicadas a Contribuyentes del Regimen de Ingresos Brutos Locales</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23002" model="article.section">
+            <field name="code">002</field>
+            <field name="name">Retenciones aplicadas a Contribuyentes del Regimen de Convenio Multilateral</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23003" model="article.section">
+            <field name="code">003</field>
+            <field name="name">Retenciones aplicadas a Empresas Constructoras</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23004" model="article.section">
+            <field name="code">004</field>
+            <field name="name">Retenciones aplicadas a Agencias de Viaje y Turismo</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23005" model="article.section">
+            <field name="code">005</field>
+            <field name="name">Retenciones aplicadas a Pagos por suministro de combustible o derivados del petroleo</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23006" model="article.section">
+            <field name="code">006</field>
+            <field name="name">Retenciones aplicadas por las Tarjetas de Credito</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23007" model="article.section">
+            <field name="code">007</field>
+            <field name="name">Retenciones de Doble Alicuota por no presentar Certificado de Cumplimiento Fiscal</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23008" model="article.section">
+            <field name="code">008</field>
+            <field name="name">Retenciones aplicadas a Contribuyentes que poseen actividades del Regimen de Hidrocarburos</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23009" model="article.section">
+            <field name="code">009</field>
+            <field name="name">Retenciones FFSS Resol 91/14</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23010" model="article.section">
+            <field name="code">010</field>
+            <field name="name">Retenciones FOFISP Resol 20/16</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23011" model="article.section">
+            <field name="code">011</field>
+            <field name="name">Alícuota cero (0%)</field>
+            <field name="type">partner</field>
+            <field name="concept">withholding</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+        <record id="article_section_23101" model="article.section">
+            <field name="code">001</field>
+            <field name="name">Régimen de Percepciones</field>
+            <field name="type">partner</field>
+            <field name="concept">perception</field>
+            <field name="jurisdiction_id" ref="jurisdiction_923"/>
+        </record>
+
+        <!--<record id="article_section_0001c" model="article.section">-->
+            <!--<field name="code">001</field>-->
+            <!--<field name="name">Art.1 - inciso A - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0002c" model="article.section">-->
+            <!--<field name="code">002</field>-->
+            <!--<field name="name">Art.1 - inciso B - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0003c" model="article.section">-->
+            <!--<field name="code">003</field>-->
+            <!--<field name="name">Art.1 - inciso C - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0004c" model="article.section">-->
+            <!--<field name="code">004</field>-->
+            <!--<field name="name">Art.1 - inciso D pto.1 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0005c" model="article.section">-->
+            <!--<field name="code">005</field>-->
+            <!--<field name="name">Art.1 - inciso D pto.2 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0006c" model="article.section">-->
+            <!--<field name="code">006</field>-->
+            <!--<field name="name">Art.1 - inciso D pto.3 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0007c" model="article.section">-->
+            <!--<field name="code">007</field>-->
+            <!--<field name="name">Art.1 - inciso E - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0008c" model="article.section">-->
+            <!--<field name="code">008</field>-->
+            <!--<field name="name">Art.1 - inciso F - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0009c" model="article.section">-->
+            <!--<field name="code">009</field>-->
+            <!--<field name="name">Art.1 - inciso H - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0010c" model="article.section">-->
+            <!--<field name="code">010</field>-->
+            <!--<field name="name">Art.1 - inciso I - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0011c" model="article.section">-->
+            <!--<field name="code">011</field>-->
+            <!--<field name="name">Art.1 - inciso J - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0012c" model="article.section">-->
+            <!--<field name="code">012</field>-->
+            <!--<field name="name">Art.1 - inciso K - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0013c" model="article.section">-->
+            <!--<field name="code">013</field>-->
+            <!--<field name="name">Art.1 - inciso L - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0014c" model="article.section">-->
+            <!--<field name="code">014</field>-->
+            <!--<field name="name">Art.1 - inciso LL pto.1 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0015c" model="article.section">-->
+            <!--<field name="code">015</field>-->
+            <!--<field name="name">Art.1 - inciso LL pto.2 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0016c" model="article.section">-->
+            <!--<field name="code">016</field>-->
+            <!--<field name="name">Art.1 - inciso LL pto.3 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0017c" model="article.section">-->
+            <!--<field name="code">017</field>-->
+            <!--<field name="name">Art.1 - inciso LL pto.4 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0018c" model="article.section">-->
+            <!--<field name="code">018</field>-->
+            <!--<field name="name">Art.1 - inciso LL pto.5 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0019c" model="article.section">-->
+            <!--<field name="code">019</field>-->
+            <!--<field name="name">Art.1 - inciso M - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0034c" model="article.section">-->
+            <!--<field name="code">034</field>-->
+            <!--<field name="name">Art.1 - inciso N - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0020c" model="article.section">-->
+            <!--<field name="code">020</field>-->
+            <!--<field name="name">Art.2 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">withholding</field>-->
+        <!--</record>-->
+
+        <!--<record id="article_section_0021c" model="article.section">-->
+            <!--<field name="code">021</field>-->
+            <!--<field name="name">Art.10 - inciso A - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0022c" model="article.section">-->
+            <!--<field name="code">022</field>-->
+            <!--<field name="name">Art.10 - inciso B - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0023c" model="article.section">-->
+            <!--<field name="code">023</field>-->
+            <!--<field name="name">Art.10 - inciso D - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0024c" model="article.section">-->
+            <!--<field name="code">024</field>-->
+            <!--<field name="name">Art.10 - inciso E - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0025c" model="article.section">-->
+            <!--<field name="code">025</field>-->
+            <!--<field name="name">Art.10 - inciso F - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0026c" model="article.section">-->
+            <!--<field name="code">026</field>-->
+            <!--<field name="name">Art.10 - inciso G - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0027c" model="article.section">-->
+            <!--<field name="code">027</field>-->
+            <!--<field name="name">Art.10 - inciso H - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0028c" model="article.section">-->
+            <!--<field name="code">028</field>-->
+            <!--<field name="name">Art.10 - inciso I - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0029c" model="article.section">-->
+            <!--<field name="code">029</field>-->
+            <!--<field name="name">Art.10 - inciso J - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0030c" model="article.section">-->
+            <!--<field name="code">030</field>-->
+            <!--<field name="name">Art.11 - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0031c" model="article.section">-->
+            <!--<field name="code">031</field>-->
+            <!--<field name="name">Art.10 - inciso L - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0032c" model="article.section">-->
+            <!--<field name="code">032</field>-->
+            <!--<field name="name">Art.10 - inciso M - (Res. Gral. 15/97 y Modif.)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+        <!--<record id="article_section_0033c" model="article.section">-->
+            <!--<field name="code">033</field>-->
+            <!--<field name="name">Art.125 - inciso H – (Código Fiscal - mera compra)</field>-->
+            <!--<field name="type">company</field>-->
+            <!--<field name="concept">perception</field>-->
+        <!--</record>-->
+    </data>
+</odoo>

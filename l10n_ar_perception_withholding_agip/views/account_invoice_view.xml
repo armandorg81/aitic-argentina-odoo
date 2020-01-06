@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ag_perception_invoice_form" model="ir.ui.view">
+            <field name="name">l10n.ag.perception.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="l10n_ar_perception_withholding.l10n_ag_perception_invoice_form" />
+            <field name="arch" type="xml">
+                <field name="amount_perception_arba" position="after">
+                    <field name="amount_perception_agip" attrs="{'invisible': [('type','not in',['out_invoice', 'out_refund'])]}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

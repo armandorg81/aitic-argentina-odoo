@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Creating new PaperFormat -->
+        <record id="l10n_ar_invoice_paperformat" model="report.paperformat">
+            <field name="name">Formato Factura Aitic</field>
+            <field name="default" eval="False"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">10</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">10</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="paperformat_cxc_cxp" model="report.paperformat">
+            <field name="name">Papel Landscape A4</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Landscape</field> <!-- Portrait-->
+            <field name="margin_top">7</field>
+            <field name="margin_bottom">7</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report 
+            id="l10n_ar_account_invoices"
+            model="account.invoice"
+            string="Formato Factura"
+            report_type="qweb-pdf"
+            name="l10n_ar_report.l10n_ar_report_invoice"
+            file="l10n_ar_report.l10n_ar_report_invoice"
+            paperformat="l10n_ar_report.l10n_ar_invoice_paperformat"
+            attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"/>
+            
+        <report 
+            id="l10n_ar_account_payments_receipt"
+            model="account.payment"
+            string="Recibo de Pago"
+            report_type="qweb-pdf"
+            name="l10n_ar_report.report_payment_receipt"
+            file="l10n_ar_report.report_payment_receipt"
+            paperformat="l10n_ar_report.l10n_ar_invoice_paperformat"
+            attachment="('Recibo '+(object.name or '').replace('/','')+'.pdf')"/>
+            
+        <report 
+            id="l10n_ar_account_payment"
+            model="account.payment"
+            string="Comprobante de Pago"
+            report_type="qweb-pdf"
+            name="l10n_ar_report.l10n_ar_report_payment"
+            file="l10n_ar_report.l10n_ar_report_payment"
+            paperformat="l10n_ar_report.l10n_ar_invoice_paperformat"
+            attachment="((object.name or '').replace('/','')+'.pdf')"/>
+
+        <report
+            id="report_account_cxc_chq"
+            string="Resumen de Composicion de Saldos de Venta"
+            model="aux.report.account.cxc.chq"
+            report_type="qweb-html"
+            file="l10n_ar_report.report_account_cxc_check"
+            name="l10n_ar_report.report_account_cxc_check"
+            paperformat="l10n_ar_report.paperformat_cxc_cxp"
+            />
+
+        <report
+            id="report_account_cxp_chq"
+            string="Resumen de Composicion de Saldos de Compra"
+            model="aux.report.account.cxc.chq"
+            report_type="qweb-html"
+            file="l10n_ar_report.report_account_cxp_check"
+            name="l10n_ar_report.report_account_cxp_check"
+            paperformat="l10n_ar_report.paperformat_cxc_cxp"
+            />
+    </data>
+</odoo>

@@ -1,0 +1,475 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_perception_withholding_agip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-23 11:59+0000\n"
+"PO-Revision-Date: 2019-04-23 11:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_download
+msgid "<i class=\"fa fa-download\" style=\"padding: 0.25em;\" aria-hidden=\"true\" aria-label=\"Download\" title=\"Download\"/>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.page_bottom
+msgid "<strong>Percep. IIBB Capital Federal</strong>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.report_aliquot_withholding
+msgid "<strong>Régimen:    </strong><span>Padron general art12r421/16</span><br/>\n"
+"                    <strong>Jurisdicción:     </strong><span>CAPITAL FEDERAL</span><br/>"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.res_company_form_agip_config
+msgid "AGIP"
+msgstr "AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__calculate_pw_agip
+msgid "AGIP perception withholding agent"
+msgstr "Agente de retención, percepción AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_withholding__acceptance
+msgid "Acceptance"
+msgstr "Aceptación"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_agip.field_res_company__customer_perc_agip_account_id
+msgid "Account where the value of the AGIP perception will be reflected in the customer invoice."
+msgstr "Cuenta donde el valor de la percepción ARBA se reflejará en la factura del cliente."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__activity
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_aliquot_agip_wizard
+msgid "Aliquot AGIP Export"
+msgstr "Exportar alícuotas AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot__mark_aliq
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__mark_aliq
+msgid "Aliquot mark"
+msgstr "Marca de alícuota"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_download
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__cuit_taxpayer
+msgid "Cuit Taxpayer"
+msgstr "Cuit impuestos"
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/res_company.py:150
+#, python-format
+msgid "Debe especificar el directorio del archivo de alícuota AGIP a importar."
+msgstr "Debe especificar el directorio del archivo de alícuota AGIP a importar."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__mark_declared
+msgid "Declared withholding"
+msgstr "Declarar retenciones"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__directory
+msgid "Directory of the AGIP aliquot file to import"
+msgstr "Directorio del archivo de alícuota AGIP a importar"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.payment,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+msgid "Earnings"
+msgstr "Ganancias"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_partner__date_agip_to
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_users__date_agip_to
+msgid "End date exempt IIBB Capital Federal"
+msgstr "Fecha fin de exclusión IIBB Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_partner__exempt_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_users__exempt_agip
+msgid "Exempt Aliquot Capital Federal"
+msgstr "Exento de Alícuotas Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_agip.aliquot_agip_wizard_action
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_agip.aliquot_agip_wizard_menu
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_download
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_form
+msgid "Export Aliquot AGIP"
+msgstr "Exportar alícuotas AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.withholding,acceptance:0
+msgid "Express"
+msgstr "Expresa "
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_res_company
+msgid "Factura Electronica"
+msgstr "Factura Electronica"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_withholding__date_acceptance
+msgid "Express Acceptance date"
+msgstr "Fecha de Aceptación Expresa"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__from_date
+msgid "From"
+msgstr "Desde"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__date_from
+msgid "From Date"
+msgstr "Fecha desde"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot__mark_hs
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__mark_hs
+msgid "High subject mark"
+msgstr "Alta marca"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.payment,type_aliquot:0
+#: selection:account.tax,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+#: selection:res.aliquot,type:0
+msgid "IIBB Capital Federal"
+msgstr "IIBB Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.payment,type_aliquot:0
+#: selection:account.tax,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+#: selection:res.aliquot,type:0
+msgid "IIBB Prov. BS. AS."
+msgstr "IIBB Prov. BS. AS."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__is_data
+msgid "Is data"
+msgstr "Es dato"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__mark_declared
+msgid "Mark withholding as declared"
+msgstr "Marcar si se van a declarar las retenciones del periodo seleccionado"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_res_partner
+msgid "Partner registered turns"
+msgstr "Turnos de empresas registradas"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_payment_group
+msgid "Payment group"
+msgstr "Grupo de pago"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_invoice__amount_perception_agip
+msgid "Percep. IIBB Capital Federal"
+msgstr "Percep. IIBB Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/res_company.py:115
+#, python-format
+msgid "Perception AGIP "
+msgstr "Percepción AGIP "
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/res_partner.py:72
+#, python-format
+msgid "Perception AGIP %"
+msgstr "Percepción AGIP %"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__perception_aliquot
+msgid "Perception Aliquot"
+msgstr "Alícuota de percepción"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__perception_group
+msgid "Perception Group"
+msgstr "Grupo de percepción"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__code_perception
+msgid "Perception Standard Code"
+msgstr "Código de la norma de percepciones"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__customer_perc_agip_account_id
+msgid "Perception account  IIBB CABA"
+msgstr "Cuenta de percepción IIBB CABA"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.aliquot.agip.wizard,activity:0
+msgid "Perception credit notes"
+msgstr "Percepción en notas de crédito"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.aliquot.agip.wizard,activity:0
+msgid "Perception/withholding"
+msgstr "Percepción/retención"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_withholding__regime_credit
+msgid "Regime of Credit Invoice"
+msgstr "Régimen de Factura de Crédito"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_agip.action_account_withholding_agip_menu
+msgid "Retenciones IIBB Capital Federal"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_agip.action_account_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.view_form_account_withholding
+msgid "Retención IIBB Capital Federal"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.withholding,acceptance:0
+msgid "S/D"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_partner__date_agip_from
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_users__date_agip_from
+msgid "Start date exempt IIBB Capital Federal"
+msgstr "Fecha inicio de exclusión IIBB Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: selection:account.withholding,acceptance:0
+msgid "Tacit"
+msgstr "Tácita"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_agip.field_res_company__calculate_pw_agip
+msgid "The company is AGIP perception withholding agent"
+msgstr "La compañía es agente de retención, percepción AGIP."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_download
+msgid "There are no data in the period to export."
+msgstr "No hay datos en el período para exportar."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__to_date
+msgid "To"
+msgstr "Hasta"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__date_to
+msgid "To Date"
+msgstr "Fecha hasta"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__txt_binary
+msgid "Txt Binary"
+msgstr "Txt Binario"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_aliquot_agip_wizard__txt_filename
+msgid "Txt Filename"
+msgstr "Nombre Txt"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_tax__type_aliquot
+msgid "Type Aliquot"
+msgstr "Tipo alícuota"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot__type_ci
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__type_ci
+msgid "Type Contr Insc"
+msgstr "Tipo de contribuyente inscrito"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_payment__type_aliquot
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_withholding__type_aliquot
+msgid "Type aliquot"
+msgstr "Tipo alícuota"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.actions.server,name:l10n_ar_perception_withholding_agip.action_update_perception_withholding_agip
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_agip.menu_update_pw_agip
+msgid "Update AGIP Aliquot"
+msgstr "Actualizar alícuotas AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__date_update
+msgid "Update date"
+msgstr "Fecha de actualización"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_payment_group__amount_agip_withholding
+msgid "Withhol. IIBB  Capital Federal"
+msgstr "Ret. IIBB  Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_payment_group__withholding_agip_aliquot
+msgid "Withholding AGIP Aliquot"
+msgstr "Alícuota retención AGIP"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__withholding_aliquot
+msgid "Withholding Aliquot"
+msgstr "Alícuotas de retención"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_aliquot_agip__withholding_group
+msgid "Withholding Group"
+msgstr "Grupo de retención"
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/account_payment_group.py:87
+#, python-format
+msgid "Withholding IIBB Capital Federal"
+msgstr "Retención IIBB Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_account_withholding__withholding_agip_aliquot
+msgid "Withholding IIBB Capital Federal Aliquot"
+msgstr "Alícuota de retención Capital Federal"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__code_withholding
+msgid "Withholding Standard Code"
+msgstr "Código de la norma de retenciones"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_agip.field_res_company__supplier_wh_agip_journal_id
+msgid "Withholding journal IIBB CABA"
+msgstr "Diario de retención IIBB CABA"
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/account_payment_group.py:170
+#, python-format
+msgid "You cannot delete a payment with declared withholdings."
+msgstr "No puede eliminar pagos que tengan retenciones declaradas."
+
+#. module: l10n_ar_perception_withholding_agip
+#: code:addons/l10n_ar_perception_withholding_agip/models/account_payment_group.py:69
+#, python-format
+msgid "You must comfigurate in the company the withholding AGIP journal."
+msgstr "Debe configurar en la compañía el diario de retención AGIP."
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_account_withholding
+msgid "account.withholding"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model_terms:ir.ui.view,arch_db:l10n_ar_perception_withholding_agip.account_aliquot_agip_wizard_form
+msgid "or"
+msgstr "o"
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_res_aliquot
+msgid "res.aliquot"
+msgstr ""
+
+#. module: l10n_ar_perception_withholding_agip
+#: model:ir.model,name:l10n_ar_perception_withholding_agip.model_res_aliquot_agip
+msgid "res.aliquot.agip"
+msgstr ""
+

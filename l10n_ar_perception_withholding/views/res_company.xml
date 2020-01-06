@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="res_company_form_arba_config" model="ir.ui.view">
+            <field name="name">res.company.form.arba.config</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <!--<field name="vat" position="after">-->
+                    <!--<field name="arba_cit_key"/>-->
+                    <!--<field name="arba_env_type"/>-->
+                <!--</field>-->
+                <notebook position="inside">
+                    <page string="Data of aliquots" name="aliquot_accounts">
+                        <separator string="ARBA"/>
+                        <group name="account_arba" colspan="4">
+                            <group>
+                                <field name="calculate_pw_arba"/>
+                                <field name="directory_arba" attrs="{'invisible':['|',('calculate_pw_arba','=',False),('is_server','=',True)], 'required':[('calculate_pw_arba','=',True),('is_server','=',False)]}"/>
+
+                                <field name="arba_env_type" attrs="{'invisible':['|',('calculate_pw_arba','=',False),('is_server','=',False)], 'required':[('calculate_pw_arba','=',True),('is_server','=',True)]}"/>
+                                <field name="activity_ids" widget="many2many_tags"
+                                       attrs="{'invisible':['|',('calculate_pw_arba','=',False)], 'required':[('calculate_pw_arba','=',True)]}"/>
+                            </group>
+                            <group>
+                                <field name="is_server"/>
+                                <field name="arba_cit_key" attrs="{'invisible':['|',('calculate_pw_arba','=',False),('is_server','=',False)], 'required':[('calculate_pw_arba','=',True),('is_server','=',True)]}"/>
+                                <field name="customer_perc_arba_account_id" attrs="{'invisible':[('calculate_pw_arba','=',False)], 'required':[('calculate_pw_arba','=',True)]}"/>
+                                <!--<field name="supplier_wh_arba_account_id"/>-->
+                                <field name="supplier_wh_arba_journal_id" attrs="{'invisible':[('calculate_pw_arba','=',False)], 'required':[('calculate_pw_arba','=',True)]}"/>
+                                <field name="arba_crt"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+        <record id="action_update_perception_withholding_arba" model="ir.actions.server">
+            <field name="name">Update ARBA Aliquot</field>
+            <field name="condition">True</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_res_company"/>
+            <field name="state">code</field>
+            <field name="code">
+companies = user.company_id
+if companies:
+    companies.get_arba_data()
+    action_values = env.ref('l10n_ar_perception_withholding.action_wizard_aliquot_data').read()[0]
+    action = action_values
+</field>
+        </record>
+
+        <menuitem
+            id="menu_update_pw_arba"
+            action="action_update_perception_withholding_arba"
+            parent="account.account_account_menu"
+            sequence="100" groups="account.group_account_manager"/>
+    </data>
+</odoo>

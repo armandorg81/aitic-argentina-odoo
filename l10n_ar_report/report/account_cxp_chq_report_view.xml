@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_account_cxp_chq_document">
+    <t t-call="web.internal_layout">
+        <div class="page">
+            <div class="row" style="font-size:14px;">
+                <table style="width:100%;">
+                    <thead>
+                       <tr>
+                            <th class="text-center" style="width:100%;">
+                                <h2><span>Resumen de Composición de Saldos de Compra</span></h2>
+                            </th>
+                       </tr>
+                    </thead>
+                </table>
+                <br/>
+                <br/>
+            </div>
+            <div class="row" style="font-size:12px;margin-top:10px;">
+                <div class="col-xs-5 text-left" style="align:right;">
+                    <p>
+                        Compañía: <span t-field="o.company_id.name"/>
+                    </p>
+                    <p>
+                        Fecha: <span t-field="o.date"/>
+                    </p>
+                    <p>
+                        Días de antiguedad de cheques endosados: <span t-field="o.days_check_endorsed"/>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="font-size:12px;margin-top:10px;">
+                <table class="table table-condensed" style="margin-right:9px;">
+                    <thead style="border: 0.5px solid black;border-collapse: collapse;">
+                        <tr>
+                            <th style="padding: 5px;border-right:0.5px solid #000000;">Cliente</th>
+                            <th style="padding: 5px;border-right:0.5px solid #000000;">FA/ND/NC</th>
+                            <th style="padding: 5px;border-right:0.5px solid #000000;" class="text-center">Cheques endosados</th>
+                            <th style="padding: 5px;border-right:0.5px solid #000000;" class="text-right">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody style="border: 0.5px solid black;border-collapse: collapse;">
+                        <tr t-foreach="o.detail_ids" t-as="l">
+                            <td style="padding: 5px">
+                                <!--<span t-esc="(l.partner_id.cuit[4:]+' ')"/>-->
+                                <span t-field="l.partner_id.name"/></td>
+                            <td style="padding: 5px;" class="text-right"><span t-field="l.amount_invoice" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
+                            <td style="padding: 5px;" class="text-right"><span t-field="l.amount_check_delivered" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
+                            <td style="padding: 5px;" class="text-right"><span t-field="l.amount_total" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </t>
+</template>
+
+<template id="report_account_cxp_check">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+             <t t-call="l10n_ar_report.report_account_cxp_chq_document" t-lang="o.company_id.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>

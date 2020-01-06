@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="regimen_retencion_0001" model="regimen.retencion">
+            <field name="name">78</field>
+            <field name="concepto">Anexo II, inc. f)</field>
+            <field name="desc">Enajenación de bienes muebles y bienes de cambio.</field>
+            <field name="por_ins">2</field>
+            <field name="por_no_ins">10</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">224000</field>
+        </record>
+
+        <record id="regimen_retencion_0002" model="regimen.retencion">
+            <field name="name">94</field>
+            <field name="concepto">Anexo II, inc. i)</field>
+            <field name="desc">Locaciones de obra y/o servicios no ejecutados en relación de dependencia no mencionados expresamente en otros incisos.</field>
+            <field name="por_ins">2</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">67170</field>
+        </record>
+
+        <record id="regimen_retencion_0003" model="regimen.retencion">
+            <field name="name">116</field>
+            <field name="concepto">Anexo ll, inc. k)</field>
+            <field name="desc">Honorarios de director de sociedades anónimas, síndico, fiduciario, consejero de sociedades cooperativas, integrante de consejos de vigilancia y socios administradores de las sociedades de responsabilidad limitada, en comandita simple y en comandita por acciones.</field>
+            <field name="por_ins">0</field>
+            <field name="segun_escala_ins">True</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">67170</field>
+        </record>
+
+        <record id="regimen_retencion_0004" model="regimen.retencion">
+            <field name="name">95</field>
+            <field name="concepto">Anexo ll, inc. l)</field>
+            <field name="desc">Operaciones de transporte de carga nacional e internacional</field>
+            <field name="por_ins">0.25</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">67170</field>
+        </record>
+
+        <record id="regimen_retencion_0005" model="regimen.retencion">
+            <field name="name">19</field>
+            <field name="concepto">Anexo II, inc.a) pto.1)</field>
+            <field name="desc">Intereses por operaciones realizadas en entidades financieras. Ley N° 21.526 y sus modificaciones o agentes de bolsa o mercado abierto.</field>
+            <field name="por_ins">3</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">10</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">0</field>
+        </record>
+
+        <record id="regimen_retencion_0006xyz" model="regimen.retencion">
+            <field name="name">21</field>
+            <field name="concepto">Anexo II, inc.a) pto.2)</field>
+            <field name="desc">Intereses originados en operaciones no comprendidas en el punto 1.</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">7870</field>
+        </record>
+
+        <record id="regimen_retencion_0006" model="regimen.retencion">
+            <field name="name">30</field>
+            <field name="concepto">Anexo II, inc. b) pto. 1)</field>
+            <field name="desc">Alquileres o arrendamientos de bienes muebles.</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">11200</field>
+        </record>
+
+        <record id="regimen_retencion_0007" model="regimen.retencion">
+            <field name="name">31</field>
+            <field name="concepto">Anexo II, inc. b) pto. 2)</field>
+            <field name="desc">Bienes Inmuebles Urbanos, incluidos los efectuados bajo la modalidad de leasing, –incluye suburbanos-</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">11200</field>
+        </record>
+
+        <record id="regimen_retencion_0008" model="regimen.retencion">
+            <field name="name">32</field>
+            <field name="concepto">Anexo II, inc. b) pto. 3)</field>
+            <field name="desc">Bienes Inmuebles Rurales, incluidos los efectuados bajo la modalidad de leasing, –incluye subrurales-</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">11200</field>
+        </record>
+
+        <record id="regimen_retencion_0009" model="regimen.retencion">
+            <field name="name">35</field>
+            <field name="concepto">Anexo II, inc. c)</field>
+            <field name="desc">Regalías.</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">7870</field>
+        </record>
+
+        <record id="regimen_retencion_0010" model="regimen.retencion">
+            <field name="name">43</field>
+            <field name="concepto">Anexo II, inc. d)</field>
+            <field name="desc">Interés accionario, excedentes y retornos distribuidos entre asociados, cooperativas, -excepto consumo-.</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">7870</field>
+        </record>
+
+        <record id="regimen_retencion_0011" model="regimen.retencion">
+            <field name="name">51</field>
+            <field name="concepto">Anexo II, inc. e)</field>
+            <field name="desc">Obligaciones de no hacer, o por abandono o no ejercicio de una actividad.</field>
+            <field name="por_ins">6</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">7870</field>
+        </record>
+
+        <record id="regimen_retencion_0012" model="regimen.retencion">
+            <field name="name">86</field>
+            <field name="concepto">Anexo II, inc. g)</field>
+            <field name="desc">Transferencia temporaria o definitiva de derechos de llave, marcas, patentes de invención, regalías, concesiones y similares.</field>
+            <field name="por_ins">2</field>
+            <field name="por_no_ins">10</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">224000</field>
+        </record>
+
+        <record id="regimen_retencion_0013" model="regimen.retencion">
+            <field name="name">110</field>
+            <field name="concepto">Anexo II, inc. h)</field>
+            <field name="desc">Explotación de derechos de autor (Ley N° 11.723).</field>
+            <field name="por_ins">0</field>
+            <field name="segun_escala_ins">True</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">10000</field>
+        </record>
+
+        <record id="regimen_retencion_0014" model="regimen.retencion">
+            <field name="name">25</field>
+            <field name="concepto">Anexo II, inc. j)</field>
+            <field name="desc">Comisiones u otras retribuciones derivadas de la actividad de comisionista, rematador, consignatario y demás auxiliares de comercio a que se refiere el inciso c) del artículo 49 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones.</field>
+            <field name="por_ins">0</field>
+            <field name="segun_escala_ins">True</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">16830</field>
+        </record>
+
+        <record id="regimen_retencion_0015" model="regimen.retencion">
+            <field name="name">116</field>
+            <field name="concepto">Anexo ll, inc. k)</field>
+            <field name="desc">Profesionales liberales, oficios, albacea, mandatario, gestor de negocio</field>
+            <field name="por_ins">0</field>
+            <field name="segun_escala_ins">True</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">16830</field>
+        </record>
+
+        <record id="regimen_retencion_0016" model="regimen.retencion">
+            <field name="name">124</field>
+            <field name="concepto">Anexo ll, inc. k)</field>
+            <field name="desc">Corredor, viajante de comercio y despachante de aduana. En todos los casos, con las salvedades mencionadas en dicho inciso.</field>
+            <field name="por_ins">0</field>
+            <field name="segun_escala_ins">True</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">16830</field>
+        </record>
+
+        <record id="regimen_retencion_0017xyz" model="regimen.retencion">
+            <field name="name">95</field>
+            <field name="concepto">Anexo ll, inc. l)</field>
+            <field name="desc">Operaciones de transporte de carga nacional e internacional.</field>
+            <field name="por_ins">0.25</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">67170</field>
+        </record>
+
+        <record id="regimen_retencion_0018" model="regimen.retencion">
+            <field name="name">53</field>
+            <field name="concepto">Anexo ll, inc. m)</field>
+            <field name="desc">Operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones..</field>
+            <field name="por_ins">0.50</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">2</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">0</field>
+        </record>
+
+        <record id="regimen_retencion_0019" model="regimen.retencion">
+            <field name="name">55</field>
+            <field name="concepto">Anexo ll, inc. n)</field>
+            <field name="desc">Distribución de películas. Transmisión de programación. Televisión vía satelital.</field>
+            <field name="por_ins">0.50</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">2</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">0</field>
+        </record>
+
+        <record id="regimen_retencion_0020" model="regimen.retencion">
+            <field name="name">111</field>
+            <field name="concepto">Anexo ll, inc. ñ)</field>
+            <field name="desc">Cualquier otra cesión o locación de derechos, excepto las que correspondan a operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones.</field>
+            <field name="por_ins">0.50</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">2</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">0</field>
+        </record>
+
+        <record id="regimen_retencion_0021xyz" model="regimen.retencion">
+            <field name="name">112</field>
+            <field name="concepto">Anexo ll, inc. o)</field>
+            <field name="desc">Beneficios provenientes del cumplimiento de los requisitos de los planes de seguro de retiro privados administrados por entidades sujetas al control de la Superintendencia de Seguros de la Nación, establecidos por el inciso d) del artículo 45 y el inciso d) del artículo 79, de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones -excepto cuando se encuentren alcanzados por el régimen de retención establecido por la Resolución General N° 2,437, sus modificatorias y complementarias-.</field>
+            <field name="por_ins">3</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">3</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">16830</field>
+        </record>
+
+        <record id="regimen_retencion_0021" model="regimen.retencion">
+            <field name="name">113</field>
+            <field name="concepto">Anexo ll, inc. p)</field>
+            <field name="desc">Rescates -totales o parciales- por desistimiento de los planes de seguro de retiro a que se refiere el inciso o), excepto que sea de aplicación lo normado en el artículo 101 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones.</field>
+            <field name="por_ins">3</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">3</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">16830</field>
+        </record>
+
+        <record id="regimen_retencion_0022" model="regimen.retencion">
+            <field name="name">(d)</field>
+            <field name="concepto">.</field>
+            <field name="desc">Pagos realizados por cada administración descentralizada fondo fijo o caja chica. Art. 27, primer párrafo.</field>
+            <field name="por_ins">0.50</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">1.50</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">24700</field>
+        </record>
+
+        <record id="regimen_retencion_0023" model="regimen.retencion">
+            <field name="name">779</field>
+            <field name="concepto">Anexo ll, inciso q)</field>
+            <field name="desc">Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Ares, en concepto de enajenación de bienes muebles y bienes de cambio, en la medida que una ley general o especial no esta blezca la exención de los mismos en el impuesto a las ganancias. </field>
+            <field name="por_ins">2</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">10</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">76140</field>
+        </record>
+
+        <record id="regimen_retencion_0024" model="regimen.retencion">
+            <field name="name">780</field>
+            <field name="concepto">Anexo ll, inciso r)</field>
+            <field name="desc">Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Aires, en concepto de locaciones de obra y/o servicios, no ejecutados en relación de dependencia, en la medida que una ley general o especial no establezca la exención de los mismos en el impuesto a las ganancias</field>
+            <field name="por_ins">2</field>
+            <field name="segun_escala_ins">False</field>
+            <field name="por_no_ins">28</field>
+            <field name="segun_escala_nins">False</field>
+            <field name="montos_no_sujeto">31460</field>
+        </record>
+
+        <record id="escala_retencion_001" model="afip.gain.withholding">
+            <field name="amount_from">0</field>
+            <field name="amount_to">8000</field>
+            <field name="amount">0</field>
+            <field name="rate">5</field>
+            <field name="excess_amount">0</field>
+        </record>
+
+        <record id="escala_retencion_002" model="afip.gain.withholding">
+            <field name="amount_from">8000</field>
+            <field name="amount_to">16000</field>
+            <field name="amount">400</field>
+            <field name="rate">9</field>
+            <field name="excess_amount">8000</field>
+        </record>
+
+        <record id="escala_retencion_003" model="afip.gain.withholding">
+            <field name="amount_from">16000</field>
+            <field name="amount_to">24000</field>
+            <field name="amount">1120</field>
+            <field name="rate">12</field>
+            <field name="excess_amount">16000</field>
+        </record>
+
+        <record id="escala_retencion_004" model="afip.gain.withholding">
+            <field name="amount_from">24000</field>
+            <field name="amount_to">32000</field>
+            <field name="amount">2080</field>
+            <field name="rate">15</field>
+            <field name="excess_amount">24000</field>
+        </record>
+
+        <record id="escala_retencion_005" model="afip.gain.withholding">
+            <field name="amount_from">32000</field>
+            <field name="amount_to">48000</field>
+            <field name="amount">3280</field>
+            <field name="rate">19</field>
+            <field name="excess_amount">32000</field>
+        </record>
+
+        <record id="escala_retencion_006" model="afip.gain.withholding">
+            <field name="amount_from">48000</field>
+            <field name="amount_to">64000</field>
+            <field name="amount">6320</field>
+            <field name="rate">23</field>
+            <field name="excess_amount">48000</field>
+        </record>
+
+        <record id="escala_retencion_007" model="afip.gain.withholding">
+            <field name="amount_from">64000</field>
+            <field name="amount_to">96000</field>
+            <field name="amount">10000</field>
+            <field name="rate">27</field>
+            <field name="excess_amount">64000</field>
+        </record>
+
+        <record id="escala_retencion_008" model="afip.gain.withholding">
+            <field name="amount_from">96000</field>
+            <field name="amount_to">999999999999999</field>
+            <field name="amount">18640</field>
+            <field name="rate">31</field>
+            <field name="excess_amount">96000</field>
+        </record>
+
+    </data>
+</odoo>
+

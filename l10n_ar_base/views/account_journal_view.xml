@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ar_view_account_journal_form" model="ir.ui.view">
+            <field name="name">l10n.ar.view.account.journal.form</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form" />
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="voucher_control" attrs="{'invisible': [('type', 'not in', ['sale', 'purchase'])]}"/>
+                    <field name="comprobante_id"
+                        options="{'no_create': True}"
+                        attrs="{'invisible': [('type','not in',['sale','purchase'])]}"/>
+                </field>
+                <field name="default_credit_account_id" position="after">
+                    <field name="use_account_invoice"/>
+                    <field name="account_product_id" attrs="{'invisible': [('use_account_invoice','=', False)]}"/>
+                    <field name="account_service_id" attrs="{'invisible': [('use_account_invoice','=', False)]}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_withholding_earnings_document">
+        <t t-call="web.external_layout">
+            <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})" />
+            <t t-foreach="docs" t-as="o">
+                <!--<t t-foreach="o.payment_ids.filtered(lambda x: x.is_withholding == True and x.type_aliquot in ['earnings'])" t-as="payment">-->
+
+                    <div class="header">
+                        <h3>Header title</h3>
+                    </div>
+                    <div class="page" style="font-size:11px">
+                        <div class="oe_structure"/>
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Cert. de Retencion de Ganancias:</strong>
+                                <div t-field="o.withholding_id.name"/>
+                            </div>
+                            <div class="col-5 col-offset-1">
+                                <strong>Fecha:</strong>
+                                <span t-field="o.withholding_id.date"/>
+                            </div>
+                        </div>
+
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Ref: Orden de Pago Nro. </strong>
+                                <span t-field="o.withholding_id.payment_group_id.name"/><br/>
+                                <strong>Razon Social:</strong>
+                                <span t-field="o.withholding_id.partner_id.name"/><br/>
+                                <strong>Direccion:</strong>
+                                <span t-field="o.withholding_id.partner_id"
+                                      t-options='{"widget": "contact", "fields": ["address"], "no_marker": True}'/><br/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Nro. de <span t-field="o.withholding_id.partner_id.documento_id.name"/>:</strong>
+                                <span t-field="o.withholding_id.partner_id.cuit"/><br/>
+                            </div>
+                            <div class="col-5 col-offset-1">
+                                <strong>Ingresos Brutos (C.M.):</strong>
+                                <br/>
+                            </div>
+                        </div>
+
+                        <hr/>
+
+                        <div class="row">
+                            <h6>Detalle de las retenciones efectuadas:</h6><br/>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:70%">Retencion</th>
+                                            <th style="width:30%">Importe</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span t-field="o.withholding_id.partner_id.regimen_retencion_id.name"/> <span t-field="o.withholding_id.partner_id.regimen_retencion_id.concepto"/> <span t-field="o.withholding_id.partner_id.regimen_retencion_id.desc"/></td>
+                                            <td>
+                                                <span t-esc="o.withholding_id.withholding_amount"
+                                                      t-esc-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h6>Comprobantes que originan la retencion:</h6><br/>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-condensed">
+                                    <tbody>
+                                        <t t-foreach="o.withholding_id.payment_group_id.debt_move_line_ids" t-as="move">
+                                            <t t-set="move" t-value="move.with_context({'payment_group_id':o.withholding_id.payment_group_id.id})" />
+                                            <tr t-if="move.report_payment_group_advance_amount != 0.0">
+                                                <t t-if="move.invoice_id">
+                                                    <td style="width: 60%"><span t-field="move.invoice_id.tipo_comprobante.name"/> <span t-field="move.invoice_id.punto_venta_proveedor"/>-<span t-field="move.invoice_id.num_comprobante"/></td>
+                                                </t>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="oe_structure"/>
+                    </div>
+                    <div class="footer" style="font-size:11px">
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Nombre y Apellido Firmante:</strong><br/>
+                                <strong>Cargo:</strong>
+                            </div>
+                            <div class="col-5 text-center" >
+                                <strong>__________________________</strong><br/>
+                                <strong>Firma Responsable</strong><br/>
+                                <strong>Original</strong>
+                            </div>
+                        </div>
+                    </div>
+                <!--</t>-->
+            </t>
+        </t>
+    </template>
+
+
+    <template id="report_withholding_earnings">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="l10n_ar_account_group_withholding.report_withholding_earnings_document" t-lang="doc.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="res_arba_config_view" model="ir.ui.view">
+            <field name="name">res.arba.config.view</field>
+            <field name="model">res.arba.config</field>
+            <field name="arch" type="xml">
+                <form string="ARBA Connection Config">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="enviroment_type"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="url_connection"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="res_arba_config_action" model="ir.actions.act_window">
+            <field name="name">ARBA Connection Config</field>
+            <field name="res_model">res.arba.config</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="res_arba_config_root_menu" name="ARBA Configuration" parent="base.menu_administration" sequence="100"/>
+
+        <menuitem id="res_arba_config_menu" name="ARBA Connection" parent="res_arba_config_root_menu" action="res_arba_config_action"/>
+    </data>
+</odoo>

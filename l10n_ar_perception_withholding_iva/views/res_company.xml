@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="res_company_form_iva_config" model="ir.ui.view">
+            <field name="name">res.company.form.iva.config</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <page name="aliquot_accounts" position="inside">
+                    <separator string="IVA"/>
+                    <group name="account_iva" colspan="4">
+                        <group name="perception_iva">
+                            <field name="calculate_perc_iva"/>
+                            <field name="perc_iva_account_id" attrs="{'invisible':[('calculate_perc_iva','=',False)], 'required':[('calculate_perc_iva','=',True)]}"/>
+                            <!--<field name="amount_exempt_perc_iva" attrs="{'invisible':[('calculate_perc_iva','=',False)], 'required':[('calculate_perc_iva','=',True)]}"/>-->
+                        </group>
+                        <group name="withholding_iva">
+                            <field name="calculate_wh_iva"/>
+                            <field name="supplier_wh_iva_journal_id" attrs="{'invisible':[('calculate_wh_iva','=',False)], 'required':[('calculate_wh_iva','=',True)]}"/>
+                            <field name="amount_exempt_iva" attrs="{'invisible':[('calculate_wh_iva','=',False)], 'required':[('calculate_wh_iva','=',True)]}"/>
+                        </group>
+                    </group>
+                </page>
+            </field>
+        </record>
+    </data>
+</odoo>

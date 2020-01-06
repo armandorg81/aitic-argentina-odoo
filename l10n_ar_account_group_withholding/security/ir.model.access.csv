@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_withholding_account_invoice,access_account_withholding_account_invoice,model_account_withholding,account.group_account_invoice,1,1,1,1
+access_afip_gain_withholding,access_afip_gain_withholding,model_afip_gain_withholding,account.group_account_invoice,1,1,1,1
+access_regimen_retencion,access_regimen_retencion,model_regimen_retencion,account.group_account_invoice,1,1,1,1
+access_account_payment_group_invoice,access_account_payment_group_invoice,model_account_payment_group_invoice,account.group_account_invoice,1,1,1,1
+

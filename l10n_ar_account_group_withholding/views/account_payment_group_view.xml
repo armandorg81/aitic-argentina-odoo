@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pw_account_payment_group_form" model="ir.ui.view">
+            <field name="name">account.payment.group.form</field>
+            <field name="model">account.payment.group</field>
+            <field name="inherit_id" ref="account_payment_group.view_account_payment_group_form"/>
+            <field name="arch" type="xml">
+                <notebook name="note" position="before">
+                    <group class="oe_subtotal_footer oe_right" colspan="2" name="sale_total" >
+                        <field name="amount_withholding" invisible="1"/>
+                        <field name="withholding_base_amount" attrs="{'invisible': [('partner_type','!=','supplier')]}" readonly="1" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <field name="amount_total_payable" readonly="1" widget='monetary'  class="oe_subtotal_footer_separator" options="{'currency_field': 'currency_id'}"/>
+                    </group>
+                    <field name="group_invoice_ids" invisible="1">
+                        <tree>
+                            <field name="invoice_id"/>
+                            <field name="withholding_tax_base"/>
+                        </tree>
+                    </field>
+                </notebook>
+                <field name="memo" position="after">
+                    <field name="exempt_withholding" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('partner_type','!=','supplier')]}"/>
+                </field>
+                <field name="payments_amount" position="after">
+                    <field name="is_canceled" invisible="1"/>
+                    <field name="edit_withholding" attrs="{'readonly': ['|', ('is_canceled', '=', True), ('state', '!=', 'draft')], 'invisible': [('partner_type','!=','supplier')]}"/>
+                    <field name="withholding_tax_base" options="{'currency_field': 'currency_id'}" attrs="{'readonly': ['|', ('state', '!=', 'draft'), ('edit_withholding','!=', True)], 'invisible': ['|', ('partner_type','!=','supplier'), ('state', '!=', 'draft')]}"/>
+                    <field name="withholding_tax_base_real" options="{'currency_field': 'currency_id'}" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': ['|', ('partner_type','!=','supplier'), ('state', '=', 'draft')]}"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_pw_account_payment_group_search" model="ir.ui.view">
+            <field name="name">account.payment.group.search</field>
+            <field name="model">account.payment.group</field>
+            <field name="inherit_id" ref="account_payment_group.account_payment_group_search_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="payment_ids" string="Nro Comprobante Retención"/>
+                    <field name="payment_ids" string="Diarios" context="{'journal_search': True}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+

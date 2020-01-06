@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_inherit_account_invoice_refund" model="ir.ui.view">
+            <field name="name">account.invoice.refund.form</field>
+            <field name="model">account.invoice.refund</field>
+            <field name="inherit_id" ref="account.view_account_invoice_refund" />
+            <field name="arch" type="xml">
+                <field name="description" position="before">
+                    <field name="journal_id" required="1"/>
+                    <field name="reconcile"/>
+                </field>
+                <xpath expr="//group/group//div[3]" position="replace">
+                    <div attrs="{'invisible':['|',('refund_only','=',True),('filter_refund','!=','modify')]}" class="oe_grey" colspan="4">
+                        Use this option if you want to cancel an invoice and create a new
+                        one. The credit note will be created and reconciled
+                        with the current invoice. A new draft invoice will be created
+                        so that you can edit it.
+                     </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

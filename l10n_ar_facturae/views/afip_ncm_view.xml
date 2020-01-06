@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_form_afip_ncm" model="ir.ui.view">
+            <field name="name">view.form.afip.ncm</field>
+            <field name="model">afip.ncm</field>
+            <field name="arch" type="xml">
+                <form string=" Nomenclador Común del Mercosur">
+                    <sheet>
+                        <legend>Nomenclador Común del Mercosur</legend>
+                        <group>
+                            <group>
+                                <field name="name" required="True"/>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_afip_ncm" model="ir.ui.view">
+            <field name="name">view.tree.afip.ncm</field>
+            <field name="model">afip.ncm</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_afip_ncm" model="ir.actions.act_window">
+            <field name="name">Nomenclador Común del Mercosur</field>
+            <field name="res_model">afip.ncm</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Presione para crear nuevo Registro</p>
+            </field>
+        </record>
+
+        <menuitem id="afip_ncm_menu"
+                  name="Nomenclador Común del Mercosur"
+                  parent="l10n_ar_base.menu_argentina"
+                  sequence="31"
+                  action="action_afip_ncm" />
+</odoo>

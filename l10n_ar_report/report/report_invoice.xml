@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_assets_common_custom_fonts" name="Custom QWeb fonts" inherit_id="web.report_assets_common">
+            <xpath expr="." position="inside">
+                <link href="/l10n_ar_report/static/src/less/fonts.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+
+        <template id="page_top">
+            <div class="top">
+                <div class="row col-12">
+                    <div class="col-6 border-right border-dark">
+                        <div>
+                            <t t-if="not o.tipo_comprobante.not_book">
+                                <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" class="float-left mt-1 mb-2 ml-1" alt="Logo" style="height:auto; max-width: 100px; padding-top: 5px;"/>
+                            </t>
+                        </div>
+                        <div class="row">
+                            <p class="text-left" style="margin-left:15px;">
+                                <t t-if="not o.tipo_comprobante.not_book">
+                                    <span t-field="o.company_id.name"/><br/>
+                                </t>
+                                <t t-if="o.tipo_comprobante.not_book">
+                                    <span>DOCUMENTO SIN NINGUNA VALIDEZ FISCAL, SOLO PARA USO INFORMATIVO</span><br/>
+                                </t>
+                                <t t-if="not o.tipo_comprobante.not_book">
+                                    <span t-field="o.company_id.street"/>, <span t-esc="o.company_id.city"/><br/>
+                                    <span t-field="o.company_id.email"/><br/>
+                                    Tel. <span t-field="o.company_id.phone"/><br/>
+                                    <span t-field="o.company_id.tipo_responsable"/>
+                                </t>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="position:absolute; top:40px; left:47%; z-index: 1; height:60px; width:60px; background-color:white; border:2px solid black;">
+                        <p class="text-center" t-if="not o.company_id.hide_afip_fields">
+                            <strong><span style="font-size:24px;" t-field="o.tipo_comprobante.desc"/></strong><br/>
+                            <span t-field="o.tipo_comprobante.codigo"/>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="row" style="margin-left: 110px; padding-top:40px;">
+                            <p class="text-left">
+                                <span style="font-size:18px; margin-bottom:15px;">
+                                    <strong><span t-field="o.tipo_comprobante.name"/></strong>
+                                </span><br/>
+                                <t t-if="not o.tipo_comprobante.not_book">
+                                    <t t-set="type_payment" t-value="o.tipo_comprobante.desc"/>
+                                    <strong>COMPROBANTE N°: <span t-esc="type_payment and type_payment.upper()"/></strong> <span t-field="o.punto_venta"/>-<span t-esc="o.num_comprobante and o.num_comprobante.zfill(8) or ''"/><br/>
+                                </t>
+                                <strong>Fecha: </strong><span t-field="o.date_invoice" t-field-options="{'format': 'dd/MM/YYYY'}"/><br/>
+                                <t t-if="not o.tipo_comprobante.not_book">
+                                    <strong>C.U.I.T.: </strong><span t-field="o.company_id.cuit"/><br/>
+                                    <strong>Ingresos Brutos: </strong><span t-field="o.company_id.ingresos_brutos"/><br/>
+                                    <strong>Inicio Actividades: </strong><span t-field="o.company_id.start_date" t-field-options="{'format': 'dd/MM/YYYY'}"/>
+                                </t>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <t t-if="o.es_exportacion and not o.tipo_comprobante.not_book">
+                    <div class="col-12" align="center"><strong>Info. Exportación</strong></div>
+                </t>
+                <div class="row col-12" style="border-bottom:2px solid black;border-style: solid none;max-width:100%;padding:0 10px;margin-left: 0px;" t-if="o.es_exportacion and not o.tipo_comprobante.not_book">
+                    <div class="col-6">
+                        <div class="row">
+                            <strong>Operación:</strong> <span t-esc="dict(o.fields_get(allfields=['cod_operacion'])['cod_operacion']['selection'])[o.cod_operacion]"/><br/>
+                            <strong>Tipo Exportación:</strong> <span t-esc="dict(o.fields_get(allfields=['tipo_expo'])['tipo_expo']['selection'])[o.tipo_expo]"/><br/>
+                            <strong>País Destino:</strong> <span t-field="o.partner_id.commercial_partner_id.country_id.name"/><br/>
+                            <strong>Moneda:</strong> <span t-field="o.currency_id.name"/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <strong>Incoterm:</strong> [<span t-field="o.incoterms"/>] <span t-esc="dict(o.fields_get(allfields=['incoterms'])['incoterms']['selection'])[o.incoterms]"/><br/>
+                            <strong>Código País:</strong> <span t-field="o.partner_id.commercial_partner_id.country_id.cod_nacionalidad"/> <strong>C.U.I.T País:</strong> <span t-field="o.partner_id.commercial_partner_id.country_id.cuit_pais"/><br/>
+                            <t t-if="o.currency_id.id != o.company_id.currency_id.id and o.currency_rate_invoice">
+                                <strong>Tasa de Cambio:</strong> <span t-field="o.rate_final"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-bottom border-dark pt-2">
+                    <div class="container">
+                        <strong>Cliente:</strong> <span t-field="o.partner_id.commercial_partner_id.name"/><br/>
+                        <strong>C.U.I.T.:</strong> <span t-field="o.partner_id.commercial_partner_id.cuit"/><br/>
+                        <strong>Domicilio:</strong> <span t-field="o.partner_id.commercial_partner_id.street"/>, <span t-field="o.partner_id.commercial_partner_id.city"/><br/>
+                        <t t-if="not o.partner_id.parent_id and not o.tipo_comprobante.not_book">
+                            <span t-field="o.partner_id.commercial_partner_id.responsability_id.name"/><br/>
+                        </t>
+                        <p t-if="o.payment_term_id">
+                            <strong>Condición de pago:</strong> <span t-field="o.payment_term_id.name"/>
+                        </p>
+                        <p t-if="not o.payment_term_id">
+                            <strong>Condición de pago:</strong> CONTADO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="page_middle">
+            <div class="middle">
+                <div class="row pl-2 pr-2">
+                    <div class="col-12">
+                        <table t-attf-style="border: 0;table-layout: fixed;width: 100%;">
+                            <thead style="border: 0px;">
+                                <tr>
+                                    <t t-foreach="columns" t-as="c">
+                                        <th t-att-style="c.get('style', '')" t-att-class="c.get('class', '')">
+                                            <span t-esc="c['name']" />
+                                        </th>
+                                    </t>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody_middle" style="border: 0px;word-wrap: break-word;"/>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="page_bottom">
+            <div class="bottom border border-dark border-top-0">
+                <div class="row col-12">
+                    <div class="col-6 mt16">
+                        <t t-if="not o.tipo_comprobante.not_book and taxes">
+                            <table style="border: 1px solid black;table-layout: fixed;width:100%;">
+                                <thead style="border: 1px solid black;">
+                                    <tr>
+                                        <th t-foreach="taxes_columns" t-as="tc"
+                                            t-att-style="tc.get('style', '')" t-att-class="tc.get('class', '')">
+                                            <span t-esc="tc['name']"/>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody style="border: 1px solid black;">
+                                    <t t-foreach="taxes" t-as="tx">
+                                        <tr>
+                                            <td t-att-colspan="len(taxes_columns)">
+                                                <strong><span t-esc="tx['name']"/></strong>
+                                            </td>
+                                        </tr>
+                                        <t t-foreach="tx['values']" t-as="value">
+                                            <tr style="border: 1px solid black;">
+                                                <td t-foreach="taxes_columns" t-as="tc"
+                                                    t-att-style="tc == 'Alic(%)' and 'white-space: nowrap;text-overflow: ellipsis;overflow: hidden;' or ''"
+                                                    t-att-class="type(tc) == str and 'text-left' or 'text-right'"
+                                                >
+                                                    <t t-if="tc.get('currency')">
+                                                        <span t-esc="value[tc['name']]"
+                                                            t-options='{"widget": "monetary", "display_currency": o.currency_id}'
+                                                        />
+                                                    </t>
+                                                    <t t-else="">
+                                                        <span t-esc="value[tc['name']]"/>
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                    <div class="col-6">
+                        <table align="right" style="table-layout: fixed;border: 0px;width:100%;">
+                            <tr style="border: 0px;" t-if="o.tipo_comprobante.desc != 'B' and not o.company_id.hide_afip_fields and not o.tipo_comprobante.not_book">
+                                <td><strong>Importe Neto Gravado</strong></td>
+                                <td class="text-right">
+                                    <span t-esc="sum(x.base for x in o.tax_line_ids if(x.tax_id.is_iva is True))" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                </td>
+                            </tr>
+                            <tr t-foreach="o.tax_line_ids" t-as="ta" t-if="o.tipo_comprobante.desc != 'B' and not o.company_id.hide_afip_fields and not o.tipo_comprobante.not_book">
+                                <t t-if="ta.tax_id.is_iva">
+                                    <td style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;"><strong><span t-esc="ta.name"/></strong></td>
+                                    <td class="text-right">
+                                        <span t-esc="ta.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </td>
+                                </t>
+                            </tr>
+                            <tr style="border: 0px;" t-if="o.tipo_comprobante.desc != 'B' and not o.company_id.hide_afip_fields and not o.tipo_comprobante.not_book">
+                                <td><strong>Exento</strong></td>
+                                <td class="text-right">
+                                    <strong>
+                                        <span t-field="o.amount_excempt" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr class="imp-otros-trib" style="border: 0px;" t-if="o.tipo_comprobante.desc != 'B' and not o.company_id.hide_afip_fields and not o.tipo_comprobante.not_book">
+                                <td><strong>Importe Otros Trib</strong></td>
+                                <td class="text-right">
+                                    <strong>
+                                        <span t-field="o.amount_other_tax" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr style="border: 0px;">
+                                <td><strong>Importe Total</strong></td>
+                                <td class="text-right">
+                                    <strong>
+                                        <span t-field="o.amount_total" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 border-dark border-bottom">
+                        <t t-if="o.comment and not o.tipo_comprobante.not_book">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span t-field="o.comment"/>
+                                </div>
+                            </div>
+                            <t t-if="o.currency_id.id != o.company_id.currency_id.id and o.currency_rate_invoice">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <strong>Tipo de cambio 1 U$S = </strong>$<span t-field="o.currency_rate_invoice"/>
+                                    </div>
+                                </div>
+                            </t>
+                        </t>
+                    </div>
+                <div class="row col-12 pt-2" style="min-height:70px;">
+                    <div class="col-8" t-if="not o.company_id.hide_afip_fields and not o.tipo_comprobante.not_book">
+                        <div>
+                            <img t-if="o.cod_barra" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.cod_barra, 600, 100)" style="width:100%;height:40px" alt="Barcode"/>
+                        </div>
+                        <div class="text-center" style="width: 100%;"><span t-field="o.cod_barra"/></div>
+                    </div>
+                    <div class="col-4" t-if="not o.company_id.hide_afip_fields">
+                        <span>
+                            <strong>CAE N°:</strong> <span t-field="o.no_cae"/>
+                        </span><br/>
+                        <span>
+                            <strong>Fecha de Vto. CAE:</strong> <span t-field="o.vence_date" t-field-options="{'format': 'dd/MM/YYYY'}"/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div t-if="add_page_number == '1'" class="footer o_background_footer">
+                <div class="text-center">
+                    <div t-if="report_type == 'pdf'" class="text-muted">
+                        Página:
+                        <span class="page"/>
+                        de
+                        <span class="topage"/>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="script">
+            <script>
+                var dynamic_report = {
+                    init: function(){
+                        var lines = <t t-raw="lines"/>;
+                        var columns = <t t-raw="columns"/>;
+                        var report_names = <t t-raw="report_names"/>;
+                        var page_height = <t t-raw="page_height"/>;
+                        this.prod_desc = 'Producto / Servicio';
+                        this.new_page = false;
+                        var self = this;
+                        report_names.forEach(function(name){
+                            var report_name = '.' + name;
+                            self.page_wrap_container = document.querySelector(report_name + ' .page_wrap_container');
+                            self.page_container = document.querySelector(report_name + ' .page_container');
+                            var page_bottom = document.querySelector(report_name + ' .bottom');
+                            self.tbody_middle = document.querySelector(report_name + ' .tbody_middle');
+
+                            if(self.page_wrap_container &amp;&amp; self.page_container &amp;&amp; self.tbody_middle &amp;&amp; page_bottom){
+                                self.pb_height = page_bottom.offsetHeight;
+                                var pc_height = page_height - self.pb_height;
+                                var page_container_style = 'page-break-before:always; min-height:' + pc_height + 'px;'
+                                self.page_container.setAttribute('style', page_container_style);
+                                self.pc_height = self.page_container.offsetHeight;
+                                self.tpl_page_container = self.page_container.cloneNode(true);
+
+                                lines.forEach(function(line){
+                                    var tr = document.createElement("tr");
+                                    if(line['display_type']){
+                                        var td = document.createElement("td");
+                                        var content = line[self.prod_desc] || '';
+                                        td.setAttribute('class', content);
+                                        td.setAttribute('colspan', columns.length);
+                                        td.innerHTML = content;
+                                        tr.appendChild(td);
+                                    }else{
+                                        columns.forEach(function(c){
+                                            var column_name = c['name'];
+                                            var currency = c['currency']
+                                            var content = line[column_name];
+                                            var att_class = c['class'];
+                                            if(column_name == self.prod_desc){
+                                                att_class += ' prod_desc';
+                                            }
+                                            content += c['currency'] &amp;&amp; ' ' + c['currency'] || '';
+
+                                            var td = document.createElement("td");
+                                            td.setAttribute('class', att_class);
+                                            td.innerHTML = content;
+                                            tr.appendChild(td);
+                                        });
+                                    }
+                                    self.tr = tr;
+                                    self.tbody_middle.appendChild(tr);
+                                    self.place_line();
+                                });
+                                if(self.new_page){
+                                    self.add_new_page();
+                                }
+
+                            }
+                        });
+                    },
+                    place_line: function(){
+                        if(this.page_container.offsetHeight &gt; this.pc_height){
+                            if(this.page_container.offsetHeight &lt;= this.pc_height + this.pb_height){
+                                this.new_page = true;
+                            }
+                            else{
+                                this.tbody_middle.removeChild(this.tr);
+                                var prev_page_container = this.page_container;
+                                var prev_tbody_middle = this.tbody_middle;
+
+                                this.add_new_page();
+
+                                this.tbody_middle = this.page_container.querySelector('.tbody_middle');
+                                this.tbody_middle.appendChild(this.tr);
+
+                                if(this.page_container.offsetHeight &gt; this.pc_height){
+                                    var td = this.tr.querySelector('td.prod_desc');
+                                    if(td){
+                                        td.setAttribute('style', 'white-space: nowrap;text-overflow: ellipsis;overflow: hidden;');
+                                        this.page_wrap_container.removeChild(this.page_container);
+                                        this.page_container = prev_page_container;
+                                        this.tbody_middle = prev_tbody_middle
+                                        this.tbody_middle.appendChild(this.tr);
+                                        this.place_line();
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    add_new_page: function(){
+                        this.page_container = this.tpl_page_container.cloneNode(true);
+                        this.page_wrap_container.appendChild(this.page_container);
+                        this.new_page = false;
+                    }
+                };
+
+                dynamic_report.init();
+            </script>
+        </template>
+
+        <template id="invoice_report_content">
+            <div class="page_wrapper">
+                <div class="page_wrap_container">
+                    <div class="page_container border border-dark">
+                        <div class="row" t-if="not o.company_id.hide_afip_fields">
+                            <div class="col-12 p-2">
+                                <h4 class="text-center"><strong><span t-esc="report_name"></span></strong></h4>
+                            </div>
+                        </div>
+                        <div t-att-class="not o.company_id.hide_afip_fields and 'border-top border-dark' or ''">
+                            <t t-call="l10n_ar_report.page_top"/>
+                            <t t-call="l10n_ar_report.page_middle"/>
+                        </div>
+                    </div>
+                </div>
+                <t t-call="l10n_ar_report.page_bottom"/>
+            </div>
+        </template>
+
+        <template id="l10n_ar_report_invoice">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-set="o" t-value="doc['inv']"/>
+                    <t t-set="lines" t-value="doc['lines']"/>
+                    <t t-set="columns" t-value="doc['columns']"/>
+                    <t t-set="taxes" t-value="doc['taxes']"/>
+                    <t t-set="taxes_columns" t-value="doc['taxes_columns']"/>
+                    <t t-call="web.basic_layout">
+                        <div style="width: 785pt;font-size: 11pt;font-family:Arial-Regular">
+                            <t t-set="report_names" t-value="['ORIGINAL']"/>
+                            <t t-if="not o.company_id.hide_afip_fields">
+                                <t t-set="report_names" t-value="report_names + ['DUPLICADO', 'TRIPLICADO']"/>
+                            </t>
+                            <t t-foreach="report_names" t-as="report_name">
+                                <div t-attf-class="page #{report_name}">
+                                    <t t-call="l10n_ar_report.invoice_report_content"/>
+                                </div>
+                            </t>
+                            <t t-call="l10n_ar_report.script"/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

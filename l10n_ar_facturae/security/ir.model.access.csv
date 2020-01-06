@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_afip_session_account_user,access.afip.session.account.user,model_afip_session,account.group_account_invoice,1,1,1,1
+access_afip_session_user,access.afip.session.user,model_afip_session,base.group_user,1,1,1,0
+access_afip_ncm_account_user,access.afip.ncm.account.user,model_afip_ncm,account.group_account_invoice,1,1,1,1
+access_afip_ncm_user,access.afip.ncm.user,model_afip_ncm,base.group_user,1,1,1,0

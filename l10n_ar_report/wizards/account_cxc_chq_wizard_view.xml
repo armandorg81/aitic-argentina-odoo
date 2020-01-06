@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="account_cxc_chq_wizard_form" model="ir.ui.view">
+            <field name="model">account.cxc.chq.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Resumen de Composición de Saldos de Venta/Compra">
+                    <group>
+                        <group>
+                            <field name="type" invisible="1" string="Tipo"/>
+                            <field name="date" readonly="1" string="Fecha"/>
+                            <field name="days_check_endorsed" required="1" string="Días de cheques endosados"/>
+                        </group>
+                        <group>
+                            <field name="company_id" readonly="1" string="Compañía"/>
+                            <field name="days_check_deposited" attrs="{'invisible': [('type','=','purchase')]}"
+                                   required="1" string="Días de cheques depositados"/>
+                            <field name="customer_id" string="Cliente" attrs="{'invisible': [('type','=','purchase')]}"/>
+                            <field name="supplier_id" string="Proveedor" attrs="{'invisible': [('type','=','sale')]}"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="print_report" string="Imprimir" type="object" class="btn-primary"/>
+                        <!--<button name="print_export_report" string="Export to CSV" type="object" class="oe_highlight"/>-->
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+             
+        <act_window
+            name="Resumen de Composición de Saldos de Venta"
+            id="account_cxc_chq_wizard_action"
+            res_model="account.cxc.chq.wizard"
+            view_type="form"
+            view_mode="form"
+            view_id="account_cxc_chq_wizard_form"
+            context="{'default_type': 'sale'}"
+            target="new" />
+
+        <menuitem
+            id="cash_flow_menu" name="Flujo de caja"
+            parent="account.menu_finance_reports"
+            sequence="101" />
+
+        <menuitem
+            id="ccount_cxc_chq_wizard_menu"
+            action="account_cxc_chq_wizard_action"
+            parent="cash_flow_menu"
+            sequence="1" />
+
+
+
+        <act_window
+            name="Resumen de Composición de Saldos de Compra"
+            id="account_cxp_chq_wizard_action"
+            res_model="account.cxc.chq.wizard"
+            view_type="form"
+            view_mode="form"
+            view_id="account_cxc_chq_wizard_form"
+            context="{'default_type': 'purchase'}"
+            target="new" />
+
+        <menuitem
+            id="ccount_cxp_chq_wizard_menu"
+            action="account_cxp_chq_wizard_action"
+            parent="cash_flow_menu"
+            sequence="2" />
+
+    </data>
+</openerp>

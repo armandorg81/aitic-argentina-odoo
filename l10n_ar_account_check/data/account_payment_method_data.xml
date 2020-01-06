@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="account_payment_method_received_third_check" model="account.payment.method">
+            <field name="name">Received Third Check</field>
+            <field name="code">received_third_check</field>
+            <field name="payment_type">inbound</field>
+        </record>
+
+        <record id="account_payment_method_delivered_third_check" model="account.payment.method">
+            <field name="name">Delivered Third Check</field>
+            <field name="code">delivered_third_check</field>
+            <field name="payment_type">outbound</field>
+        </record>
+
+        <record id="account_payment_method_own_check" model="account.payment.method">
+            <field name="name">Own Check</field>
+            <field name="code">own_check</field>
+            <field name="payment_type">outbound</field>
+        </record>
+
+        <record id="account_payment_method_transfer_check" model="account.payment.method">
+            <field name="name">Transfer Check</field>
+            <field name="code">transfer_check</field>
+            <field name="payment_type">outbound</field>
+        </record>
+
+        <function model="account.journal" name="_enable_own_check_on_bank_journals"/>
+
+        <record id="sequence_selled_check" model="ir.sequence">
+            <field name="name">Selled Check sequence</field>
+            <field name="code">sequence.selled.check</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field name="padding">4</field>
+        </record>
+
+    </data>
+</odoo>

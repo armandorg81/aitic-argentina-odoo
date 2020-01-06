@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="l10n_ar_perception_withholding_iva.report_aliquot_withholding_iva">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.internal_layout">
+                        <t t-foreach="o.payment_ids.filtered(lambda x: x.is_withholding == True and x.type_aliquot in ['iva'])" t-as="payment">
+                            <div class="page" style="font-size:11px;height:100%;margin-bottom:300px;">
+                                <div class="oe_structure"/>
+                                <div class="row" style="text-align: center;">
+                                    <div class="col-lg-12 text-center">
+                                        <h1>Certificado de Retención</h1>
+                                    </div>
+                                </div>
+                                <div class="row" style="text-align: center;">
+                                    <div class="col-lg-12 text-center">
+                                        <h1>IVA</h1>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                                <div class="row">
+                                    <div class="col-12" style="border-top:1px solid black;padding:5px; font-size: 14px;">
+                                        <br/>
+                                        <div style="float:left;width: 70%;">
+                                            <strong>Certificado Nro:    </strong>
+                                            <t t-if="o.withholding_iva_id">
+                                                <span t-field="o.withholding_iva_id.name"/>
+                                            </t>
+                                        </div>
+                                        <div style="float:right width: 25%;">
+                                            <strong>Fecha:    </strong>
+                                            <span t-field="o.withholding_iva_id.date"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="border-top:1px solid black;padding:5px; font-size: 14px;">
+                                        <br/>
+                                        <span style="font-size: 16px;"><strong> A - Datos del agente de retención</strong></span><br/><br/>
+                                        <strong>Apellidos y Nombre / Denominación:    </strong>
+                                        <span t-field="o.company_id"/>
+                                        <!--<span>(</span><span t-field="o.company_id.city"/><span>)</span><br/>-->
+                                        <br/>
+                                        <strong>C.U.I.T:    </strong>
+                                        <span t-field="o.company_id.cuit"/><br/>
+                                        <strong>Domicilio:    </strong>
+                                        <span t-field="o.company_id.street"/>
+                                        <span> -C.P. </span><span t-field="o.company_id.zip"/>
+                                        <span> -Loc. </span><span t-field="o.company_id.city"/>
+                                        <span> -CABA</span><br/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="border-top:1px solid black;padding:5px; font-size: 14px;">
+                                        <br/>
+                                        <span style="font-size: 16px;"><strong> B - Datos del sujeto retenido</strong></span><br/><br/>
+                                        <strong>Apellidos y Nombre / Denominación:    </strong> <span t-field="o.partner_id.name"/><br/>
+                                        <strong>C.U.I.T:     </strong> <span t-field="o.partner_id.cuit"/><br/>
+                                        <strong>Domicilio:     </strong> <span t-field="o.partner_id.street"/>
+                                        <span> </span> <span t-field="o.partner_id.street2"/><br/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-12" style="border-top:1px solid black;border-bottom:1px solid black;padding:5px; font-size: 14px;">
+                                        <br/>
+                                        <span style="font-size: 16px;"><strong> C - Datos de la retención</strong></span><br/><br/>
+                                        <strong>Impuesto:    </strong><span>767 - Impuesto al Valor Agregado</span><br/>
+                                        <strong>Régimen:    </strong><span></span><br/>
+                                        <strong>Monto de la retención:     </strong>
+                                        <span t-field="o.withholding_iva_id.withholding_amount" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/><br/>
+                                        <br/>
+                                        <strong>Alícuota:     </strong>
+                                        <span t-field="o.withholding_iva_id.withholding_iva_aliquot"/><br/>
+                                        <div style="width:100%;">
+                                            <div style="float:left;">
+                                                <strong>Comprobantes que originan la retención:     </strong>
+                                            </div>
+                                            <t t-set="amount_inv" t-value="0.0" />
+                                            <div style="margin-left:10px;width:35%;float:left;">
+                                                <table style="border: 0px;width:100%;" class="pago">
+                                                    <t t-foreach="o.debt_move_line_ids" t-as="move">
+                                                        <t t-set="move" t-value="move.with_context({'payment_group_id':o.id})" />
+                                                        <tr t-if="move.report_payment_group_advance_amount != 0.0">
+                                                            <t t-if="move.invoice_id">
+                                                                <t t-set="amount_inv" t-value="amount_inv + move.invoice_id.amount_total_company_signed"/>
+                                                                <td><span t-field="move.invoice_id.type"/></td>
+                                                                <t t-if="move.invoice_id.tipo_comprobante">
+                                                                    <td><span t-field="move.invoice_id.tipo_comprobante.desc"/> <span>   </span></td>
+                                                                </t>
+                                                                <t t-if="not move.invoice_id.tipo_comprobante">
+                                                                    <td></td>
+                                                                </t>
+                                                                <td><span t-field="move.invoice_id.num_comprobante"/></td>
+                                                            </t>
+                                                        </tr>
+                                                    </t>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <strong>Monto del comprobante que origina la retención:     </strong>
+                                        <span t-esc="amount_inv" t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/><br/><br/>
+                                        <br/><br/><br/>
+                                        <div style="margin-top:10px;width:100%;float:left;">
+                                            <strong>Importe de la retención en letras:     </strong> <span t-field="payment.amount_aliquot_in_words"/><br/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/><br/>
+                            </div>
+                            <div class="footer">
+                                <div class="row">
+                                    <div class="col-6">
+                                    </div>
+                                    <div class="col-5 text-center" >
+                                        <strong>__________________________</strong><br/>
+                                        <strong>Firma del agente de retención</strong><br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

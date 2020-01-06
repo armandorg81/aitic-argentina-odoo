@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_condicion_venta" model="ir.ui.view">
+             <field name="name">view.form.condicion.venta</field>
+             <field name="model">condicion.venta</field>
+             <field name="arch" type="xml">
+                <form string="Listado de Tipo de Responsable">
+                  <sheet>
+                    <legend>Tipo de Responsable</legend>
+                      <group>
+                         <field name="codigo" required="True" class="oe_inline"/>
+                         <field name="name" required="True"/>
+                         <field name="for_company"/>
+                         <field name="for_partner"/>
+                         <field name="validar_cuit"/>
+                         <field name="comprobante_default"/>
+                      </group>
+                       <group string="Comprobantes Permitidos Receptor">
+                            <field name="comprobante_ids" nolabel="1" required="1"/>
+                        </group>
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_condicion_venta" model="ir.ui.view">
+             <field name="name">view.tree.point.sales</field>
+             <field name="model">condicion.venta</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="codigo"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_condicion_venta" model="ir.actions.act_window">
+            <field name="name">Tipo de Responsable</field>
+            <field name="res_model">condicion.venta</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="py_condicion_venta_menu"
+        name="Tipo de Responsable"
+        parent="l10n_ar_base.menu_argentina"
+        sequence="33"
+        action="action_condicion_venta" />
+
+     </data>
+</odoo>

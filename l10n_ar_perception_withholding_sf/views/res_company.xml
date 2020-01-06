@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="res_company_form_sf_config" model="ir.ui.view">
+            <field name="name">res.company.form.sf.config</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Data of aliquots" name="aliquot_accounts">
+                        <separator string="SIRCAR"/>
+                        <group name="account_sf" colspan="4">
+                            <group name="perception_sf">
+                                <field name="jurisdiction_id" attrs="{'required':['|', ('calculate_perc_sf','=',True),('calculate_wh_sf','=',True)]}"/>
+                                <field name="calculate_perc_sf"/>
+                                <!--<field name="article_perception_id" attrs="{'invisible':[('calculate_wh_sf','=',False)], 'required':[('calculate_wh_sf','=',True)]}"/>-->
+                                <field name="perc_sf_account_id" attrs="{'invisible':[('calculate_perc_sf','=',False)], 'required':[('calculate_perc_sf','=',True)]}"/>
+                                <field name="amount_exempt_perc_sf" attrs="{'invisible':[('calculate_perc_sf','=',False)], 'required':[('calculate_perc_sf','=',True)]}"/>
+                            </group>
+                            <group name="withholding_sf">
+                                <field name="calculate_wh_sf"/>
+                                <!--<field name="article_withholding_id" attrs="{'invisible':[('calculate_wh_sf','=',False)], 'required':[('calculate_wh_sf','=',True)]}"/>-->
+                                <field name="supplier_wh_sf_journal_id" attrs="{'invisible':[('calculate_wh_sf','=',False)], 'required':[('calculate_wh_sf','=',True)]}"/>
+                                <field name="amount_exempt_sf" attrs="{'invisible':[('calculate_wh_sf','=',False)], 'required':[('calculate_wh_sf','=',True)]}"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

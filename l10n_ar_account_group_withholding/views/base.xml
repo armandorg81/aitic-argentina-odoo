@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+        <menuitem id="menu_retenciones" name="Retenciones" parent="base.menu_administration" sequence="0"/>
+    </data>
+</odoo>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_form_account_withholding" model="ir.ui.view">
+            <field name="name">view.form.account.withholding</field>
+            <field name="model">account.withholding</field>
+            <field name="inherit_id" ref="l10n_ar_account_group_withholding.view_form_account_withholding"/>
+            <field name="arch" type="xml">
+                <xpath expr='//group[@name="data"]' position='before'>
+                    <legend attrs="{'invisible':[('type_aliquot','!=', 'agip')]}">Retención IIBB Capital Federal</legend>
+                </xpath>
+                <field name="withholding_tax_base_real" position="after">
+                    <field name="type_aliquot" invisible="1"/>
+                    <field name="withholding_agip_aliquot" readonly="1" attrs="{'invisible': [('type_aliquot','!=','agip')]}"/>
+                </field>
+                <field name="payment_group_id" position="after">
+                    <field name="regime_credit" readonly="1" attrs="{'invisible': [('type_aliquot','!=','agip')]}"/>
+                    <field name="acceptance" attrs="{'invisible': [('regime_credit','=',False)]}"/>
+                    <field name="date_acceptance" attrs="{'invisible': [('acceptance','!=','express')]}"/>
+                </field>
+            </field>
+        </record>
+        <record id="action_account_withholding_agip" model="ir.actions.act_window">
+            <field name="name">Retención IIBB Capital Federal</field>
+            <field name="res_model">account.withholding</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('type_aliquot','=','agip')]</field>
+        </record>
+
+        <menuitem id="action_account_withholding_agip_menu"
+                  name="Retenciones IIBB Capital Federal"
+                  parent="l10n_ar_account_group_withholding.account_withholding_menu"
+                  sequence="2"
+                  action="action_account_withholding_agip" />
+    </data>
+</odoo>

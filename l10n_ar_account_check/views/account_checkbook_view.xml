@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_account_checkbook_tree" model="ir.ui.view">
+            <field name="name">account.checkbook.tree</field>
+            <field name="model">account.checkbook</field>
+            <field name="arch" type="xml">
+                <tree string="Checkbooks" colors="blue:state == 'draft';black:state in ('active');red:state == 'rejected';gray:state == 'used'" editable="bottom">
+                    <field name="own_check_subtype"/>
+                    <field name="name"/>
+                    <field name="next_number"/>
+                    <field name="to_number"/>
+                    <field name="block_manual_number" readonly="1"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_account_checkbook_form" model="ir.ui.view">
+            <field name="name">account.checkbook.form</field>
+            <field name="model">account.checkbook</field>
+            <field name="arch" type="xml">
+                <form string="Checkbooks"> 
+                    <header string="Checkbooks">
+                        <field name="state" widget="statusbar" clickable="True"/>
+                    </header>
+                    <sheet string="Checkbooks">
+                        <group>
+                            <field name="name" invisible="1"/>
+                            <field name="own_check_subtype"/>
+                            <field name="to_number"/>
+                            <field name="block_manual_number"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+ 
+    </data>
+</odoo>        

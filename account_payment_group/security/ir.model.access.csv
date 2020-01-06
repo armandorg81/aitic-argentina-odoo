@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_payment_group,account.payment.group,model_account_payment_group,account.group_account_invoice,1,1,1,1
+access_payment_group_advance_move,access_payment_group_advance_move,model_payment_group_advance_move,account.group_account_invoice,1,1,1,1
+access_account_invoice_group,access_account_invoice_group,model_account_invoice_group,account.group_account_invoice,1,1,1,1
+access_ir_config_parameter_invoice,ir_config_parameter_invoice,base.model_ir_config_parameter,account.group_account_invoice,1,0,0,0

@@ -1,0 +1,677 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_perception_withholding_sf
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-15 13:48+0000\n"
+"PO-Revision-Date: 2018-11-15 13:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_article_wh_id
+msgid " Withholding Regimen"
+msgstr " Regímen de Retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> A - Datos del agente de retención</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+msgstr "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> A - Datos del agente de retención</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> B - Datos del sujeto retenido</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+msgstr "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> B - Datos del sujeto retenido</strong></span><br/><br/>\n"
+"                                        <strong>Apellidos y Nombre / Denominación:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> C - Datos de la retención</strong></span><br/><br/>"
+msgstr "<br/>\n"
+"                                        <span style=\"font-size: 16px;\"><strong> C - Datos de la retención</strong></span><br/><br/>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Alícutoa:     </strong>"
+msgstr "<br/>\n"
+"                                        <strong>Alícutoa:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>C.U.I.T:     </strong>"
+msgstr "<br/>\n"
+"                                        <strong>C.U.I.T:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Domicilio:     </strong>"
+msgstr "<br/>\n"
+"                                        <strong>Domicilio:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:     </strong>"
+msgstr "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:    </strong>"
+msgstr "<br/>\n"
+"                                        <strong>Número de Inscripción IIBB:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<span> -C.P. </span>"
+msgstr "<span> -C.P. </span>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<span> -Loc. </span>"
+msgstr "<span> -Loc. </span>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<span> -Prov. Buenos Aires</span><br/>\n"
+"                                        <strong>C.U.I.T:    </strong>"
+msgstr "<span> -Prov. Buenos Aires</span><br/>\n"
+"                                        <strong>C.U.I.T:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<span>)</span><br/>\n"
+"                                        <strong>Domicilio:    </strong>"
+msgstr "<span>)</span><br/>\n"
+"                                        <strong>Domicilio:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong><span>__________________________________ </span></strong>"
+msgstr "<strong><span>__________________________________ </span></strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Certificado Nro:    </strong>"
+msgstr "<strong>Certificado Nro:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Comprobantes que originan la retención:     </strong>"
+msgstr "<strong>Comprobantes que originan la retención:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Fecha:    </strong>"
+msgstr "<strong>Fecha:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Firma del agente de retención:    </strong>"
+msgstr "<strong>Firma del agente de retención:    </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Importe de la retención en letras:     </strong>"
+msgstr "<strong>Importe de la retención en letras:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Importe de la retención:     </strong>"
+msgstr "<strong>Importe de la retención:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Importe sujeto a retención:     </strong>"
+msgstr "<strong>Importe sujeto a retención:     </strong>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "<strong>Régimen:    </strong><span>Retención</span><br/>\n"
+"                                            <strong>Jurisdicción:     </strong><span>Santa Fé</span><br/>"
+msgstr "<strong>Régimen:    </strong><span>Retención</span><br/>\n"
+"                                            <strong>Jurisdicción:     </strong><span>Santa Fé</span><br/>"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_res_company_perc_sf_account_id
+msgid "Account where the value of the Santa Fe perception will be reflected in the customer invoice."
+msgstr "Cuenta donde el valor de la percepción de Santa Fé se reflejará en la factura del cliente."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_active
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.view_res_partner_sf_form
+msgid "Aliquot Info"
+msgstr "Información de alícuotas"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_aliquot_sf_wizard
+msgid "Aliquot Santa Fe Export"
+msgstr "Exportar retenciones/percepciones Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_partner_aliquot_ids
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_users_aliquot_ids
+msgid "Aliquots"
+msgstr "Alícuotas"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_amount_exempt_perc_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_amount_exempt_sf
+msgid "Amount exempt sf"
+msgstr "Monto exento de retención IIBB"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:res.partner,exempt_sf:0
+msgid "Art. 3ero. Res 15/97 y modif."
+msgstr "Art. 3ero. Res 15/97 y modif."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_withholding_article_id
+msgid "Article"
+msgstr "Artículo"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_article_section
+msgid "Article/Section"
+msgstr "Artículo/Inciso"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_article_perception_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_article_withholding_id
+msgid "Article/Section by retaining"
+msgstr "Artículo/Inciso por el que retiene"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:article.section,concept:0
+msgid "Both"
+msgstr "Ambos"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "Certificado de Retención"
+msgstr "Certificado de Retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.report,name:l10n_ar_perception_withholding_sf.report_aliquot
+msgid "Certificados de Retenciones de IIBB"
+msgstr "Certificados de Retenciones de IIBB"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:res.partner,exempt_sf:0
+msgid "Certificate of exemption"
+msgstr "Certificado de exención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_partner_certificate_exemption
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_users_certificate_exemption
+msgid "Certificate of exemption number"
+msgstr "Número de certificado de exención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:res.partner,exempt_sf:0
+msgid "Certificate of non-perception"
+msgstr "Certificado de no percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_download
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_code
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:article.section,type:0
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_company_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_create_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_create_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.res_company_form_sf_config
+msgid "Data of aliquots"
+msgstr "Datos de alícuotas"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_partner_date_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_users_date_sf
+msgid "Date exempt IIBB Santa Fe"
+msgstr "Fecha de exención IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:jurisdiction,perception_design:0
+#: selection:jurisdiction,withholding_design:0
+msgid "Design Nro 1"
+msgstr "Diseño Nro 1"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:jurisdiction,perception_design:0
+#: selection:jurisdiction,withholding_design:0
+msgid "Design Nro 2"
+msgstr "Diseño Nro 2"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_display_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_sf.aliquot_sf_wizard_action
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_sf.aliquot_sf_wizard_menu
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_download
+msgid "Export Aliquot  Santa Fé"
+msgstr "Exportar retenciones/percepciones Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_form
+msgid "Export Aliquot Santa Fé"
+msgstr "Exportar retenciones/percepciones Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_res_company
+msgid "Factura Electronica"
+msgstr "Factura Electronica"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_date_from
+msgid "From Date"
+msgstr "Fecha desde"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:account.tax,type_aliquot:0
+#: selection:res.aliquot,type:0
+msgid "IIBB Santa Fe"
+msgstr "IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_account_tax_is_perception
+msgid "Indicates if the tax is IIBB aliquot"
+msgstr "Indicates if the tax is IIBB aliquot"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.report_aliquot_withholding
+msgid "Ingresos Brutos"
+msgstr "Ingresos Brutos"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_is_data
+msgid "Is data"
+msgstr "Es dato"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_invoice_is_total_withholding_iibb
+msgid "Is total IIBB withholding"
+msgstr "Is total IIBB withholding"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.view_form_jurisdiction
+msgid "Jurisdicción"
+msgstr "Jurisdicción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_sf.action_jurisdiction
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_jurisdiction
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_jurisdiction_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_jurisdiction_id
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_jurisdiction_id
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_sf.action_jurisdiction_menu
+msgid "Jurisdiction"
+msgstr "Jurisdicción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard___last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section___last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction___last_update
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_write_uid
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_write_date
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_name
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:res.partner,exempt_sf:0
+msgid "No withholding certificate"
+msgstr "Certificado de no retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:res.partner,exempt_sf:0
+msgid "Not exempt"
+msgstr "No exento"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_payment_number_sf
+msgid "Number Santa Fe"
+msgstr "Número Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_partner_cuit_origin
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_users_cuit_origin
+msgid "Número Documento"
+msgstr "Número Documento"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:article.section,type:0
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_res_partner
+msgid "Partner registered turns"
+msgstr "Empresa"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_payment_group
+msgid "Payment group"
+msgstr "Grupo de pagos"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_invoice_amount_perception_sf
+msgid "Percep. IIBB Santa Fe"
+msgstr "Percep. IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:article.section,concept:0
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_tax_is_perception
+msgid "Perception"
+msgstr "Percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_perception_aliquot
+msgid "Perception Aliquot"
+msgstr "Alícuota de percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_article_perc_id
+msgid "Perception Regimen"
+msgstr "Regímen de Percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: code:addons/l10n_ar_perception_withholding_sf/models/res_sf.py:40
+#: code:addons/l10n_ar_perception_withholding_sf/models/res_sf.py:64
+#, python-format
+msgid "Perception Santa Fe %"
+msgstr "Percepción Santa Fé %"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_perc_sf_account_id
+msgid "Perception account  IIBB Santa fe"
+msgstr "Cuenta de percepción IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_perception_design
+msgid "Perception design"
+msgstr Diseño percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.act_window,help:l10n_ar_perception_withholding_sf.action_article_section
+#: model:ir.actions.act_window,help:l10n_ar_perception_withholding_sf.action_jurisdiction
+msgid "Presione para crear nuevo Registro"
+msgstr "Presione para crear nuevo Registro"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_payment_group_withholding_sf_id
+msgid "Retencion"
+msgstr "Retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_sf.action_account_withholding_sf_menu
+msgid "Retenciones IIBB Santa Fe"
+msgstr "Retenciones de IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_sf.action_account_withholding_santaf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.view_form_account_withholding
+msgid "Retención IIBB Santa Fe"
+msgstr "Retención de IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.res_company_form_sf_config
+msgid "SIRCAR"
+msgstr "SIRCAR"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_calculate_perc_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_calculate_perc_sf
+msgid "Santa Fe perception agent"
+msgstr "Agente de percepción Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_calculate_wh_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_calculate_wh_sf
+msgid "Santa Fe withholding agent"
+msgstr "Agente de retención Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_res_aliquot_calculate_perc_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_res_company_calculate_perc_sf
+msgid "The company is Santa Fe perception agent."
+msgstr "La compañía es Agente de percepción Santa Fé."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_res_aliquot_calculate_wh_sf
+#: model:ir.model.fields,help:l10n_ar_perception_withholding_sf.field_res_company_calculate_wh_sf
+msgid "The company is Santa Fe withholding agent."
+msgstr "La compañía es Agente de retención Santa Fé."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_download
+msgid "There are no data in the period to export."
+msgstr "No hay datos en el período para exportar."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_to_date
+msgid "To"
+msgstr "Hasta"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_from_date
+msgid "From"
+msgstr "Desde"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_activity
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_txt_binary
+msgid "Txt Binary"
+msgstr "Txt Binary"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_aliquot_sf_wizard_txt_filename
+msgid "Txt Filename"
+msgstr "Txt Filename"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_concept
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_article_section_type
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_tax_type_aliquot
+msgid "Type Aliquot"
+msgstr "Type Aliquot"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_partner_exempt_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_users_exempt_sf
+msgid "Type of exemption Santa Fe"
+msgstr "Tipo de exención Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_date_update
+msgid "Update date"
+msgstr "Fecha de actualización"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_payment_group_amount_sf_withholding
+msgid "Withhol. Santa Fe"
+msgstr "Retención Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: selection:article.section,concept:0
+msgid "Withholding"
+msgstr "Retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_aliquot_withholding_aliquot
+msgid "Withholding Aliquot"
+msgstr "Alícuotas de retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: code:addons/l10n_ar_perception_withholding_sf/models/account_payment_group.py:92
+#, python-format
+msgid "Withholding IIBB Santa Fe"
+msgstr "Retenciones IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_withholding_withholding_sf_aliquot
+msgid "Withholding Santa Fe Aliquot"
+msgstr "Alícuota de retención Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.actions.act_window,name:l10n_ar_perception_withholding_sf.action_article_section
+#: model:ir.ui.menu,name:l10n_ar_perception_withholding_sf.action_article_section_menu
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.view_form_article_section
+msgid "Withholding and perception regimes"
+msgstr "Regímenes de Retención y Percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_jurisdiction_withholding_design
+msgid "Withholding design"
+msgstr "Diseño de retención"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_res_company_supplier_wh_sf_journal_id
+msgid "Withholding journal IIBB Santa Fe"
+msgstr "Diario de retención IIBB Santa Fé"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model.fields,field_description:l10n_ar_perception_withholding_sf.field_account_invoice_exempt_percep
+msgid "Without perception"
+msgstr "Sin percepción"
+
+#. module: l10n_ar_perception_withholding_sf
+#: code:addons/l10n_ar_perception_withholding_sf/models/account_payment_group.py:83
+#, python-format
+msgid "You must configurate in the company the withholding Santa Fe journal."
+msgstr "Debes configurar en la empresa el diario de retención Santa Fé."
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_account_withholding
+msgid "account.withholding"
+msgstr "account.withholding"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.ui.view,arch_db:l10n_ar_perception_withholding_sf.account_aliquot_sf_wizard_form
+msgid "or"
+msgstr "o"
+
+#. module: l10n_ar_perception_withholding_sf
+#: model:ir.model,name:l10n_ar_perception_withholding_sf.model_res_aliquot
+msgid "res.aliquot"
+msgstr "res.aliquot"
+

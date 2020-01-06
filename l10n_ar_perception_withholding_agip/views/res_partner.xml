@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_res_partner_agip_form" model="ir.ui.view">
+            <field name="name">view.res.partner.agip.form</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="l10n_ar_perception_withholding.view_res_partner_arba_form"/>
+            <field name="arch" type="xml">
+                <group name="agip" position="inside">
+                    <field name="exempt_agip"/>
+                    <field name="date_agip_from" attrs="{'invisible': [('exempt_agip','=',False)], 'required': [('exempt_agip','=',True)]}"/>
+                    <field name="date_agip_to" attrs="{'invisible': [('exempt_agip','=',False)], 'required': [('exempt_agip','=',True)]}"/>
+                </group>
+            </field>
+        </record>
+
+        <record id="view_res_aliquot_form" model="ir.ui.view">
+            <field name="name">view.res.aliquot.form</field>
+            <field name="model">res.aliquot</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="l10n_ar_perception_withholding.view_res_aliquot_form"/>
+            <field name="arch" type="xml">
+                <group name="column1" position="inside">
+                    <field name="type_ci" attrs="{'invisible': [('type','!=','agip')]}"/>
+                </group>
+                <group name="column1" position="inside">
+                    <field name="mark_hs" attrs="{'invisible': [('type','!=','agip')]}"/>
+                    <field name="mark_aliq" attrs="{'invisible': [('type','!=','agip')]}"/>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>

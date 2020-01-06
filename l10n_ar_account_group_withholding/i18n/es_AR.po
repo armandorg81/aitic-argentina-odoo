@@ -1,0 +1,1113 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ar_account_group_withholding
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-13 20:36+0000\n"
+"PO-Revision-Date: 2018-12-13 20:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__por_ins
+msgid "% para Inscriptos"
+msgstr "% para Inscriptos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__por_no_ins
+msgid "% para no Inscriptos"
+msgstr "% para no Inscriptos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0013
+msgid "110"
+msgstr "110"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0020
+msgid "111"
+msgstr "111"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0021
+msgid "113"
+msgstr "113"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0003
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0015
+msgid "116"
+msgstr "116"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0016
+msgid "124"
+msgstr "124"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0005
+msgid "19"
+msgstr "19"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0014
+msgid "25"
+msgstr "25"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0006
+msgid "30"
+msgstr "30"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0007
+msgid "31"
+msgstr "31"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0008
+msgid "32"
+msgstr "32"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0009
+msgid "35"
+msgstr "35"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0010
+msgid "43"
+msgstr "43"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0011
+msgid "51"
+msgstr "51"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0018
+msgid "53"
+msgstr "53"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0019
+msgid "55"
+msgstr "55"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0023
+msgid "779"
+msgstr "779"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0001
+msgid "78"
+msgstr "78"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0024
+msgid "780"
+msgstr "780"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0012
+msgid "86"
+msgstr "86"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0002
+msgid "94"
+msgstr "94"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0004
+#: model:regimen.retencion,name:l10n_ar_account_group_withholding.regimen_retencion_0017
+msgid "95"
+msgstr "95"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<br/>\n"
+"                                <strong>Direccion:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<br/>\n"
+"                                <strong>Razon Social:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+msgid "<br/>\n"
+"                        <strong>Direccion:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+msgid "<br/>\n"
+"                        <strong>Razon Social:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_download
+msgid "<i class=\"fa fa-download\" style=\"padding: 0.25em;\" aria-hidden=\"true\" aria-label=\"Download\" title=\"Download\"/>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_account_group_wh_payment
+msgid "<span>Total pagado:</span>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>Cert. de Retencion de Ganancias:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>Fecha:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>Ingresos Brutos (C.M.):</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+msgid "<strong>Ingresos Brutos (C.M.):</strong>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>Nombre y Apellido Firmante:</strong><br/>\n"
+"                                <strong>Cargo:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+msgid "<strong>Nombre y Apellido Firmante:</strong><br/>\n"
+"                        <strong>Cargo:</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>Ref: Orden de Pago Nro. </strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "<strong>__________________________</strong><br/>\n"
+"                                <strong>Firma Responsable</strong><br/>\n"
+"                                <strong>Original</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+msgid "<strong>______________________________________</strong><br/>\n"
+"                        <strong>Firma Responsable</strong><br/>\n"
+"                        <strong>Original</strong>"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0006
+msgid "Alquileres o arrendamientos de bienes muebles."
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment__amount_aliquot_in_words
+msgid "Amount in Words"
+msgstr "Importe en letras"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0006
+msgid "Anexo II, inc. b) pto. 1)"
+msgstr "Anexo II, inc. b) pto. 1)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0007
+msgid "Anexo II, inc. b) pto. 2)"
+msgstr "Anexo II, inc. b) pto. 2)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0008
+msgid "Anexo II, inc. b) pto. 3)"
+msgstr "Anexo II, inc. b) pto. 3)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0009
+msgid "Anexo II, inc. c)"
+msgstr "Anexo II, inc. c)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0010
+msgid "Anexo II, inc. d)"
+msgstr "Anexo II, inc. d)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0011
+msgid "Anexo II, inc. e)"
+msgstr "Anexo II, inc. e)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0001
+msgid "Anexo II, inc. f)"
+msgstr "Anexo II, inc. f)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0012
+msgid "Anexo II, inc. g)"
+msgstr "Anexo II, inc. g)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0013
+msgid "Anexo II, inc. h)"
+msgstr "Anexo II, inc. h)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0002
+msgid "Anexo II, inc. i)"
+msgstr "Anexo II, inc. i)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0014
+msgid "Anexo II, inc. j)"
+msgstr "Anexo II, inc. j)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0005
+msgid "Anexo II, inc.a) pto.1)"
+msgstr "Anexo II, inc.a) pto.1)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0003
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0015
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0016
+msgid "Anexo ll, inc. k)"
+msgstr "Anexo ll, inc. k)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0004
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0017
+msgid "Anexo ll, inc. l)"
+msgstr "Anexo ll, inc. l)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0018
+msgid "Anexo ll, inc. m)"
+msgstr "Anexo ll, inc. m)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0019
+msgid "Anexo ll, inc. n)"
+msgstr "Anexo ll, inc. n)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0021
+msgid "Anexo ll, inc. p)"
+msgstr "Anexo ll, inc. p)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0020
+msgid "Anexo ll, inc. ñ)"
+msgstr "Anexo ll, inc. ñ)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0023
+msgid "Anexo ll, inciso q)"
+msgstr "Anexo ll, inciso q)"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,concepto:l10n_ar_account_group_withholding.regimen_retencion_0024
+msgid "Anexo ll, inciso r)"
+msgstr "Anexo ll, inciso r)"
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.withholding,state:0
+msgid "Annulled"
+msgstr "Anulado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0008
+msgid "Bienes Inmuebles Rurales, incluidos los efectuados bajo la modalidad de leasing, –incluye subrurales-"
+msgstr "Bienes Inmuebles Rurales, incluidos los efectuados bajo la modalidad de leasing, –incluye subrurales-"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0007
+msgid "Bienes Inmuebles Urbanos, incluidos los efectuados bajo la modalidad de leasing, –incluye suburbanos-"
+msgstr "Bienes Inmuebles Urbanos, incluidos los efectuados bajo la modalidad de leasing, –incluye suburbanos-"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_company__branch_number
+msgid "Branch number withholding"
+msgstr "Número de sucursal para las retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_company__calculate_wh
+msgid "Calculate withholding"
+msgstr "Calcular retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,help:l10n_ar_account_group_withholding.field_res_company__calculate_wh
+msgid "Calculate withholding in payment to suppliers"
+msgstr "Calcular retención en el pago a proveedores"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__is_canceled
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.report,name:l10n_ar_account_group_withholding.report_withholding_report
+msgid "Certificados de retenciones de ganancias"
+msgstr "Certificados de retenciones de ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_download
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0014
+msgid "Comisiones u otras retribuciones derivadas de la actividad de comisionista, rematador, consignatario y demás auxiliares de comercio a que se refiere el inciso c) del artículo 49 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones."
+msgstr "Comisiones u otras retribuciones derivadas de la actividad de comisionista, rematador, consignatario y demás auxiliares de comercio a que se refiere el inciso c) del artículo 49 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__company_id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Comprobantes que originan la retencion:"
+msgstr "Comprobantes que originan la retencion:"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__concepto
+msgid "Conceptos sujeto a retención"
+msgstr "Conceptos sujeto a retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0016
+msgid "Corredor, viajante de comercio y despachante de aduana. En todos los casos, con las salvedades mencionadas en dicho inciso."
+msgstr "Corredor, viajante de comercio y despachante de aduana. En todos los casos, con las salvedades mencionadas en dicho inciso."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__create_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0020
+msgid "Cualquier otra cesión o locación de derechos, excepto las que correspondan a operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones."
+msgstr "Cualquier otra cesión o locación de derechos, excepto las que correspondan a operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__name
+msgid "Código Régimen"
+msgstr "Código Régimen"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.export_data_menu
+msgid "Data export"
+msgstr "Exportar datos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.server,name:l10n_ar_account_group_withholding.action_declared_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_account_withholding
+msgid "Declared"
+msgstr "Declarar"
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.withholding,state:0
+msgid "Declared"
+msgstr "Declarado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__mark_declared
+msgid "Declared withholding"
+msgstr "Declarar retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__desc
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Detalle de las retenciones efectuadas:"
+msgstr "Detalle de las retenciones efectuadas:"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_company__supplier_wh_journal_id
+msgid "Retention journal"
+msgstr "Diario de retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__display_name
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0019
+msgid "Distribución de películas. Transmisión de programación. Televisión vía satelital."
+msgstr "Distribución de películas. Transmisión de programación. Televisión vía satelital."
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.withholding,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.payment,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+msgid "Earnings"
+msgstr "Ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__edit_withholding
+msgid "Edit withholding tax base"
+msgstr "Editar base imponible retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0001
+msgid "Enajenación de bienes muebles y bienes de cambio."
+msgstr "Enajenación de bienes muebles y bienes de cambio."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.act_window,name:l10n_ar_account_group_withholding.view_afip_gain_withholding_action
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.menu_action_afip_gain_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_afip_gain_withholding_tree
+msgid "Escala de Retenciones"
+msgstr "Escala de Retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_partner__exempt_earning
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_users__exempt_earning
+msgid "Exento de retención de ganancias"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0013
+msgid "Explotación de derechos de autor (Ley N° 11.723)."
+msgstr "Explotación de derechos de autor (Ley N° 11.723)."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.act_window,name:l10n_ar_account_group_withholding.withholding_wizard_action
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.withholding_wizard_menu
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_download
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_form
+msgid "Export Withholding Gain"
+msgstr "Exportar retenciones de ganancia"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_res_company
+msgid "Factura Electronica"
+msgstr "Factura Electronica"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__invoice_ids
+msgid "Facturas Asociadas"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__date
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_partner__date_earnings_to
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_users__date_earnings_to
+msgid "Fecha fin de exclusión de ganancias"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_partner__date_earnings_from
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_users__date_earnings_from
+msgid "Fecha inicio de exclusión de ganancias"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__from_date
+msgid "From"
+msgstr "De"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__group_id
+msgid "Group"
+msgstr "Grupo"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Header title"
+msgstr "Título del encabezado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0003
+msgid "Honorarios de director de sociedades anónimas, síndico, fiduciario, consejero de sociedades cooperativas, integrante de consejos de vigilancia y socios administradores de las sociedades de responsabilidad limitada, en comandita simple y en comandita por acciones."
+msgstr "Honorarios de director de sociedades anónimas, síndico, fiduciario, consejero de sociedades cooperativas, integrante de consejos de vigilancia y socios administradores de las sociedades de responsabilidad limitada, en comandita simple y en comandita por acciones."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.payment,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+msgid "IIBB Capital Federal"
+msgstr "IIBB Capital Federal"
+
+#. module: l10n_ar_account_group_withholding
+#: selection:account.payment,type_aliquot:0
+#: selection:account.withholding,type_aliquot:0
+msgid "IIBB Prov. BS. AS."
+msgstr "IIBB Prov. BS. AS."
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Importe"
+msgstr "Importe"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0005
+msgid "Intereses por operaciones realizadas en entidades financieras. Ley N° 21.526 y sus modificaciones o agentes de bolsa o mercado abierto."
+msgstr "Intereses por operaciones realizadas en entidades financieras. Ley N° 21.526 y sus modificaciones o agentes de bolsa o mercado abierto."
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0010
+msgid "Interés accionario, excedentes y retornos distribuidos entre asociados, cooperativas, -excepto consumo-."
+msgstr "Interés accionario, excedentes y retornos distribuidos entre asociados, cooperativas, -excepto consumo-."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_invoice
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__group_invoice_ids
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__invoice_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__is_data
+msgid "Is data"
+msgstr "Es dato"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding____last_update
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__write_date
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__withholding_line
+msgid "Linea de Retenciones"
+msgstr "Línea de Retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_regimen_retencion
+msgid "Listado de Puntos de Ventas"
+msgstr "Listado de Puntos de Ventas"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0002
+msgid "Locaciones de obra y/o servicios no ejecutados en relación de dependencia no mencionados expresamente en otros incisos."
+msgstr "Locaciones de obra y/o servicios no ejecutados en relación de dependencia no mencionados expresamente en otros incisos."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,help:l10n_ar_account_group_withholding.field_res_company__regime_wh
+msgid "Mark if the calculation of monthly accumulated retention is by regime"
+msgstr "Marcar si el cálculo de retención acumulada mensual es por régimen."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,help:l10n_ar_account_group_withholding.field_account_withholding_wizard__mark_declared
+msgid "Mark withholding as declared"
+msgstr "Marcar si se van a declarar las retenciones del periodo seleccionado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__rate
+msgid "Mas el %"
+msgstr "Más el %"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__amount
+msgid "Monto"
+msgstr "Monto"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__amount_from
+msgid "Monto Desde"
+msgstr "Monto Desde"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__amount_to
+msgid "Monto Hasta"
+msgstr "Monto Hasta"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__withholding_amount
+msgid "Monto Retencion"
+msgstr "Monto Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__withholding_tax_base_real
+msgid "Monto Sujeto a Retención"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__payment_group_id
+msgid "Payment group"
+msgstr "Grupo de pago"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__montos_no_sujeto
+msgid "Montos no sujetos a retención"
+msgstr "Montos no sujetos a retención"
+
+#. module: l10n_ar_account_group_withholding
+#: code:addons/l10n_ar_account_group_withholding/models/account_withholding.py:18
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__name
+msgid "No. de Retencion"
+msgstr "No. de Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__withholding_certificate
+msgid "No.Withholding Certificate"
+msgstr "No. de Certificado de retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_account_group_wh_payment
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_pw_account_payment_group_search
+msgid "Nro Comprobante Retención"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Nro. de"
+msgstr "Nro. de"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__cuit
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_partner__cuit_origin
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_users__cuit_origin
+msgid "Número Documento"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0011
+msgid "Obligaciones de no hacer, o por abandono o no ejercicio de una actividad."
+msgstr "Obligaciones de no hacer, o por abandono o no ejercicio de una actividad."
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0004
+msgid "Operaciones de transporte de carga nacional e internacional"
+msgstr "Operaciones de transporte de carga nacional e internacional"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0017
+msgid "Operaciones de transporte de carga nacional e internacional."
+msgstr "Operaciones de transporte de carga nacional e internacional."
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0018
+msgid "Operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones.."
+msgstr "Operaciones realizadas por intermedio de mercados de cereales a término que se resuelvan en el curso del término (arbitrajes) y de mercados de futuros y opciones.."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_line__payment_id
+msgid "Pago"
+msgstr "Pago"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__payment_id
+msgid "Pago Principal"
+msgstr "Pago Principal"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_account_withholding
+msgid "Pagos Asociados"
+msgstr "Pagos Asociados"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0022
+msgid "Pagos realizados por cada administración descentralizada fondo fijo o caja chica. Art. 27, primer párrafo."
+msgstr "Pagos realizados por cada administración descentralizada fondo fijo o caja chica. Art. 27, primer párrafo."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_res_partner
+msgid "Partner registered turns"
+msgstr "Partner registered turns"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_invoice__group_invoice_ids
+msgid "Payment"
+msgstr "Pagos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_payment_group
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__payment_group_id
+msgid "Payment group"
+msgstr "Grupo de pagos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.actions.act_window,help:l10n_ar_account_group_withholding.action_regimen_retencion
+msgid "Presione para crear nuevo Registro"
+msgstr "Presione para crear nuevo Registro"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0015
+msgid "Profesionales liberales, oficios, albacea, mandatario, gestor de negocio"
+msgstr "Profesionales liberales, oficios, albacea, mandatario, gestor de negocio"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__partner_id
+msgid "Razon Social"
+msgstr "Razón Social"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__reference
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0009
+msgid "Regalías."
+msgstr "Regalías."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_company__regime_wh
+msgid "Regime withholding"
+msgstr "Retención por régimen"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__regimen_retencion_id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_partner__regimen_retencion_id
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_res_users__regimen_retencion_id
+msgid "Regimen Retención"
+msgstr "Régimen Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_regimen_retencion
+msgid "Regimen de Retencion"
+msgstr "Régimen de Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0021
+msgid "Rescates -totales o parciales- por desistimiento de los planes de seguro de retiro a que se refiere el inciso o), excepto que sea de aplicación lo normado en el artículo 101 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones."
+msgstr "Rescates -totales o parciales- por desistimiento de los planes de seguro de retiro a que se refiere el inciso o), excepto que sea de aplicación lo normado en el artículo 101 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__withholding_id
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_document
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.report_withholding_earnings_document
+msgid "Retencion"
+msgstr "Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.account_withholding_menu
+msgid "Withholdings"
+msgstr "Retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.account_withholding_earnings_menu
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.menu_retenciones
+msgid "Withholdings of Earnings"
+msgstr "Retenciones de Ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_invoice__withholding_ids
+msgid "Retenciones Asociadas"
+msgstr "Retenciones Asociadas"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.act_window,name:l10n_ar_account_group_withholding.action_account_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_account_withholding
+msgid "Withholding of Earnings"
+msgstr "Retención de Ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.act_window,name:l10n_ar_account_group_withholding.action_regimen_retencion
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.py_regimen_retencion_menu
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_regimen_retencion
+msgid "Régimen Retención"
+msgstr "Régimen Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_afip_gain_withholding__excess_amount
+msgid "S/Exced. de"
+msgstr "S/Exced. de"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__segun_escala_ins
+msgid "Segun Escala Inscritos"
+msgstr "Según Escala Inscritos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_regimen_retencion__segun_escala_nins
+msgid "Segun Escala No Inscritos"
+msgstr "Según Escala No Inscritos"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0024
+msgid "Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Aires, en concepto de locaciones de obra y/o servicios, no ejecutados en relación de dependencia, en la medida que una ley general o especial no establezca la exención de los mismos en el impuesto a las ganancias"
+msgstr "Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Aires, en concepto de locaciones de obra y/o servicios, no ejecutados en relación de dependencia, en la medida que una ley general o especial no establezca la exención de los mismos en el impuesto a las ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0023
+msgid "Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Ares, en concepto de enajenación de bienes muebles y bienes de cambio, en la medida que una ley general o especial no esta blezca la exención de los mismos en el impuesto a las ganancias. "
+msgstr "Subsidios abonados por los estados Nacional, provinciales, municipales o el Gobierno de la Ciudad Autónoma de Buenos Ares, en concepto de enajenación de bienes muebles y bienes de cambio, en la medida que una ley general o especial no esta blezca la exención de los mismos en el impuesto a las ganancias. "
+
+#. module: l10n_ar_account_group_withholding
+#: code:addons/l10n_ar_account_group_withholding/models/account_payment_group.py:279
+#, python-format
+msgid "The amount to be paid must not be greater than the amount initially paid."
+msgstr "El monto a pagar no debe ser mayor que el monto pagado inicialmente."
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_download
+msgid "There are no data in the period to export."
+msgstr "No hay datos en el período para exportar."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__to_date
+msgid "To"
+msgstr "Para"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__amount_total_payable
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__total_amount_cancel
+msgid "Total amount canceled"
+msgstr "Cantidad total cancelada"
+
+#. module: l10n_ar_account_group_withholding
+#: model:regimen.retencion,desc:l10n_ar_account_group_withholding.regimen_retencion_0012
+msgid "Transferencia temporaria o definitiva de derechos de llave, marcas, patentes de invención, regalías, concesiones y similares."
+msgstr "Transferencia temporaria o definitiva de derechos de llave, marcas, patentes de invención, regalías, concesiones y similares."
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__txt_binary
+msgid "Txt Binary"
+msgstr "Txt Binario"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding_wizard__txt_filename
+msgid "Txt Filename"
+msgstr "Nombre Txt"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment__type_aliquot
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_withholding__type_aliquot
+msgid "Type aliquot"
+msgstr "Tipo alícuota"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__amount_withholding
+msgid "Withhol. Base."
+msgstr "Base de Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment__customers_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment__is_withholding
+msgid "Withholding"
+msgstr "Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__withholding_base_amount
+msgid "Withholding Amount"
+msgstr "Retención de Ganancia"
+
+#. module: l10n_ar_account_group_withholding
+#: code:addons/l10n_ar_account_group_withholding/models/account_payment_group.py:274
+#, python-format
+msgid "Withholding Earnings"
+msgstr "Retención de Ganancia"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_withholding_wizard
+msgid "Withholding Gain Export"
+msgstr "Exportación de retenciones de ganacia"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_invoice__no_withholding_amount_iibb
+msgid "Withholding IIBB"
+msgstr "Retenciones IIBB"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_journal__is_withholding
+msgid "Withholding Journal"
+msgstr "Diario de Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment__withholding_receipt
+msgid "Withholding Receipt"
+msgstr "Nro Comprobante Retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.actions.act_window,name:l10n_ar_account_group_withholding.action_account_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.view_form_account_withholding
+msgid "Withholding of Earnings"
+msgstr "Retención de Ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__withholding_tax_base
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__withholding_tax_base_real
+msgid "Withholding tax base"
+msgstr "Base imponible retención"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.account_withholding_menu
+msgid "Withholdings"
+msgstr "Retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.ui.menu,name:l10n_ar_account_group_withholding.account_withholding_earnings_menu
+msgid "Withholdings of Earnings"
+msgstr "Retenciones de Ganancias"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group__exempt_withholding
+msgid "Without withholding"
+msgstr "Sin retenciones"
+
+#. module: l10n_ar_account_group_withholding
+#: code:addons/l10n_ar_account_group_withholding/models/account_payment_group.py:429
+#: code:addons/l10n_ar_account_group_withholding/models/account_payment.py:20
+#, python-format
+msgid "You cannot delete a payment with declared withholdings."
+msgstr "No puede eliminar pagos que tengan retenciones declaradas."
+
+#. module: l10n_ar_account_group_withholding
+#: code:addons/l10n_ar_account_group_withholding/models/account_payment_group.py:258
+#, python-format
+msgid "You must comfigurate in the company the withholding journal."
+msgstr "Debe configurar en la compañía el diario de retención de ganancia"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_payment_group_invoice
+msgid "account.payment.group.invoice"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_withholding
+msgid "account.withholding"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_account_withholding_line
+msgid "account.withholding.line"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model,name:l10n_ar_account_group_withholding.model_afip_gain_withholding
+msgid "afip.gain.withholding"
+msgstr ""
+
+#. module: l10n_ar_account_group_withholding
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_group_withholding.account_withholding_wizard_form
+msgid "or"
+msgstr "o"
+
+#. module: l10n_ar_account_group_withholding
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__withholding_tax_base
+#: model:ir.model.fields,field_description:l10n_ar_account_group_withholding.field_account_payment_group_invoice__withholding_tax_real
+msgid "withholding tax base"
+msgstr "Base imponible retención"
+

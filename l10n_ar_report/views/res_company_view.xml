@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ar_report_view_company_inherit_form" model="ir.ui.view">
+            <field name="name">l10n.ar.report.view.company.inherit.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="l10n_ar_facturae.view_company_inherit_form" />
+            <field name="arch" type="xml">
+                <field name="off_cae" position="after">
+                    <field name="hide_afip_fields"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

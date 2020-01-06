@@ -1,0 +1,19 @@
+' ]vbn vid,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_user_res_aliquot,access.purchase.user.res.aliquot,l10n_ar_perception_withholding_sf.model_res_aliquot,purchase.group_purchase_user,1,1,1,0
+access_sale_salesman_all_res_aliquot,access.sale.salesman.all.res.aliquot,l10n_ar_perception_withholding_sf.model_res_aliquot,sales_team.group_sale_salesman,1,1,1,0
+access_account_manager_res_aliquot,access.account.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_res_aliquot,account.group_account_manager,1,1,1,0
+access_erp_manager_res_aliquot,access.erp.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_res_aliquot,base.group_erp_manager,1,1,1,1
+
+access_purchase_user_article_section,access.purchase.user.res.aliquot,l10n_ar_perception_withholding_sf.model_article_section,purchase.group_purchase_user,1,1,1,0
+access_sale_salesman_all_article_section,access.sale.salesman.all.res.aliquot,l10n_ar_perception_withholding_sf.model_article_section,sales_team.group_sale_salesman,1,1,1,0
+access_account_manager_article_section,access.account.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_article_section,account.group_account_manager,1,1,1,0
+access_erp_manager_article_section,access.erp.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_article_section,base.group_erp_manager,1,1,1,1
+
+access_purchase_user_jurisdiction,access.purchase.user.res.aliquot,l10n_ar_perception_withholding_sf.model_jurisdiction,purchase.group_purchase_user,1,1,1,0
+access_sale_salesman_all_jurisdiction,access.sale.salesman.all.res.aliquot,l10n_ar_perception_withholding_sf.model_jurisdiction,sales_team.group_sale_salesman,1,1,1,0
+access_account_manager_jurisdiction,access.account.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_jurisdiction,account.group_account_manager,1,1,1,0
+access_erp_manager_jurisdiction,access.erp.manager.res.aliquot,l10n_ar_perception_withholding_sf.model_jurisdiction,base.group_erp_manager,1,1,1,1
+
+access_purchase_user_res_compa,access_purchase_user_res_compa,model_res_company,purchase.group_purchase_user,1,1,0,0
+access_sale_salesman_all_res_compa,access_sale_salesman_all_res_compa,model_res_company,sales_team.group_sale_salesman,1,1,0,0
+access_account_manager_res_compa,access_account_manager_res_compa,model_res_company,account.group_account_manager,1,1,0,0

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ag_facturae_invoice_form" model="ir.ui.view">
+            <field name="name">l10n.ag.facturae.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="l10n_ar_base.l10n_ag_base_invoice_form" />
+            <field name="arch" type="xml">
+                <!--<button name="action_invoice_open" position="replace">
+                    <button string="Enviar Factura" type="object"
+                        class="oe_highlight"
+                        name="enviar_dte"
+                        icon='fa-cloud-upload'
+                        attrs="{'invisible': ['|','|','|','|',('state','=','cancel'),('not_invoice','=',True),('online_mode_f','=',False),
+                                                  ('state_dte','!=','created')]}"/>
+                    <button name="action_invoice_open" type="object"
+                        string="Validar" class="oe_highlight"
+                        attrs="{'invisible': ['|','|',('not_invoice','=',True),('state_dte','!=','accepted'),
+                                                          ('state','!=','draft')]}"
+                        groups="account.group_account_invoice"/>
+
+                    <button name="action_invoice_open" type="object"
+                        string="Validar" class="oe_highlight"
+                        attrs="{'invisible': ['|','|',('not_invoice','=',True),('online_mode_f','!=',False),
+                                                          ('state','!=','draft')]}"
+                        groups="account.group_account_invoice"/>
+
+                </button>-->
+                <field name="team_id" position="after">
+                    <field name="not_invoice" invisible="1"/>
+                    <field name="comprobante_credito" invisible="1"/>
+                    <field name="anulacion" attrs="{'invisible': [('comprobante_credito', '=', False), ('type', '!=', 'out_refund')]}"/>
+                    <field name='num_comprobante'  attrs="{'readonly': ['|','|',('online_mode_f','=',True),('state','!=','draft'),],
+                        'required': [('state','!=','draft'),('voucher_control', '=', True),('online_mode_f','=', True)], 'invisible': [('voucher_control', '=', False)]}"/>
+                    <field name="cod_operacion" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+                    <!-- Campos de Exportación -->
+                    <field name="tipo_expo" attrs="{'readonly': [('state','!=','draft')],
+                                                    'invisible': [('es_exportacion','=',False)],
+                                                    'required': [('es_exportacion','=',True)]}"/>
+
+                    <field name="permiso_existente" attrs="{'readonly': [('state','!=','draft')],
+                                                    'invisible': [('es_exportacion','=',False)],
+                                                    'required': [('es_exportacion','=',True)]}"/>
+
+                    <field name="incoterms" attrs="{'readonly': [('state','!=','draft')],
+                                                    'invisible': [('es_exportacion','=',False)],
+                                                    'required': [('es_exportacion','=',True)]}"/>
+                    <field name="port" attrs="{'readonly': [('state','!=','draft')],
+                                                    'invisible': [('es_exportacion','=',False)]}"/>
+                    <field name="currency_rate" attrs="{'invisible': [('es_exportacion','=',False)]}"/>
+                    <field name="tipo_de_cambio" invisible="1"/>
+                    <field name="es_exportacion" invisible="1" />
+                </field>
+                <page name="other_info" position="after">
+                    <page string="Factura Electrónica" name="electronic_invoice">
+                        <header>
+                            <field name="state_dte" widget="statusbar" style="margin-left:20px; margin-top:10px"/>
+                        </header>
+                        <group>
+                              <field name='no_cae' attrs="{'readonly': ['|',('online_mode_f','=',True),('state','!=','draft')],
+                                        'required': [('state','!=','draft'),('voucher_control','=',True), ('online_mode_f','=',True)], 'invisible': [('voucher_control','=',False)]}"/>
+                              <field name='vence_date' attrs="{'readonly': ['|',('online_mode_f','=',True),('state','!=','draft')],
+                                        'required': [('state','!=','draft'),('voucher_control','=',True),('online_mode_f','=',True)], 'invisible': [('voucher_control','=',False)]}"/>
+                              <field name="requestXml" readonly="1" filename="requestXml_fname"/>
+                              <field name="responseXml" readonly="1" filename="responseXml_fname"/>
+                              <field name='cod_barra' readonly="1"/>
+                              <field name='barcode_img' widget="image" readonly="1"/>
+                              <field name="requestXml_fname" invisible="1"/>
+                              <field name="responseXml_fname" invisible="1"/>
+                              <field name="online_mode_f"/>
+                              <field name="off_cae" invisible="1"/>
+                        </group>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+        <record id="l10n_ag_facturae_invoice_tree" model="ir.ui.view">
+            <field name="name">l10n.ag.facturae.invoice.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="l10n_ar_base.l10n_ag_base_invoice_tree" />
+            <field name="arch" type="xml">
+                <field name="punto_venta" position="after">
+                    <field name="num_comprobante"/>
+                    <field name="state_dte"/>
+                </field>
+
+                <tree position="attributes">
+                    <attribute name="decoration-danger">state_dte != 'accepted'</attribute>
+                </tree>
+            </field>
+        </record>
+
+        <record id="l10n_ag_facturae_supplier_form" model="ir.ui.view">
+            <field name="name">l10n.ag.facturae.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="l10n_ar_base.l10n_ag_base_supplier_form" />
+            <field name="arch" type="xml">
+                <field name="punto_venta_proveedor" position="after">
+                    <field name="num_comprobante" attrs="{'readonly': [('state','!=','draft')], 'required': [('voucher_control', '=', True)], 'invisible': [('voucher_control', '=', False),]}" placeholder="00000000"/>
+                    <field name="cod_operacion" attrs="{'readonly': [('state','!=','draft')]}"/>
+                </field>
+            </field>
+        </record>
+
+
+         <record id="l10n_ag_base_supplier_tree2" model="ir.ui.view">
+            <field name="name">l10n.ag.base.supplier.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree"/>
+            <field name="arch" type="xml">
+                <field name="punto_venta_proveedor" position="after">
+                    <field name="num_comprobante"/>
+                </field>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

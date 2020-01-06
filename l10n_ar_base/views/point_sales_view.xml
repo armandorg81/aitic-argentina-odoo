@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_point_sales" model="ir.ui.view">
+             <field name="name">view.form.point.sales</field>
+             <field name="model">point.sales</field>
+             <field name="arch" type="xml">
+                <form string="Listado de Puntos de Ventas">
+                  <sheet>
+                    <legend>Punto de Venta</legend>
+                       <group>
+                          <group>
+                             <field name="name" required="True"/>
+                             <field name="desc" required="True"/>
+                             <field name="default_invoice"/>
+                             <field name="default_picking"/>
+                             <field name="tax_assets"/>
+                          </group>
+                       </group>
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_point_sales" model="ir.ui.view">
+             <field name="name">view.tree.point.sales</field>
+             <field name="model">point.sales</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="desc"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_point_sales" model="ir.actions.act_window">
+            <field name="name">Punto de Ventas</field>
+            <field name="res_model">point.sales</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="py_point_sales_menu"
+        name="Punto de Venta"
+        parent="l10n_ar_base.menu_argentina"
+        sequence="31"
+        action="action_point_sales" />
+
+     </data>
+</odoo>

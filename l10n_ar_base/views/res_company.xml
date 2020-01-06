@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_company_inherit_form">
+        <field name="name">res.company.form.inherit</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="model">res.company</field>
+        <field name="arch" type="xml">
+            <field name="state_id" position="replace"/>
+            <field name="country_id" position="replace"/>
+            <xpath expr="//div[@class='o_address_format']" position="after">
+                <field name="cuit" string="C.U.I.T:" placeholder="C.U.I.T" required="True"/>
+                 <field name="documento_id" required="True"/>
+                 <field name="tipo_responsable" required="True" domain="[('for_company','=',True)]"/>
+                <field name="ingresos_brutos" required="True"/>
+                <field name="start_date" required="True"/>
+                <field name="is_check_price_total" />
+            </xpath>
+
+            <notebook position="inside">
+                <page string="Control de Facturas" name="invoice_control">
+                    <group name="account_arba" colspan="4">
+                        <group>
+                            <field name="invoice_line" />
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+</odoo>

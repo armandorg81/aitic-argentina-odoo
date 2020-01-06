@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ar_pw_view_tax_form" model="ir.ui.view">
+            <field name="name">l10n.ar.pw.view.tax.form</field>
+            <field name="model">account.tax</field>
+            <field name="inherit_id" ref="l10n_ar_base.l10n_ar_base_view_tax_form"/>
+            <field name="arch" type="xml">
+                <field name="is_excempt" position="after">
+                    <field name="is_perception"/>
+                    <!--<field name="is_withholding" readonly="True"/>-->
+                </field>
+                <field name="is_iva" position="attributes">
+                    <attribute name="attrs">{'readonly': [('is_perception','=',True)]}</attribute>
+                </field>
+                <field name="is_excempt" position="attributes">
+                    <attribute name="attrs">{'readonly': ['|',('is_perception','=',True)]}</attribute>
+                </field>
+                <field name="tipo_tributo" position="attributes">
+                    <attribute name="attrs">{'invisible': ['|',('is_iva','=',True),('is_perception','=',True)], 'required': ['|',('is_iva','=',False),('is_perception','=',False)]}</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

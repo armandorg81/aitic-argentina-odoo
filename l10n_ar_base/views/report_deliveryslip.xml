@@ -1,0 +1,70 @@
+<odoo>
+    <template id="report_shipping_contact" inherit_id="stock.report_picking">
+        <xpath expr="//div[@name='partner_header']" position="replace">
+            <div t-if="o.partner_id and o.partner_id.parent_id" name="partner_header">
+                <span t-if="o.partner_id.parent_id">
+                    <div t-field="o.partner_id.parent_id"
+                         t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                    <p t-if="o.sudo().partner_id.vat">VAT: <span t-field="o.sudo().partner_id.vat"/></p>
+                </span>
+                <span t-if="not o.partner_id.parent_id">
+                    <div t-field="o.partner_id"
+                         t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                    <p t-if="o.sudo().partner_id.vat">VAT: <span t-field="o.sudo().partner_id.vat"/></p>
+                </span>
+            </div>
+        </xpath>
+        <xpath expr="//div[@class='col-xs-6'][1]//div[1]" position="replace">
+            <div class="col-xs-6">
+                <div t-if="o.partner_id and not o.partner_id.parent_id">
+                    <div t-if="o.move_lines and o.move_lines[0].partner_id and o.move_lines[0].partner_id.id != o.partner_id.id">
+                        <span><strong>Dirección de Envío:</strong></span>
+                        <div t-field="o.move_lines[0].partner_id"
+                             t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                    </div>
+                </div>
+                <div t-if="o.partner_id and o.partner_id.parent_id">
+                    <span><strong>Dirección de Envío:</strong></span>
+                    <div t-field="o.partner_id"
+                         t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template id="report_delivery_document_inherit_contact" inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[@name='customer_address']" position="replace">
+            <div class="row" name="customer_address">
+                <div class="col-xs-6">
+                    <div t-if="o.partner_id and not o.partner_id.parent_id">
+                        <div t-if="o.move_lines and o.move_lines[0].partner_id and o.move_lines[0].partner_id.id != o.partner_id.id">
+                            <span><strong>Dirección de Envío:</strong></span>
+                            <div t-field="o.move_lines[0].partner_id"
+                                 t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                        </div>
+                    </div>
+                    <div t-if="o.partner_id and o.partner_id.parent_id">
+                        <span><strong>Dirección de Envío:</strong></span>
+                        <div t-field="o.partner_id"
+                             t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                    </div>
+                </div>
+                <div class="col-xs-4 pull-right">
+                    <div>
+                        <span><strong>Dirección del Cliente:</strong></span>
+                    </div>
+                    <div t-if="o.partner_id" name="partner_header">
+                        <span t-if="o.partner_id.parent_id">
+                            <div t-field="o.partner_id.parent_id"
+                                 t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                        </span>
+                        <span t-if="not o.partner_id.parent_id">
+                            <div t-field="o.partner_id"
+                                 t-options='{"widget": "contact", "fields": ["address", "name", "phone", "fax"], "no_marker": True, "phone_icons": True}'/>
+                            <p t-if="o.sudo().partner_id.vat">VAT: <span t-field="o.sudo().partner_id.vat"/></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_book,access.account.book,l10n_ar_books.model_account_book,account.group_account_invoice,1,1,1,0
+access_account_book_user,access.account.book.user,l10n_ar_books.model_account_book,account.group_account_user,1,1,1,1

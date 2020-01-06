@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+        <record id="view_form_tipo_documento" model="ir.ui.view">
+            <field name="name">view.form.tipo.documento</field>
+            <field name="model">tipo.documento</field>
+            <field name="arch" type="xml">
+                <form string="Tipos de Documentos">
+                  <sheet>
+                    <legend>Tipo de Documento</legend>
+                       <group>
+                          <group>
+                             <field name="codigo" required="True"/>
+                             <field name="name" required="True"/>
+                          </group>
+                       </group>
+                   </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_tipo_documento" model="ir.ui.view">
+            <field name="name">view.tree.tipo.documento</field>
+            <field name="model">tipo.documento</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="codigo"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_tipo_documento" model="ir.actions.act_window">
+                <field name="name">Tipo de Documento</field>
+                <field name="res_model">tipo.documento</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                  <p class="oe_view_nocontent_create">
+                    Presione para crear un nuevo documento</p>
+               </field>
+        </record>
+
+        <menuitem id="py_tipo_documento_menu"
+            name="Tipo de Documento"
+            parent="l10n_ar_base.menu_argentina"
+            sequence="32"
+            action="action_tipo_documento"/>
+
+     </data>
+</odoo>

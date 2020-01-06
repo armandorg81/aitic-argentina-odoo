@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--<record id="view_wizard_arba_data" model="ir.ui.view">-->
+            <!--<field name="name">wizard.arba.data</field>-->
+            <!--<field name="model">wizard.arba.data</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<form>-->
+                    <!--<p class="oe_gray" >-->
+                        <!--You are sure that you want to load the aliquots of the IIBB of the Buenos Aires Province.-->
+                    <!--</p>-->
+                    <!--<footer>-->
+                        <!--<button name="import_file" string="Accept" type="object" class="btn-primary"/>-->
+                        <!--or-->
+                        <!--<button string="Cancel" class="oe_link" special="cancel"/>-->
+                    <!--</footer>-->
+                <!--</form>-->
+            <!--</field>-->
+        <!--</record>-->
+        <!---->
+        <!--<record id="action_wizard_arba_data" model="ir.actions.act_window">-->
+            <!--<field name="name">Update ARBA Aliquot</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">wizard.arba.data</field>-->
+            <!--<field name="view_type">form</field>-->
+            <!--<field name="view_mode">form</field>-->
+            <!--<field name="target">new</field>-->
+        <!--</record>-->
+
+        <record id="view_wizard_aliquot_data" model="ir.ui.view">
+            <field name="name">wizard.arba.data</field>
+            <field name="model">wizard.arba.data</field>
+            <field name="arch" type="xml">
+                <form>
+                    <p class="oe_gray" >
+                        The loading of the aliquots was carried out satisfactorily.
+                    </p>
+                    <footer>
+                        <button string="Close" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_aliquot_data" model="ir.actions.act_window">
+            <field name="name">Update Aliquot</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.arba.data</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        
+                
+        <!--<menuitem-->
+            <!--id="menu_update_pw_arba"-->
+            <!--action="action_wizard_arba_data"-->
+            <!--parent="account.account_account_menu"-->
+            <!--sequence="100"/>-->
+                
+
+    </data>
+</odoo>

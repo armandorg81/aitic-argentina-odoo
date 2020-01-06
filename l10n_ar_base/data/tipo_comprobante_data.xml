@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data noupdate="1">
+               <record id="001" model="tipo.comprobante">
+                   <field name="codigo">001</field>
+                   <field name="name">FACTURA A</field>
+                   <field name="desc">A</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">True</field>
+               </record>
+               <record id="002" model="tipo.comprobante">
+                   <field name="codigo">002</field>
+                   <field name="name">NOTA DE DEBITO A</field>
+                   <field name="desc">A</field>
+                   <field name="type">debit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="001"/>
+               </record>
+               <record id="003" model="tipo.comprobante">
+                   <field name="codigo">003</field>
+                   <field name="name">NOTA DE CREDITO A</field>
+                   <field name="desc">A</field>
+                   <field name="type">credit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="001"/>
+               </record>
+               <record id="004" model="tipo.comprobante">
+                   <field name="codigo">004</field>
+                   <field name="name">RECIBO A</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="005" model="tipo.comprobante">
+                   <field name="codigo">005</field>
+                   <field name="name">NOTA DE VENTA AL CONTADO A</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="006" model="tipo.comprobante">
+                   <field name="codigo">006</field>
+                   <field name="name">FACTURA B</field>
+                   <field name="desc">B</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">True</field>
+               </record>
+               <record id="007" model="tipo.comprobante">
+                   <field name="codigo">007</field>
+                   <field name="name">NOTA DE DEBITO B</field>
+                   <field name="desc">B</field>
+                   <field name="type">debit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="006"/>
+               </record>
+               <record id="008" model="tipo.comprobante">
+                   <field name="codigo">008</field>
+                   <field name="name">NOTA DE CREDITO B</field>
+                   <field name="desc">B</field>
+                   <field name="type">credit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="006"/>
+               </record>
+               <record id="009" model="tipo.comprobante">
+                   <field name="codigo">009</field>
+                   <field name="name">RECIBO B</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="010" model="tipo.comprobante">
+                   <field name="codigo">010</field>
+                   <field name="name">NOTA DE VENTA AL CONTADO B</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="011" model="tipo.comprobante">
+                   <field name="codigo">011</field>
+                   <field name="name">FACTURA C</field>
+                   <field name="desc">C</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="012" model="tipo.comprobante">
+                   <field name="codigo">012</field>
+                   <field name="name">NOTA DE DEBITO C</field>
+                   <field name="desc">C</field>
+                   <field name="type">debit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="011"/>
+               </record>
+               <record id="013" model="tipo.comprobante">
+                   <field name="codigo">013</field>
+                   <field name="name">NOTA DE CREDITO C</field>
+                   <field name="desc">C</field>
+                   <field name="type">credit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="011"/>
+               </record>
+               <record id="014" model="tipo.comprobante">
+                   <field name="codigo">014</field>
+                   <field name="name">DOCUMENTO ADUANERO</field>
+                   <field name="desc">DA</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="015" model="tipo.comprobante">
+                   <field name="codigo">015</field>
+                   <field name="name">RECIBO C</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="016" model="tipo.comprobante">
+                   <field name="codigo">016</field>
+                   <field name="name">NOTA DE VENTA AL CONTADO</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="019" model="tipo.comprobante">
+                   <field name="codigo">019</field>
+                   <field name="name">FACTURA DE EXPORTACION</field>
+                   <field name="desc">A</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="020" model="tipo.comprobante">
+                   <field name="codigo">020</field>
+                   <field name="name">NOTA DE DEBITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="desc">A</field>
+                   <field name="type">debit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="019"/>
+               </record>
+               <record id="021" model="tipo.comprobante">
+                   <field name="codigo">021</field>
+                   <field name="name">NOTA DE CREDITO POR OPERACIONES CON EL EXTERIOR</field>
+                   <field name="desc">A</field>
+                   <field name="type">credit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="019"/>
+               </record>
+               <record id="022" model="tipo.comprobante">
+                   <field name="codigo">022</field>
+                   <field name="name">FACTURA - PERMISO EXPORTACION SIMPLIFICADO - DTO. 855/97</field>
+                   <field name="desc">A</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="030" model="tipo.comprobante">
+                   <field name="codigo">030</field>
+                   <field name="name">COMPROBANTES DE COMPRA DE BIENES USADOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="031" model="tipo.comprobante">
+                   <field name="codigo">031</field>
+                   <field name="name">MANDATO - CONSIGNACION</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="032" model="tipo.comprobante">
+                   <field name="codigo">032</field>
+                   <field name="name">COMPROBANTES PARA RECICLAR MATERIALES</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="034" model="tipo.comprobante">
+                   <field name="codigo">034</field>
+                   <field name="name">COMPROBANTES A DEL APARTADO A  INCISO F  R G  N  1415</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="035" model="tipo.comprobante">
+                   <field name="codigo">035</field>
+                   <field name="name">COMPROBANTES B DEL ANEXO I, APARTADO A, INC. F), RG N° 1415</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="036" model="tipo.comprobante">
+                   <field name="codigo">036</field>
+                   <field name="name">COMPROBANTES C DEL Anexo I, Apartado A, INC.F), R.G. N° 1415</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="037" model="tipo.comprobante">
+                   <field name="codigo">037</field>
+                   <field name="name">NOTA DE DEBITO O DOCUMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="038" model="tipo.comprobante">
+                   <field name="codigo">038</field>
+                   <field name="name">NOTA DE CREDITO O DOCMENTO EQUIVALENTE QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="039" model="tipo.comprobante">
+                   <field name="codigo">039</field>
+                   <field name="name">OTROS COMPROBANTES A QUE CUMPLEN CON LA R G  1415</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="040" model="tipo.comprobante">
+                   <field name="codigo">040</field>
+                   <field name="name">OTROS COMPROBANTES B QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="041" model="tipo.comprobante">
+                   <field name="codigo">041</field>
+                   <field name="name">OTROS COMPROBANTES C QUE CUMPLAN CON LA R.G. N° 1415</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="050" model="tipo.comprobante">
+                   <field name="codigo">050</field>
+                   <field name="name">RECIBO FACTURA A  REGIMEN DE FACTURA DE CREDITO</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="051" model="tipo.comprobante">
+                   <field name="codigo">051</field>
+                   <field name="name">FACTURA M</field>
+                   <field name="desc">M</field>
+                   <field name="type">invoice</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="052" model="tipo.comprobante">
+                   <field name="codigo">052</field>
+                   <field name="name">NOTA DE DEBITO M</field>
+                   <field name="desc">M</field>
+                   <field name="type">debit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="051"/>
+               </record>
+               <record id="053" model="tipo.comprobante">
+                   <field name="codigo">053</field>
+                   <field name="name">NOTA DE CREDITO M</field>
+                   <field name="desc">M</field>
+                   <field name="type">credit_note</field>
+                   <field name="permitido_venta">False</field>
+                   <field name="referencia_id" ref="051"/>
+               </record>
+               <record id="054" model="tipo.comprobante">
+                   <field name="codigo">054</field>
+                   <field name="name">RECIBO M</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="055" model="tipo.comprobante">
+                   <field name="codigo">055</field>
+                   <field name="name">NOTA DE VENTA AL CONTADO M</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="056" model="tipo.comprobante">
+                   <field name="codigo">056</field>
+                   <field name="name">COMPROBANTES M DEL ANEXO I  APARTADO A  INC F   R G  N  1415</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="057" model="tipo.comprobante">
+                   <field name="codigo">057</field>
+                   <field name="name">OTROS COMPROBANTES M QUE CUMPLAN CON LA R G  N  1415</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="058" model="tipo.comprobante">
+                   <field name="codigo">058</field>
+                   <field name="name">CUENTAS DE VENTA Y LIQUIDO PRODUCTO M</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="059" model="tipo.comprobante">
+                   <field name="codigo">059</field>
+                   <field name="name">LIQUIDACIONES M</field>
+                   <field name="desc">M</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="060" model="tipo.comprobante">
+                   <field name="codigo">060</field>
+                   <field name="name">CUENTAS DE VENTA Y LIQUIDO PRODUCTO A</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="061" model="tipo.comprobante">
+                   <field name="codigo">061</field>
+                   <field name="name">CUENTAS DE VENTA Y LIQUIDO PRODUCTO B</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="063" model="tipo.comprobante">
+                   <field name="codigo">063</field>
+                   <field name="name">LIQUIDACIONES A</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="064" model="tipo.comprobante">
+                   <field name="codigo">064</field>
+                   <field name="name">LIQUIDACIONES B</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="065" model="tipo.comprobante">
+                   <field name="codigo">065</field>
+                   <field name="name">NOTA DE CREDITO DE COMPROBANTES CON COD. 34, 39, 58, 59, 60, 63, 96, 97</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="066" model="tipo.comprobante">
+                   <field name="codigo">066</field>
+                   <field name="name">DESPACHO DE IMPORTACION</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="067" model="tipo.comprobante">
+                   <field name="codigo">067</field>
+                   <field name="name">IMPORTACION DE SERVICIOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="068" model="tipo.comprobante">
+                   <field name="codigo">068</field>
+                   <field name="name">LIQUIDACION C</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="070" model="tipo.comprobante">
+                   <field name="codigo">070</field>
+                   <field name="name">RECIBO FACTURA DE CREDITO</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="071" model="tipo.comprobante">
+                   <field name="codigo">071</field>
+                   <field name="name">CREDITO FISCAL POR CONTRIBUCIONES PATRONALES</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="073" model="tipo.comprobante">
+                   <field name="codigo">073</field>
+                   <field name="name">FORMULARIO 1116 RT</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="074" model="tipo.comprobante">
+                   <field name="codigo">074</field>
+                   <field name="name">CARTA DE PORTE PARA EL TRANSPORTE AUTOMOTOR PARA GRANOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="075" model="tipo.comprobante">
+                   <field name="codigo">075</field>
+                   <field name="name">CARTA DE PORTE PARA EL TRANSPORTE FERROVIARIO PARA GRANOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="080" model="tipo.comprobante">
+                   <field name="codigo">080</field>
+                   <field name="name">COMPROBANTE DIARIO DE CIERRE (ZETA)</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="081" model="tipo.comprobante">
+                   <field name="codigo">081</field>
+                   <field name="name">TIQUE FACTURA A   CONTROLADORES FISCALES</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="082" model="tipo.comprobante">
+                   <field name="codigo">082</field>
+                   <field name="name">TIQUE - FACTURA B</field>
+                   <field name="desc">B</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="083" model="tipo.comprobante">
+                   <field name="codigo">083</field>
+                   <field name="name">TIQUE</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="084" model="tipo.comprobante">
+                   <field name="codigo">084</field>
+                   <field name="name">COMPROBANTE   FACTURA DE SERVICIOS PUBLICOS   INTERESES FINANCIEROS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="085" model="tipo.comprobante">
+                   <field name="codigo">085</field>
+                   <field name="name">NOTA DE CREDITO   SERVICIOS PUBLICOS   NOTA DE CREDITO CONTROLADORES FISCALES</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="086" model="tipo.comprobante">
+                   <field name="codigo">086</field>
+                   <field name="name">NOTA DE DEBITO   SERVICIOS PUBLICOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="087" model="tipo.comprobante">
+                   <field name="codigo">087</field>
+                   <field name="name">OTROS COMPROBANTES - SERVICIOS DEL EXTERIOR</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="088" model="tipo.comprobante">
+                   <field name="codigo">088</field>
+                   <field name="name">OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS / REMITO ELECTRONICO </field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="089" model="tipo.comprobante">
+                   <field name="codigo">089</field>
+                   <field name="name">OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTA DE DEBITO / RESUMEN DE DATOS</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="090" model="tipo.comprobante">
+                   <field name="codigo">090</field>
+                   <field name="name">OTROS COMPROBANTES - DOCUMENTOS EXCEPTUADOS - NOTA DE CREDITO</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="091" model="tipo.comprobante">
+                   <field name="codigo">091</field>
+                   <field name="name">REMITO R</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="092" model="tipo.comprobante">
+                   <field name="codigo">092</field>
+                   <field name="name">AJUSTES CONTABLES QUE INCREMENTAN EL DEBITO FISCAL</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="093" model="tipo.comprobante">
+                   <field name="codigo">093</field>
+                   <field name="name">AJUSTES CONTABLES QUE DISMINUYEN EL DEBITO FISCAL</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="094" model="tipo.comprobante">
+                   <field name="codigo">094</field>
+                   <field name="name">AJUSTES CONTABLES QUE INCREMENTAN EL CREDITO FISCAL</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="095" model="tipo.comprobante">
+                   <field name="codigo">095</field>
+                   <field name="name">AJUSTES CONTABLES QUE DISMINUYEN EL CREDITO FISCAL</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="096" model="tipo.comprobante">
+                   <field name="codigo">096</field>
+                   <field name="name">FORMULARIO 1116 B</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="097" model="tipo.comprobante">
+                   <field name="codigo">097</field>
+                   <field name="name">FORMULARIO 1116 C</field>
+                   <field name="desc">C</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="099" model="tipo.comprobante">
+                   <field name="codigo">099</field>
+                   <field name="name">OTROS COMP  QUE NO CUMPLEN CON LA R G  3419 Y SUS MODIF</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="101" model="tipo.comprobante">
+                   <field name="codigo">101</field>
+                   <field name="name">AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  POSITIVO</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="102" model="tipo.comprobante">
+                   <field name="codigo">102</field>
+                   <field name="name">AJUSTE ANUAL PROVENIENTE DE LA  D J  DEL IVA  NEGATIVO</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="103" model="tipo.comprobante">
+                   <field name="codigo">103</field>
+                   <field name="name">NOTA DE ASIGNACION</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+               <record id="104" model="tipo.comprobante">
+                   <field name="codigo">104</field>
+                   <field name="name">NOTA DE CREDITO DE ASIGNACION</field>
+                   <field name="desc">A</field>
+                   <field name="type">other</field>
+                   <field name="permitido_venta">False</field>
+               </record>
+        </data>
+    </odoo>

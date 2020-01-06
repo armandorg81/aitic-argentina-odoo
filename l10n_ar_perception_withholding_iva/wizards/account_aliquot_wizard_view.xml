@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="account_aliquot_iva_wizard_form" model="ir.ui.view">
+            <field name="model">account.aliquot.iva.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Export Aliquot">
+                    <group>
+                        <group>
+                            <field name="from_date" required="1"/>
+                            <!--<field name="activity" required="1" attrs="{'invisible': ['|', ('calculate_perc_sf','=',False),('calculate_wh_sf','=',False)]}"/>-->
+                            <field name="calculate_perc_iva" invisible="1"/>
+                            <field name="calculate_wh_iva" invisible="1"/>
+                            <field name="mark_declared"/>
+                        </group>
+                        <group>
+                            <field name="to_date" required="1"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Confirm" name="confirm" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_aliquot_iva_wizard_download" model="ir.ui.view">
+            <field name="model">account.aliquot.iva.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Export Aliquot">
+                    <center>
+                        <field name="is_data" invisible="1"/>
+                        <i class="fa fa-download" style="padding: 0.25em;" aria-hidden="true" aria-label="Download" title="Download"></i>
+                        <field name="txt_filename" invisible="1"/>
+                        <h1><field name="txt_binary" filename="txt_filename" readonly="1" attrs="{'invisible':[('is_data','=',False)]}"/></h1>
+                        <h1 attrs="{'invisible':[('is_data','=',True)]}">There are no data in the period to export.</h1>
+                    </center>
+                    <footer>
+                        <button string="Close" special="cancel" class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+             
+        <act_window
+            name="Export Aliquot IVA"
+            id="aliquot_iva_wizard_action"
+            res_model="account.aliquot.iva.wizard"
+            view_type="form"
+            view_mode="form"
+            view_id="account_aliquot_iva_wizard_form"
+            target="new" />
+
+        <menuitem
+            id="aliquot_iva_wizard_menu"
+            action="aliquot_iva_wizard_action"
+            parent="l10n_ar_account_group_withholding.export_data_menu"
+            sequence="4" />
+
+    </data>
+</openerp>

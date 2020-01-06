@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="account_book_form" model="ir.ui.view">
+        <field name="name">account.book.form</field>
+        <field name="model">account.book</field>
+        <field name="arch" type="xml">
+            <form string="Libros Compra/Venta">
+                <header>
+                    <button string="Obtener Documentos" name="get_invoices" type="object" class="oe_highlight"
+                        attrs="{'invisible': [('state','!=','draft')]}" icon='fa-anchor'/>
+                    <button string="Validar" name="validate" type="object"
+                        class="oe_highlight" attrs="{'invisible': ['|',('count_docs','=',0),('state','!=','draft')]}" icon='fa-check'/>
+                    <button string="Imprimir PDF" name="print_pdf" type="object"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','not_sent')]}" icon='fa-file-text-o'/>
+                    <button string="Imprimir XLS" name="print_xls" type="object"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','not_sent')]}" icon='fa-trello'/>
+                    <button string="Descargar TXT CBTE" name="download_txt" type="object"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','not_sent')]}" icon='fa-flag-o'/>
+                    <button string="Descargar TXT Alicuotas" name="download_txt_a" type="object"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','not_sent')]}" icon='fa-flag'/>
+                    <button string="Descargar TXT Alicuotas Importacion" name="download_txt_a_i" type="object"
+                        class="oe_highlight" attrs="{'invisible': ['|', ('state','!=','not_sent'), ('operation', '!=', 'purchase')]}" icon='fa-flag'/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="alert alert-warning" attrs="{'invisible': [('is_locked', '=', False)]}">
+                        <center>
+                            Usted debe seleccionar una fecha de bloqueo mayor o igual a la fecha actual.
+                        </center>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="date" class="oe_inline" required="1"/>
+                            <field name="operation" class="oe_inline"/>
+                            <field name="csv_file" readonly="1"
+                                filename="csv_file_name" attrs="{'invisible': [('state','=','draft')]}"/>
+                            <field name="csv_file_name" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="period" class="oe_inline"/>
+                            <field name="company_id" class="oe_inline"
+                                options="{'no_create': True}" groups="base.group_multi_company"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="is_locked"/>
+                            <field name="date_lock" attrs="{'invisible': [('is_locked', '=', False)], 'required': [('is_locked', '=', True)]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="invoice" string="Documentos">
+                            <field name="invoice_ids" attrs="{'invisible': [('count_docs','=',0)]}">
+                                <tree editable="bottom" default_order="date_invoice">
+                                    <field name="type" invisible="1"/>
+                                    <field name="date_invoice"/>
+                                    <field name="date"/>
+                                    <field name="num_comprobante"/>
+                                    <field name="partner_id"/>
+                                    <field name="company_id" groups="base.group_multi_company"/>
+                                    <field name="tipo_comprobante"/>
+                                    <field name="journal_id"/>
+                                    <field name="move_id"/>
+                                    <field name="amount_total_company_signed"/>
+                                    <field name="state" invisible="1"/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="company_currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                            <group class="oe_subtotal_footer oe_right">
+                                <field name="count_docs"/>
+                                <field name="amount_excempt"/>
+                                <field name="amount_iva"/>
+                                <field name="amount_total" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="account_book_tree" model="ir.ui.view">
+        <field name="name">account.book.tree</field>
+        <field name="model">account.book</field>
+        <field name="arch" type="xml">
+            <tree string="Libros Compra/Venta">
+                <field name="name"/>
+                <field name="period"/>
+                <field name="operation"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="account_book_action">
+        <field name="name">Libros Compra/Venta</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.book</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="account_book_menu" name="Libros" parent="account.menu_finance_entries" sequence="10"/>
+    <menuitem id="sale_purchase_book_menu" action="account_book_action" parent="account_book_menu" sequence="10"/>
+
+</odoo>

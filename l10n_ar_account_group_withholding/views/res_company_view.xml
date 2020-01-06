@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+        <record id="account_withholding_view_company_form" model="ir.ui.view">
+            <field name="name">account.withholding.view.company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form" />
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Retenciones en Pagos" name="withholding_payment">
+                        <group colspan="4">
+                            <group>
+                                <field name="calculate_wh"/>
+                                <field name="regime_wh"/>
+                            </group>
+                            <group>
+                                <field name="supplier_wh_journal_id" attrs="{'invisible': [('calculate_wh','=',False)],
+                                                                 'required': [('calculate_wh','=',True)]}"/>
+                                <field name="branch_number" required="1"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

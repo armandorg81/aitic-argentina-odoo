@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="page_bottom" inherit_id="l10n_ar_report.page_bottom">
+            <xpath expr="//tr[@class='imp-otros-trib']" position="before">
+                <tr class="imp-percp-arba" style="border: 0px;" t-if="o.tipo_comprobante.desc != 'B' and not o.company_id.hide_afip_fields">
+                    <td><strong>Percep. IIBB Prov. BS. AS.</strong></td>
+                    <td class="text-right">
+                        <strong>
+                            <span t-field="o.amount_perception_arba"
+                                t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                        </strong>
+                    </td>
+                </tr>
+            </xpath>
+        </template>
+        
+    </data>
+</odoo>

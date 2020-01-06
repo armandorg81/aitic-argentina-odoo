@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="account_account_201050110" model="account.account">
+            <field name="name">Percepciones de IIIBB Santa Fé</field>
+            <field name="code">20105010</field>
+            <field name="reconcile" eval="True"/>
+            <field ref="account.data_account_type_current_liabilities" name="user_type_id"/>
+            <field name="reconcile">1</field>
+        </record>
+        <record id="account_account_20105040" model="account.account">
+            <field name="name">Retenciones de IIBB Santa Fé</field>
+            <field name="code">20105040</field>
+            <field name="reconcile" eval="True"/>
+            <field ref="account.data_account_type_current_liabilities" name="user_type_id"/>
+            <field name="reconcile">1</field>
+        </record>
+        <record id="account_journal_withholding_iibb_sf" model="account.journal">
+            <field name="name">DIARIO DE RETENCIONES DE IIBB Santa Fe</field>
+            <field name="type">bank</field>
+            <field name="code">WHSF</field>
+            <field name="default_credit_account_id" ref="account_account_20105040"/>
+            <field name="default_debit_account_id" ref="account_account_20105040"/>
+            <field name="show_on_dashboard">True</field>
+            <field name="update_posted">True</field>
+            <field name="inbound_payment_method_ids" eval="[(6, 0, [])]"/>
+        </record>
+        <record id="sequence_payment_sf" model="ir.sequence">
+            <field name="name">Payments supplier sf sequence</field>
+            <field name="code">account.payment.supplier.sf</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="True" name="use_date_range"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">8</field>
+        </record>
+    </data>
+</odoo>

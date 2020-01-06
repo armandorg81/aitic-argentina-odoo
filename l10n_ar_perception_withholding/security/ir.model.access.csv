@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_user_res_aliquot,access.purchase.user.res.aliquot,l10n_ar_perception_withholding.model_res_aliquot,purchase.group_purchase_user,1,1,1,0
+access_sale_salesman_all_res_aliquot,access.sale.salesman.all.res.aliquot,l10n_ar_perception_withholding.model_res_aliquot,sales_team.group_sale_salesman,1,1,1,0
+access_account_manager_res_aliquot,access.account.manager.res.aliquot,l10n_ar_perception_withholding.model_res_aliquot,account.group_account_manager,1,1,1,0
+access_erp_manager_res_aliquot,access.erp.manager.res.aliquot,l10n_ar_perception_withholding.model_res_aliquot,base.group_erp_manager,1,1,1,1
+access_group_erp_manager_res_arba_config,access.group.erp.manager.res.arba.config,l10n_ar_perception_withholding.model_res_arba_config,base.group_erp_manager,1,1,1,1
+access_account_manager_res_arba_config,access.account.manager.res.arba.config,l10n_ar_perception_withholding.model_res_arba_config,account.group_account_invoice,1,0,0,0
+access_account_manager_res_arba_activity,access.account.manager.res.arba.activity,l10n_ar_perception_withholding.model_res_arba_activity,account.group_account_invoice,1,0,0,0
+access_account_user_res_arba_activity,access.account.user.res.arba.activity,l10n_ar_perception_withholding.model_res_arba_activity,account.group_account_user,1,1,1,1
+

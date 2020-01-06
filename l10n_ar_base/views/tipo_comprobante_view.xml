@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_tipo_comprobante" model="ir.ui.view">
+             <field name="name">view.form.tipo.comprobante</field>
+             <field name="model">tipo.comprobante</field>
+             <field name="arch" type="xml">
+                <form string="Listado de Tipos de Comprobantes">
+                  <sheet>
+                    <legend>Tipo de Comprobante</legend>
+                       <group>
+                          <group>
+                             <field name="codigo" required="True"/>
+                             <field name="name" required="True"/>
+                             <field name="desc" required="True"/>
+                             
+                          </group>
+                          <group>
+                             <field name="type" required="True"/>
+                             <field name="referencia_id" />
+                             <field name="is_import" />
+                             <field name="is_exempt" />
+                             <field name="not_book" />
+                              <field name="not_date_due"/>
+<!--
+                             <field name="sale_journal_id" required="1"/>
+                             <field name="purchase_journal_id" required="1"/>
+-->
+                             <field name="permitido_venta" />
+                          </group>
+                       </group>
+                       <notebook>
+                            <page string="Puntos de Venta">
+                               <field name="punto_venta_ids" nolabel="1"/>
+                            </page>
+                            <page string="Diarios de Venta">
+                                <field name="sale_journal_ids" nolabel="1"/>
+                            </page>
+                            <page string="Diarios de Compra">
+                                <field name="purchase_journal_ids" nolabel="1"/>
+                            </page>
+                       </notebook>
+                       
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_tipo_comprobante" model="ir.ui.view">
+             <field name="name">view.tree.tipo.comprobante</field>
+             <field name="model">tipo.comprobante</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="codigo"/>
+                    <field name="name"/>
+                    <field name="desc"/>
+                    <field name="referencia_id" />
+                    <field name="permitido_venta" />
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_tipo_comprobante" model="ir.actions.act_window">
+            <field name="name">Tipo de Comprobante</field>
+            <field name="res_model">tipo.comprobante</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="py_tipo_comprobante_menu"
+        name="Tipo de comprobante"
+        parent="l10n_ar_base.menu_argentina"
+        sequence="31"
+        action="action_tipo_comprobante" />
+
+     </data>
+</odoo>

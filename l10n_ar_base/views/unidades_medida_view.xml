@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_unidades_medida" model="ir.ui.view">
+             <field name="name">view.form.unidades.medida</field>
+             <field name="model">unidades.medida</field>
+             <field name="arch" type="xml">
+                <form string="Unidades Medida">
+                  <sheet>
+                    <legend>Unidades de Medida</legend>
+                       <group>
+                          <group>
+                             <field name="name" required="True"/>
+                             <field name="cod" required="True"/>
+                          </group>
+                       </group>
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_unidades_medida" model="ir.ui.view">
+             <field name="name">view.tree.unidades.medida</field>
+             <field name="model">unidades.medida</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="cod"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_unidades_medida" model="ir.actions.act_window">
+            <field name="name">Unidades Medida</field>
+            <field name="res_model">unidades.medida</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="py_unidades_medida_menu"
+        name="Unidades Medida"
+        parent="l10n_ar_base.menu_argentina"
+        sequence="36"
+        action="action_unidades_medida" />
+
+     </data>
+</odoo>

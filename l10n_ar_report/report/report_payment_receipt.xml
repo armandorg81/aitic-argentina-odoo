@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_payment_receipt">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.internal_layout">
+                        <div class="page" style="border:1px solid;">
+                            <div class="col-xs-12" style="border:1px solid;height:220px;">
+                                <div class="col-xs-6" style="border-right:1px solid;height:220px;width:50%;">
+                                    <t t-if="not o.company_id.hide_afip_fields">
+                                        <!--<img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo"
+                                            style="max-height:auto;max-width:80%;align:center;"/><br/>-->
+                                        <img t-if="o.company_id.logo" alt="set company logo"
+                                             t-attf-src="data:image/gif;base64, #{o.company_id.logo}"
+                                             style="mmax-height:auto;max-width:80%;align:center;"/>
+                                        <strong><span t-esc="o.company_id.name"/></strong><br/>
+                                        <span t-field="o.company_id.street"/>, <span t-esc="o.company_id.city"/><br/>
+                                        <span t-esc="o.company_id.email"/><br/>
+                                        <h4><strong><span t-esc="o.company_id.tipo_responsable.name"/></strong></h4>
+                                    </t>
+                                </div>
+                                <div style="position:absolute;top:40px;left:46%;z-index: 1;height:60px;width:60px;background-color:white;border:2px solid;">
+                                    <p class="text-center">
+                                        <strong><span style="font-size:24px;">X</span></strong><br/>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6" style="border-left:1px solid;height:220px;width:50%;">
+                                    <div class="row" style="padding-left:50px;" t-if="not o.company_id.hide_afip_fields">
+                                        <h4><strong>RECIBO</strong></h4>
+    <!--
+                                        <h4><strong><span t-esc="o.tipo_comprobante.desc.upper()"/> <span t-field="o.punto_venta"/>-<span t-esc="o.num_comprobante and o.num_comprobante.zfill(8) or ''"/></strong> </h4><br/>
+    -->
+                                        <h4><strong><span t-field="o.name"/></strong> </h4><br/>
+                                        <strong>Fecha: </strong><span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d-%m-%Y')"/><br/>
+                                        <strong>C.U.I.T.: </strong><span t-field="o.company_id.cuit"/><br/>
+                                        <strong>Ingresos Brutos: </strong><span t-field="o.company_id.ingresos_brutos"/><br/>
+                                        <strong>Inicio Actividades: </strong><span t-field="o.company_id.start_date" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/>
+                                    </div>
+                                    <div class="row" style="padding-left:50px;margin-top:5px;" t-if="o.company_id.hide_afip_fields">
+                                        <strong>Fecha y Hora: </strong><span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d-%m-%Y')"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" style="border:1px solid;max-width:100%;height:auto;padding:10px;">
+                                <div class="col-xs-12">
+                                    <strong>Sres.:</strong> <span t-field="o.partner_id.name"/><br/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <strong>Domicilio:</strong> <span t-field="o.partner_id.street"/><br/>
+                                    <strong>IVA:</strong>
+                                    <t t-if="o.partner_id.parent_id">
+                                        <span t-field="o.partner_id.parent_id.responsability_id.name"/><br/>
+                                    </t>
+                                </div>
+                                <div class="col-xs-6">
+                                    <strong>Localidad:</strong> <span t-field="o.partner_id.city"/><br/>
+                                    <strong>C.U.I.T.:</strong> <span t-field="o.partner_id.cuit"/><br/>
+                                </div>
+                            </div>
+                            <div style="border:1px solid;max-width:100%;height:900px;padding:10px;">
+                                <div class="col-xs-12" style="border:1px solid; margin-top:10px;">
+                                    <strong>Recibí la suma de:</strong>
+                                    <p t-esc="o.word_amount"/>
+                                </div>
+                                <div class="col-xs-12" style="border:1px solid;">
+                                    <strong>En concepto de:</strong><br/>
+                                    <table style="border: 0px;width:100%;">
+                                        <thead style="border: 0px;font-size:11px;">
+                                            <tr>
+                                                <th style="padding: 5px;">Factura</th>
+                                                <th style="padding: 5px;" t-if="o.partner_type == 'customer'">Cliente</th>
+                                                <th style="padding: 5px;" t-if="o.partner_type == 'supplier'">Proveedor</th>
+                                                <th style="padding: 5px;" class="text-right">Monto Factura</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="border: 0px;font-size:9px;">
+                                            <tr t-foreach="o.invoice_ids" t-as="i">
+                                                <td style="padding: 5px;"><span t-esc="i.tipo_comprobante.desc.upper()"/> <span t-field="i.punto_venta"/>-<span t-esc="i.num_comprobante and i.num_comprobante.zfill(8) or ''"/></td>
+                                                <td style="padding: 5px;"><span t-field="i.partner_id.name"/></td>
+                                                <td style="padding: 5px;" class="text-right"><span t-field="i.amount_total"/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-12" style="border:1px solid;" t-if="not o.company_id.hide_afip_fields and o.partner_type == 'supplier'">
+                                    <strong>Retenciones:</strong>
+                                     <table style="border: 0px;width:40%;">
+                                        <thead style="border: 0px;font-size:11px;">
+                                            <tr>
+                                                <th style="padding: 5px;">Retención</th>
+                                                <th style="padding: 5px;" class="text-right">Monto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="border: 0px;font-size:9px;">
+                                            <tr>
+                                                <td style="padding: 5px;"><span t-field="o.withholding_id.name"/></td>
+                                                <td style="padding: 5px;" class="text-right">
+                                                    <span t-esc="o.withholding_id.withholding_amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-12" style="border:1px solid;">
+                                    <strong>Detalle del Pago:</strong>
+                                    <table style="border: 0px;width:60%;">
+                                        <thead style="border: 0px;font-size:11px;">
+                                            <tr>
+                                                <th style="padding: 5px;">Número</th>
+                                                <th style="padding: 5px;">Forma Pago</th>
+                                                <th style="padding: 5px;" class="text-right">Importe</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="border: 0px;font-size:9px;">
+                                            <tr>
+                                                <td style="padding: 5px;" t-if="not o.check_id"><span t-field="o.name"/></td>
+                                                <td style="padding: 5px;" t-if="o.check_id"><span t-field="o.check_id.name"/></td>
+                                                <td style="padding: 5px;"><span t-field="o.journal_id.name"/></td>
+                                                <td style="padding: 5px;" class="text-right"><span t-esc="o.difference" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="border:1px solid;max-width:100%;height:250px;font-size:20px;">
+                                <div class="col-xs-6" style="border-right:1px solid;padding:20px;height:250px;width:50%;">
+                                    <strong>
+                                        TOTAL: <span t-esc="o.difference + o.withholding_base_amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                    </strong>
+                                </div>
+                                <div class="col-xs-6" style="border-left:1px solid;padding:20px;height:250px;width:50%;">
+                                    Firma ________________________<br/><br/><br/>
+                                    Aclaración _____________________
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        
+    </data>
+</odoo>

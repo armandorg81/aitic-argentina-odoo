@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="book_report_body">
+            <!--BODY-->
+            <div class="row" style="font-size:9px;">
+                <table style="border-top: 1px solid;border-bottom: 1px solid;width:100%;">
+                    <thead>
+                        <tr style="border-top: 1px solid;border-bottom: 1px solid;background-color: lightgray;">
+                            <th class="text-center"><strong>FECHA</strong></th>
+                            <th class="text-center"><strong>TIPO COMP.</strong></th>
+                            <th class="text-center"><strong>COMPROBANTE</strong></th>
+                            <th><strong>TIPO RESP.</strong></th>
+                            <th class="text-center"><strong>C.U.I.T.</strong></th>
+                            <th><strong>RAZON SOCIAL</strong></th>
+                            <th class="text-right"><strong>NETO GRAVADO</strong></th>
+                            <th class="text-right"><strong>NO GRAVADO</strong></th>
+                            <th class="text-right"><strong>IVA</strong></th>
+                            <th class="text-right"><strong>OTROS IMP.</strong></th>
+                            <th class="text-right"><strong>TOTAL</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.invoice_ids.sorted(key=lambda x: x.date_invoice)" t-as="inv">
+                            <td name="fecha_comprobante" class="text-center"><span t-esc="o.operation == 'sale' and inv.date_invoice or inv.date" t-field-options="{&quot;format&quot;: &quot;dd/MM/YYYY&quot;}"/></td>
+                            <td class="text-center"><span t-esc="inv.tipo_comprobante.book_desc and inv.tipo_comprobante.book_desc or inv.tipo_comprobante.name"/></td>
+                            <td class="text-center"><span t-field="inv.tipo_comprobante.desc"/><span t-field="inv.punto_venta.name"/>-<span t-esc="inv.num_comprobante and inv.num_comprobante.zfill(8) or 'S/N'"/></td>
+                            <td><span t-esc="inv.partner_id.commercial_partner_id.responsability_id.book_desc and inv.partner_id.commercial_partner_id.responsability_id.book_desc or inv.partner_id.commercial_partner_id.responsability_id.name"/></td>
+                            <td class="text-center"><span t-field="inv.partner_id.commercial_partner_id.cuit"/></td>
+                            <td><span t-field="inv.partner_id.commercial_partner_id"/></td>
+                            <td class="text-right"><span t-esc="inv.type in ('in_refund', 'out_refund') and inv.refund_type == 'credit' and round(-1 * inv.neto_gravado * inv.rate, 2) or round(inv.neto_gravado * inv.rate, 2)"/></td>
+                            <td class="text-right"><span t-esc="round(inv.type in ('in_refund', 'out_refund') and inv.refund_type == 'credit' and -1 * (inv._get_no_excempt_book() + inv._get_no_gravado_book()) * inv.rate, 2) or round((inv._get_no_excempt_book() + inv._get_no_gravado_book()) * inv.rate, 2)"/></td>
+                            <td class="text-right"><span t-esc="inv.type in ('in_refund', 'out_refund') and inv.refund_type == 'credit' and round(-1 * inv.amount_iva * inv.rate, 2) or round(inv.amount_iva * inv.rate, 2)"/></td>
+                            <td class="text-right"><span t-esc="inv.type in ('in_refund', 'out_refund') and inv.refund_type == 'credit' and round(-1 * inv.amount_other_tax * inv.rate, 2) + round(-1 * inv.amount_perception * inv.rate, 2) or round(inv.amount_other_tax * inv.rate, 2) + round(inv.amount_perception * inv.rate, 2)"/></td>
+                            <td class="text-right"><span t-esc="round(inv.amount_total_company_signed, 2)"/></td>
+                        </tr>
+                        <tr style="border-top: 1px solid;">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-center"><strong>TOTALES</strong></td>
+                            <td class="text-right"><strong><span t-esc="round(sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * x.neto_gravado * x.rate or x.neto_gravado * x.rate for x in o.invoice_ids]), 2)"/></strong></td>
+                            <td class="text-right"><strong><span t-esc="round(sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * (x._get_no_excempt_book() + x._get_no_gravado_book()) * x.rate or (x._get_no_excempt_book() + x._get_no_gravado_book()) * x.rate for x in o.invoice_ids]), 2)"/></strong></td>
+                            <td class="text-right"><strong><span t-esc="round(sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * x.amount_iva * x.rate or x.amount_iva * x.rate for x in o.invoice_ids]), 2)"/></strong></td>
+                            <td class="text-right"><strong><span t-esc="round(sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * x.amount_other_tax * x.rate or x.amount_other_tax * x.rate for x in o.invoice_ids]), 2)"/></strong></td>
+                            <td class="text-right"><strong><span t-esc="round(sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * x.amount_total * x.rate or x.amount_total * x.rate for x in o.invoice_ids]), 2)"/></strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/><br/>
+                <div class="row" style="font-size:11px;margin-left:10px;">
+                    <strong><i><u>TOTALES AGRUPADOS</u></i></strong><br/>
+                    <table t-foreach="o.grouped_tipo_responsable()" t-as="tipo_r" style="border: 0px;width:80%;margin-bottom:5px;">
+                        <thead>
+                            <tr>
+                                <th style="width:20%"><strong><span t-esc="tipo_r.name"/></strong></th>
+                                <th style="width:10%" class="text-left"><strong>FACTURAS</strong></th>
+                                <th style="width:10%" class="text-center"><strong>NOTA DEBITO</strong></th>
+                                <th style="width:10%" class="text-center"><strong>NOTA CRÉDITO</strong></th>
+                                <th style="width:20%" class="text-center"><strong>TOTALES</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.get_grouped_taxes(tipo_r)['iva']" t-as="ivaTax">
+                                <t t-if="not o.tax_is_zero(ivaTax)">
+                                    <td style="width:20%"><span t-esc="ivaTax.name"/></td>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['invoice_tax'],2)"/></td>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['debitnote_tax'],2)"/></td>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['creditnote_tax'],2)"/></td>
+                                    <td style="width:20%" class="text-center"><span t-esc="round(o.get_total_taxes(ivaTax, tipo_r)[ivaTax.id],2)"/></td>
+                                </t>
+                            </tr>
+                            <tr t-foreach="o.get_grouped_taxes(tipo_r)['iva']" t-as="ivaTax">
+                                    <t t-if="not o.tax_is_zero(ivaTax)">
+                                        <td style="width:20%">Neto Gravado <span t-esc="ivaTax.name"/></td>
+                                    </t>
+                                    <t t-if="o.tax_is_zero(ivaTax)">
+                                        <td style="width:20%">No Gravado</td>
+                                    </t>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['invoice_base'],2)"/></td>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['debitnote_base'],2)"/></td>
+                                    <td style="width:10%" class="text-right"><span t-esc="round(o.taxes_by_responsability(tipo_r, ivaTax)['creditnote_base'],2)"/></td>
+                                    <td style="width:20%" class="text-center"><span t-esc="round(o.get_total_tax_bases(ivaTax, tipo_r)[ivaTax.id],2)"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div class="row" style="font-size:11px;margin-left:5px;">
+                    <div class="col-xs-6">
+                        <strong><i><u>TOTALES GENERALES DEL PERIODO</u></i></strong><br/>
+                        <strong>Total No Gravado: </strong><span t-esc="sum([x.type in ('in_refund', 'out_refund') and x.refund_type == 'credit' and -1 * (x._get_no_excempt_book() or x._get_no_gravado_book())* x.rate or (x._get_no_excempt_book() or x._get_no_gravado_book())* x.rate for x in o.invoice_ids])"/><br/>
+                        <span t-foreach="o.get_grouped_taxes()['iva']" t-as="ivaTax">
+                            <t t-if="not o.tax_is_zero(ivaTax)">
+                                <span><strong><span t-esc="ivaTax.name"/></strong></span>:
+                                <span t-esc="round(o.get_total_taxes(ivaTax)[ivaTax.id],2)"/><br/>
+                                <span><strong>Total Gravado <span t-esc="ivaTax.name"/></strong></span>:
+                                <span t-esc="round(o.get_total_tax_bases(ivaTax)[ivaTax.id],2)"/><br/>
+                            </t>
+                        </span>
+                    </div>
+                    <div class="col-xs-6">
+                        <strong><i><u>TOTALES CONCEPTOS "OTROS" DEL PERIODO</u></i></strong><br/>
+                        <span t-foreach="o.get_grouped_taxes()['other']" t-as="oTax">
+                            <span><strong><span t-esc="oTax.name"/></strong></span>:
+                            <span t-esc="round(o.get_total_taxes(oTax)[oTax.id],2)"/><br/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--BODY-->
+        </template>
+
+        <template id="book_report_view">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.internal_layout">
+                        <div class="page" style="font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;">
+                            <hr/>
+                            <div class="row" style="margin-left:20px;">
+                                <strong>
+                                    LIBRO DE <span t-esc="dict(o.fields_get(allfields=['operation'])['operation']['selection'])[o.operation].upper()"/>: Período <span t-esc="o.period[5:7]"/>/<span t-esc="o.period[0:4]"/><br/>
+                                    EMPRESA: <span t-field="o.company_id"/>
+                                </strong>
+                            </div>
+                            <br/>
+                            <t t-call="l10n_ar_books.book_report_body"/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

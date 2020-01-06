@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <!--height by page on l10n_ar_report_invoice-->
+        <record id="icp_report_invoice_page_height" model="ir.config_parameter">
+            <field name="key">report.invoice.page_height</field>
+            <field name="value">1500</field>
+        </record>
+
+        <!--add page number in footer-->
+        <record id="icp_report_invoice_add_page_num" model="ir.config_parameter">
+            <field name="key">report.invoice.add_page_number</field>
+            <field name="value">1</field>
+        </record>
+    </data>
+</odoo>
